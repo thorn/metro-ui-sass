@@ -71,12 +71,12 @@
 @mixin padding80 {padding: 80px;}
 
 @mixin selected {
-    border: 4px @blue solid;
+    border: 4px $blue solid;
 
     &:after {
         width: 0;
         height: 0;
-        border-top: 40px solid @blue;
+        border-top: 40px solid $blue;
         border-left: 40px solid transparent;
         position: absolute;
         display: block;
