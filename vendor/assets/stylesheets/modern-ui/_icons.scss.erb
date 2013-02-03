@@ -13,11 +13,11 @@ License:  CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
 
 @font-face {
     font-family: 'iconFont';
-    src: url('<%= asset_path("iconFont.eot")          %>');
-    src: url('<%= asset_path("iconFont.eot?#iefix")   %>') format('embedded-opentype'),
-         url('<%= asset_path("iconFont.svg#iconFont") %>') format('svg'),
-         url('<%= asset_path("iconFont.woff")         %>') format('woff'),
-         url('<%= asset_path("iconFont.ttf")          %>') format('truetype');
+    src: asset-ulr('iconFont.eot')         ;
+    src: asset-ulr('iconFont.eot?#iefix')   format('embedded-opentype'),
+         asset-ulr('iconFont.svg#iconFont') format('svg'),
+         asset-ulr('iconFont.woff')         format('woff'),
+         asset-ulr('iconFont.ttf')          format('truetype');
     font-weight: normal;
     font-style: normal;
 }
