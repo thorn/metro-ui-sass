@@ -33,6 +33,10 @@ table {
           padding-right: $subunit * 2;
         }
 
+        &.center {
+          text-align: center;
+        }
+
         &.last {
           border-right: 1px transparent solid;
         }
