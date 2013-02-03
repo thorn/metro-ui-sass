@@ -2,7 +2,7 @@ require "modern-ui-sass/version"
 
 module ModernUI
 
-  class FrameworkNotFound < StandartError; end
+  class FrameworkNotFound < StandardError; end
 
   def self.load!
     if compass? && asset_pipeline?
