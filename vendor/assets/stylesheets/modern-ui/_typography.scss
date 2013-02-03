@@ -257,12 +257,12 @@ h1 {
 }
 
 h2 {
-    @include font-subheader
-    @include state-subheader
+    @include font-subheader;
+    @include state-subheader;
 }
 
 h3 {
-    @include font-subheader
+    @include font-subheader;
     @include state-subheader-secondary;
     font-size: 16pt;
     line-height: 24px;
