@@ -24,7 +24,7 @@ table {
         border-right: 1px #ddd solid;
         border-left: 1px transparent solid;
         border-top: 1px transparent solid;
-        #font > .navigation;
+        @include font-navigation;
         .text-rest2-state;
         text-align: left;
 
@@ -49,7 +49,7 @@ table {
       border: 1px #fff solid;
 
       td {
-        #font > .normal;
+        @include font-normal;
         padding: 3px 10px;
         border-right: 1px #ddd solid;
         border-bottom: 1px #ddd solid;

@@ -143,3 +143,38 @@
      -moz-box-sizing: $boxmodel;
           box-sizing: $boxmodel;
 }
+
+@mixin font-navigation {
+    font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 11pt;
+    letter-spacing: 0.01em;
+    line-height: 14pt;
+    font-smooth:always;
+}
+
+@mixin body {
+    font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 11pt;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    font-smooth:always;
+}
+
+@mixin normal{
+    font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 11pt;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    font-smooth:always;
+}
+@mixin body-secondary{
+    font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 11pt;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    font-smooth:always;
+}
