@@ -25,7 +25,7 @@ table {
         border-left: 1px transparent solid;
         border-top: 1px transparent solid;
         @include font-navigation;
-        .text-rest2-state;
+        @include text-rest2-state;
         text-align: left;
 
         &.right {
@@ -72,21 +72,21 @@ table {
       }
 
       &.success {
-        .bg-color-green;
+        @include bg-color-green;
       }
       &.error {
-        .bg-color-red();
+        @include bg-color-red;
       }
       &.warning {
-        .bg-color-orange();
+        @include bg-color-orange;
       }
       &.info {
-        .bg-color-blue();
+        @include bg-color-blue;
       }
 
       &.info, &.warning, &.error, &.success {
         td {
-          .fg-color-white;
+          @include fg-color-white;
         }
       }
 

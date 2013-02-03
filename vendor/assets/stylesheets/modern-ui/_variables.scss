@@ -32,42 +32,42 @@ $grayDark:              #525252 !default;
 
 
 // Foregraund colors classes
-.fg-color-blue {color: $blue !important;}
-.fg-color-blueLight {color: $blueLight !important;}
-.fg-color-blueDark {color: $blueDark !important;}
-.fg-color-green {color: $green !important;}
-.fg-color-greenLight {color: $greenLight !important;}
-.fg-color-greenDark {color: $greenDark !important;}
-.fg-color-red {color: $red !important;}
-.fg-color-yellow {color: $yellow !important;}
-.fg-color-orange {color: $orange !important;}
-.fg-color-orangeDark {color: $orangeDark !important;}
-.fg-color-pink {color: $pink !important;}
-.fg-color-pinkDark {color: $pinkDark !important;}
-.fg-color-purple {color: $purple !important;}
-.fg-color-darken {color: $darken !important;}
-.fg-color-lighten {color: $lighten !important;}
-.fg-color-white {color: $white !important;}
-.fg-color-grayDark {color: $grayDark !important;}
+@mixin fg-color-blue {color: $blue !important;}
+@mixin fg-color-blueLight {color: $blueLight !important;}
+@mixin fg-color-blueDark {color: $blueDark !important;}
+@mixin fg-color-green {color: $green !important;}
+@mixin fg-color-greenLight {color: $greenLight !important;}
+@mixin fg-color-greenDark {color: $greenDark !important;}
+@mixin fg-color-red {color: $red !important;}
+@mixin fg-color-yellow {color: $yellow !important;}
+@mixin fg-color-orange {color: $orange !important;}
+@mixin fg-color-orangeDark {color: $orangeDark !important;}
+@mixin fg-color-pink {color: $pink !important;}
+@mixin fg-color-pinkDark {color: $pinkDark !important;}
+@mixin fg-color-purple {color: $purple !important;}
+@mixin fg-color-darken {color: $darken !important;}
+@mixin fg-color-lighten {color: $lighten !important;}
+@mixin fg-color-white {color: $white !important;}
+@mixin fg-color-grayDark {color: $grayDark !important;}
 
 // Background colors classes
-.bg-color-blue {background-color: $blue !important;}
-.bg-color-blueLight {background-color: $blueLight !important;}
-.bg-color-blueDark {background-color: $blueDark !important;}
-.bg-color-green {background-color: $green !important;}
-.bg-color-greenLight {background-color: $greenLight !important;}
-.bg-color-greenDark {background-color: $greenDark !important;}
-.bg-color-red {background-color: $red !important;}
-.bg-color-yellow {background-color: $yellow !important;}
-.bg-color-orange {background-color: $orange !important;}
-.bg-color-orangeDark {background-color: $orangeDark !important;}
-.bg-color-pink {background-color: $pink !important;}
-.bg-color-pinkDark {background-color: $pinkDark !important;}
-.bg-color-purple {background-color: $purple !important;}
-.bg-color-darken {background-color: $darken !important;}
-.bg-color-lighten {background-color: $lighten !important;}
-.bg-color-white {background-color: $white !important;}
-.bg-color-grayDark {background-color: $grayDark !important;}
+@mixin bg-color-blue {background-color: $blue !important;}
+@mixin bg-color-blueLight {background-color: $blueLight !important;}
+@mixin bg-color-blueDark {background-color: $blueDark !important;}
+@mixin bg-color-green {background-color: $green !important;}
+@mixin bg-color-greenLight {background-color: $greenLight !important;}
+@mixin bg-color-greenDark {background-color: $greenDark !important;}
+@mixin bg-color-red {background-color: $red !important;}
+@mixin bg-color-yellow {background-color: $yellow !important;}
+@mixin bg-color-orange {background-color: $orange !important;}
+@mixin bg-color-orangeDark {background-color: $orangeDark !important;}
+@mixin bg-color-pink {background-color: $pink !important;}
+@mixin bg-color-pinkDark {background-color: $pinkDark !important;}
+@mixin bg-color-purple {background-color: $purple !important;}
+@mixin bg-color-darken {background-color: $darken !important;}
+@mixin bg-color-lighten {background-color: $lighten !important;}
+@mixin bg-color-white {background-color: $white !important;}
+@mixin bg-color-grayDark {background-color: $grayDark !important;}
 
 // Border colors classes
 
@@ -75,41 +75,41 @@ $grayDark:              #525252 !default;
     border: 2px solid;
 }
 
-.border-color-blue {border-color: $blue !important;}
-.border-color-blueLight {border-color: $blueLight !important;}
-.border-color-blueDark {border-color: $blueDark !important;}
-.border-color-green {border-color: $green !important;}
-.border-color-greenLight {border-color: $greenLight !important;}
-.border-color-greenDark {border-color: $greenDark !important;}
-.border-color-red {border-color: $red !important;}
-.border-color-yellow {border-color: $yellow !important;}
-.border-color-orange {border-color: $orange !important;}
-.border-color-orangeDark {border-color: $orangeDark !important;}
-.border-color-pink {border-color: $pink !important;}
-.border-color-pinkDark {border-color: $pinkDark !important;}
-.border-color-purple {border-color: $purple !important;}
-.border-color-darken {border-color: $darken !important;}
-.border-color-lighten {border-color: $lighten !important;}
-.border-color-white {border-color: $white !important;}
-.border-color-grayDark {border-color: $grayDark !important;}
+@mixin border-color-blue {border-color: $blue !important;}
+@mixin border-color-blueLight {border-color: $blueLight !important;}
+@mixin border-color-blueDark {border-color: $blueDark !important;}
+@mixin border-color-green {border-color: $green !important;}
+@mixin border-color-greenLight {border-color: $greenLight !important;}
+@mixin border-color-greenDark {border-color: $greenDark !important;}
+@mixin border-color-red {border-color: $red !important;}
+@mixin border-color-yellow {border-color: $yellow !important;}
+@mixin border-color-orange {border-color: $orange !important;}
+@mixin border-color-orangeDark {border-color: $orangeDark !important;}
+@mixin border-color-pink {border-color: $pink !important;}
+@mixin border-color-pinkDark {border-color: $pinkDark !important;}
+@mixin border-color-purple {border-color: $purple !important;}
+@mixin border-color-darken {border-color: $darken !important;}
+@mixin border-color-lighten {border-color: $lighten !important;}
+@mixin border-color-white {border-color: $white !important;}
+@mixin border-color-grayDark {border-color: $grayDark !important;}
 
 *:hover[class=outline-color] {
     outline: 3px solid;
 }
-.outline-color-blue {outline-color: $blue !important;}
-.outline-color-blueLight {outline-color: $blueLight !important;}
-.outline-color-blueDark {outline-color: $blueDark !important;}
-.outline-color-green {outline-color: $green !important;}
-.outline-color-greenLight {outline-color: $greenLight !important;}
-.outline-color-greenDark {outline-color: $greenDark !important;}
-.outline-color-red {outline-color: $red !important;}
-.outline-color-yellow {outline-color: $yellow !important;}
-.outline-color-orange {outline-color: $orange !important;}
-.outline-color-orangeDark {outline-color: $orangeDark !important;}
-.outline-color-pink {outline-color: $pink !important;}
-.outline-color-pinkDark {outline-color: $pinkDark !important;}
-.outline-color-purple {outline-color: $purple !important;}
-.outline-color-darken {outline-color: $darken !important;}
-.outline-color-lighten {outline-color: $lighten !important;}
-.outline-color-white {outline-color: $white !important;}
-.outline-color-grayDark {outline-color: $grayDark !important;}
+@mixin outline-color-blue {outline-color: $blue !important;}
+@mixin outline-color-blueLight {outline-color: $blueLight !important;}
+@mixin outline-color-blueDark {outline-color: $blueDark !important;}
+@mixin outline-color-green {outline-color: $green !important;}
+@mixin outline-color-greenLight {outline-color: $greenLight !important;}
+@mixin outline-color-greenDark {outline-color: $greenDark !important;}
+@mixin outline-color-red {outline-color: $red !important;}
+@mixin outline-color-yellow {outline-color: $yellow !important;}
+@mixin outline-color-orange {outline-color: $orange !important;}
+@mixin outline-color-orangeDark {outline-color: $orangeDark !important;}
+@mixin outline-color-pink {outline-color: $pink !important;}
+@mixin outline-color-pinkDark {outline-color: $pinkDark !important;}
+@mixin outline-color-purple {outline-color: $purple !important;}
+@mixin outline-color-darken {outline-color: $darken !important;}
+@mixin outline-color-lighten {outline-color: $lighten !important;}
+@mixin outline-color-white {outline-color: $white !important;}
+@mixin outline-color-grayDark {outline-color: $grayDark !important;}
