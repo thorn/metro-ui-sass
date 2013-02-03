@@ -32,42 +32,60 @@ $grayDark:              #525252 !default;
 
 
 // Foregraund colors classes
-@mixin fg-color-blue {color: $blue !important;}
-@mixin fg-color-blueLight {color: $blueLight !important;}
-@mixin fg-color-blueDark {color: $blueDark !important;}
-@mixin fg-color-green {color: $green !important;}
-@mixin fg-color-greenLight {color: $greenLight !important;}
-@mixin fg-color-greenDark {color: $greenDark !important;}
-@mixin fg-color-red {color: $red !important;}
-@mixin fg-color-yellow {color: $yellow !important;}
-@mixin fg-color-orange {color: $orange !important;}
-@mixin fg-color-orangeDark {color: $orangeDark !important;}
-@mixin fg-color-pink {color: $pink !important;}
-@mixin fg-color-pinkDark {color: $pinkDark !important;}
-@mixin fg-color-purple {color: $purple !important;}
-@mixin fg-color-darken {color: $darken !important;}
-@mixin fg-color-lighten {color: $lighten !important;}
-@mixin fg-color-white {color: $white !important;}
-@mixin fg-color-grayDark {color: $grayDark !important;}
+@mixin color-blue {color: $blue !important;}
+@mixin color-blueLight {color: $blueLight !important;}
+@mixin color-blueDark {color: $blueDark !important;}
+@mixin color-green {color: $green !important;}
+@mixin color-greenLight {color: $greenLight !important;}
+@mixin color-greenDark {color: $greenDark !important;}
+@mixin color-red {color: $red !important;}
+@mixin color-yellow {color: $yellow !important;}
+@mixin color-orange {color: $orange !important;}
+@mixin color-orangeDark {color: $orangeDark !important;}
+@mixin color-pink {color: $pink !important;}
+@mixin color-pinkDark {color: $pinkDark !important;}
+@mixin color-purple {color: $purple !important;}
+@mixin color-darken {color: $darken !important;}
+@mixin color-lighten {color: $lighten !important;}
+@mixin color-white {color: $white !important;}
+@mixin color-grayDark {color: $grayDark !important;}
+
+.fg-color-blue {@include color-blue ;}
+.fg-color-blueLight {@include color-blueLight ;}
+.fg-color-blueDark {@include color-blueDark ;}
+.fg-color-green {@include color-green ;}
+.fg-color-greenLight {@include color-greenLight ;}
+.fg-color-greenDark {@include color-greenDark ;}
+.fg-color-red {@include color-red ;}
+.fg-color-yellow {@include color-yellow ;}
+.fg-color-orange {@include color-orange ;}
+.fg-color-orangeDark {@include color-orangeDark ;}
+.fg-color-pink {@include color-pink ;}
+.fg-color-pinkDark {@include color-pinkDark ;}
+.fg-color-purple {@include color-purple ;}
+.fg-color-darken {@include color-darken ;}
+.fg-color-lighten {@include color-lighten ;}
+.fg-color-white {@include color-white ;}
+.fg-color-grayDark {@include color-grayDark ;}
 
 // Background colors classes
-@mixin bg-color-blue {background-color: $blue !important;}
-@mixin bg-color-blueLight {background-color: $blueLight !important;}
-@mixin bg-color-blueDark {background-color: $blueDark !important;}
-@mixin bg-color-green {background-color: $green !important;}
-@mixin bg-color-greenLight {background-color: $greenLight !important;}
-@mixin bg-color-greenDark {background-color: $greenDark !important;}
-@mixin bg-color-red {background-color: $red !important;}
-@mixin bg-color-yellow {background-color: $yellow !important;}
-@mixin bg-color-orange {background-color: $orange !important;}
-@mixin bg-color-orangeDark {background-color: $orangeDark !important;}
-@mixin bg-color-pink {background-color: $pink !important;}
-@mixin bg-color-pinkDark {background-color: $pinkDark !important;}
-@mixin bg-color-purple {background-color: $purple !important;}
-@mixin bg-color-darken {background-color: $darken !important;}
-@mixin bg-color-lighten {background-color: $lighten !important;}
-@mixin bg-color-white {background-color: $white !important;}
-@mixin bg-color-grayDark {background-color: $grayDark !important;}
+.bg-color-blue {@include color-blue;}
+.bg-color-blueLight {@include color-blueLight;}
+.bg-color-blueDark {@include color-blueDark;}
+.bg-color-green {@include color-green;}
+.bg-color-greenLight {@include color-greenLight;}
+.bg-color-greenDark {@include color-greenDark;}
+.bg-color-red {@include color-red;}
+.bg-color-yellow {@include color-yellow;}
+.bg-color-orange {@include color-orange;}
+.bg-color-orangeDark {@include color-orangeDark;}
+.bg-color-pink {@include color-pink;}
+.bg-color-pinkDark {@include color-pinkDark;}
+.bg-color-purple {@include color-purple;}
+.bg-color-darken {@include color-darken;}
+.bg-color-lighten {@include color-lighten;}
+.bg-color-white {@include color-white;}
+.bg-color-grayDark {@include color-grayDark;}
 
 // Border colors classes
 
@@ -75,41 +93,41 @@ $grayDark:              #525252 !default;
     border: 2px solid;
 }
 
-@mixin border-color-blue {border-color: $blue !important;}
-@mixin border-color-blueLight {border-color: $blueLight !important;}
-@mixin border-color-blueDark {border-color: $blueDark !important;}
-@mixin border-color-green {border-color: $green !important;}
-@mixin border-color-greenLight {border-color: $greenLight !important;}
-@mixin border-color-greenDark {border-color: $greenDark !important;}
-@mixin border-color-red {border-color: $red !important;}
-@mixin border-color-yellow {border-color: $yellow !important;}
-@mixin border-color-orange {border-color: $orange !important;}
-@mixin border-color-orangeDark {border-color: $orangeDark !important;}
-@mixin border-color-pink {border-color: $pink !important;}
-@mixin border-color-pinkDark {border-color: $pinkDark !important;}
-@mixin border-color-purple {border-color: $purple !important;}
-@mixin border-color-darken {border-color: $darken !important;}
-@mixin border-color-lighten {border-color: $lighten !important;}
-@mixin border-color-white {border-color: $white !important;}
-@mixin border-color-grayDark {border-color: $grayDark !important;}
+.border-color-blue {@include color-blue;}
+.border-color-blueLight {@include color-blueLight;}
+.border-color-blueDark {@include color-blueDark;}
+.border-color-green {@include color-green;}
+.border-color-greenLight {@include color-greenLight;}
+.border-color-greenDark {@include color-greenDark;}
+.border-color-red {@include color-red;}
+.border-color-yellow {@include color-yellow;}
+.border-color-orange {@include color-orange;}
+.border-color-orangeDark {@include color-orangeDark;}
+.border-color-pink {@include color-pink;}
+.border-color-pinkDark {@include color-pinkDark;}
+.border-color-purple {@include color-purple;}
+.border-color-darken {@include color-darken;}
+.border-color-lighten {@include color-lighten;}
+.border-color-white {@include color-white;}
+.border-color-grayDark {@include color-grayDark;}
 
 *:hover[class=outline-color] {
     outline: 3px solid;
 }
-@mixin outline-color-blue {outline-color: $blue !important;}
-@mixin outline-color-blueLight {outline-color: $blueLight !important;}
-@mixin outline-color-blueDark {outline-color: $blueDark !important;}
-@mixin outline-color-green {outline-color: $green !important;}
-@mixin outline-color-greenLight {outline-color: $greenLight !important;}
-@mixin outline-color-greenDark {outline-color: $greenDark !important;}
-@mixin outline-color-red {outline-color: $red !important;}
-@mixin outline-color-yellow {outline-color: $yellow !important;}
-@mixin outline-color-orange {outline-color: $orange !important;}
-@mixin outline-color-orangeDark {outline-color: $orangeDark !important;}
-@mixin outline-color-pink {outline-color: $pink !important;}
-@mixin outline-color-pinkDark {outline-color: $pinkDark !important;}
-@mixin outline-color-purple {outline-color: $purple !important;}
-@mixin outline-color-darken {outline-color: $darken !important;}
-@mixin outline-color-lighten {outline-color: $lighten !important;}
-@mixin outline-color-white {outline-color: $white !important;}
-@mixin outline-color-grayDark {outline-color: $grayDark !important;}
+.outline-color-blue {@include color-blue;}
+.outline-color-blueLight {@include color-blueLight;}
+.outline-color-blueDark {@include color-blueDark;}
+.outline-color-green {@include color-green;}
+.outline-color-greenLight {@include color-greenLight;}
+.outline-color-greenDark {@include color-greenDark;}
+.outline-color-red {@include color-red;}
+.outline-color-yellow {@include color-yellow;}
+.outline-color-orange {@include color-orange;}
+.outline-color-orangeDark {@include color-orangeDark;}
+.outline-color-pink {@include color-pink;}
+.outline-color-pinkDark {@include color-pinkDark;}
+.outline-color-purple {@include color-purple;}
+.outline-color-darken {@include color-darken;}
+.outline-color-lighten {@include color-lighten;}
+.outline-color-white {@include color-white;}
+.outline-color-grayDark {@include color-grayDark;}
