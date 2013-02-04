@@ -98,7 +98,7 @@ $cellMargin: 20px;
 
     .row {
         width: 100%;
-        .clearfix();
+        @include clearfix();
 
         [class*="span"] {
             float: left;
