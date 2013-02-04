@@ -59,7 +59,7 @@ table {
         border-bottom: 1px #ddd solid;
         border-left: 1px transparent solid;
         border-top: 1px transparent solid;
-        @extend .box-sizing(border-box);
+        @include box-sizing(border-box);
 
         &.right {
           text-align: right;
