@@ -56,7 +56,7 @@ button, .button {
     color: #353535;
     margin-right: 10px;
     margin-bottom: 10px;
-    @include border-raduis(0);
+    @include border-radius(0);
     display: inline-block;
     text-align: center;
     vertical-align: middle;
