@@ -6,71 +6,62 @@
  * Routines.less
  */
 
-@mixin place-left {float: left !important; margin-right: 10px;}
-@mixin place-right {float: right !important; margin-left: 10px;}
-@mixin scroll-y {overflow-y: scroll;}
-@mixin scroll-vertical {overflow-y: scroll;}
-@mixin scroll-x{overflow-x: scroll; }
-@mixin scroll-horizontal { overflow-x: scroll; }
+.place-left {float: left !important; margin-right: 10px;}
+.place-right {float: right !important; margin-left: 10px;}
 
-@mixin pos-rel {position: relative;}
-@mixin pos-abs {position: absolute;}
-@mixin pos-fix {position: fixed;}
-@mixin text-left {text-align: left;}
-@mixin text-right {text-align: right;}
-@mixin text-center {text-align: center;}
-@mixin text-justify {text-align: justify;}
+.scroll-y, .scroll-vertical {
+    overflow-y: scroll;
+}
+.scroll-x, .scroll-horizontal {
+    overflow-x: scroll;
+}
 
-@mixin top-left {
+.pos-rel {position: relative;}
+.pos-abs {position: absolute;}
+.pos-fix {position: fixed;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.text-justify {text-align: justify;}
+
+.top-left {
     position: absolute;
     top: 0;
     left: 0;
 }
-@mixin top-right {
+.top-right {
     position: absolute;
     top: 0;
     right: 0;
 }
-@mixin bottom-right {
+.bottom-right {
     position: absolute;
     bottom: 0;
     right: 0;
 }
-@mixin bottom-left {
+.bottom-left {
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-@mixin no-overflow {overflow: hidden;}
-@mixin no-display {display: none;}
-@mixin as-block {display: block; float: none !important;}
-@mixin as-inline-block {display: inline-block;}
+.no-overflow {overflow: hidden;}
+.no-display {display: none;}
+.as-block {display: block; float: none !important;}
+.as-inline-block {display: inline-block;}
 
-@mixin nlm {margin-left: 0 !important;}
-@mixin nrm {margin-right: 0 !important;}
+.nlm {margin-left: 0 !important;}
+.nrm {margin-right: 0 !important;}
 
-@mixin clearfix {
-    *zoom: 1;
-    &:before,
-    &:after {
-        display: table;
-        content: "";
-    }
-    &:after {
-        clear: both;
-    }
-}
+.padding5  {padding: 5px;}
+.padding10 {padding: 10px;}
+.padding15 {padding: 15px;}
+.padding20 {padding: 20px;}
+.padding30 {padding: 30px;}
+.padding40 {padding: 40px;}
+.padding80 {padding: 80px;}
 
-@mixin padding5 {padding: 5px;}
-@mixin padding10 {padding: 10px;}
-@mixin padding15 {padding: 15px;}
-@mixin padding20 {padding: 20px;}
-@mixin padding30 {padding: 30px;}
-@mixin padding40 {padding: 40px;}
-@mixin padding80 {padding: 80px;}
-
-@mixin selected {
+.selected {
     border: 4px $blue solid;
 
     &:after {
@@ -135,6 +126,19 @@
     -ms-transform: translate($x, $y, $z);
     -o-transform: translate($x, $y, $z);
     transform: translate($x, $y, $z);
+}
+
+
+@mixin clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
 }
 
 // Box sizing
