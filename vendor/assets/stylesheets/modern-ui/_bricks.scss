@@ -44,7 +44,7 @@
     width: $subunit*7;
     height: $subunit*6;
     padding-top: $subunit;
-    @include font-control;
+    @extend .font-control;
     color: $darken;
     text-align: center;
 }

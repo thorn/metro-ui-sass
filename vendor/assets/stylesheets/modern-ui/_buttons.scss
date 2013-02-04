@@ -47,7 +47,7 @@ $img-back-button-white: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAA
 }
 
 button, .button {
-    @include font-control;
+    @extend .font-control;
     min-width: 90px;
     min-height: 32px;
     height: 32px;
@@ -134,11 +134,11 @@ button, .button, .tool-button {
     height: auto;
     color: #000;
     background-color: #ccc;
-    @include font-normal;
+    @extend .font-normal;
 
     & > small {
         display: block;
-        @include font-normal;
+        @extend .font-normal;
         font-size: 10pt;
         color: #505050;
     }
