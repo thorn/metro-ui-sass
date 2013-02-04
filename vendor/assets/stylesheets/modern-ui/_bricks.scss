@@ -7,40 +7,40 @@
  *
  */
 
-@mixin item-margin {
+.item-margin {
     margin: 0 $subunit*2 $subunit*2 0;
 }
-@mixin column-margin {
+.column-margin {
     margin: 0 $unit $subunit*2 0;
 }
-@mixin group-margin {
+.group-margin {
     margin: 0 $unit*4 $subunit*2 0;
 }
 
 [class*="-brick"] {
 }
 
-@mixin brick {
-    @include pos-rel;
-    @include item-margin;
-    @include as-block;
+.brick {
+    @extend .pos-rel;
+    @extend .item-margin;
+    @extend .as-block;
 }
 .brick{ @include brick; }
 .short-brick {
-    @include brick;
+    @extend .brick;
     width: 150px;
     height: 150px;
 }
 
 .medium-brick {
-    @include brick;
+    @extend .brick;
     width: 310px;
     height: 150px;
 }
 
 /*
 .badge {
-    @include brick;
+    @extend .brick;
     width: $subunit*7;
     height: $subunit*6;
     padding-top: $subunit;
