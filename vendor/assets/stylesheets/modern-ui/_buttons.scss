@@ -138,7 +138,7 @@ button, .button, .tool-button {
 
     & > small {
         display: block;
-        #font > .normal;
+        @include font-normal;
         font-size: 10pt;
         color: #505050;
     }
