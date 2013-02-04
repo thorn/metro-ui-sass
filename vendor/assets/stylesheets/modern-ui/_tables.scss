@@ -90,7 +90,7 @@ table {
 
       &.info, &.warning, &.error, &.success {
         td {
-          @include color-white;
+          @include fg-color-white;
         }
       }
 
