@@ -25,7 +25,7 @@
     @extend .item-margin;
     @extend .as-block;
 }
-.brick{ @include brick; }
+
 .short-brick {
     @extend .brick;
     width: 150px;
