@@ -41,13 +41,13 @@
     src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/K88pR3goAWT7BTt32Z01mz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 
-@mixin text-rest-state       {color: rgba(0, 0, 0, 1.0);}
-@mixin text-rest2-state      {color: rgba(0, 0, 0, 0.6);}
-@mixin text-hover-state      {color: rgba(0, 0, 0, 0.8);}
-@mixin text-pressed-state    {color: rgba(0, 0, 0, 0.4);}
+.text-rest-state       {color: rgba(0, 0, .0, 1.0);}
+.text-rest2-state      {color: rgba(0, 0, 0, 0.6);}
+.text-hover-state      {color: rgba(0, 0, 0, 0.8);}
+.text-pressed-state    {color: rgba(0, 0, 0, 0.4);}
 
 
-@mixin font-header {
+.font-header {
     font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
     font-weight: 200;
     font-size: 42pt;
@@ -55,15 +55,7 @@
     line-height: 44pt;
     font-smooth:always;
 }
-@mixin font-subheader {
-    font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: 20pt;
-    letter-spacing: 0.01em;
-    line-height: 24pt;
-    font-smooth:always;
-}
-@mixin font-subheader-secondary {
+.font-subheader, .font-subheader-secondary {
     font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
     font-weight: 200;
     font-size: 20pt;
@@ -72,15 +64,7 @@
     font-smooth:always;
 }
 
-@mixin font-subheader-smaller {
-    font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    letter-spacing: 0.01em;
-    line-height: 24pt;
-    font-size: 16pt;
-    font-smooth:always;
-}
-@mixin font-subheader-secondary-smaller {
+.font-subheader-smaller, .font-subheader-secondary-smaller {
     font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
     font-weight: 200;
     letter-spacing: 0.01em;
@@ -89,15 +73,7 @@
     font-smooth:always;
 }
 
-@mixin font-small-subheader {
-    font-family: 'Segoe UI Semibold', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 11pt;
-    letter-spacing: 0.01em;
-    line-height: 14pt;
-    font-smooth:always;
-}
-@mixin font-small-subheader-secondary {
+.font-small-subheader, .font-small-subheader-secondary {
     font-family: 'Segoe UI Semibold', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 11pt;
@@ -106,7 +82,7 @@
     font-smooth:always;
 }
 
-@mixin font-navigation {
+.font-navigation {
     font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 11pt;
@@ -115,7 +91,7 @@
     font-smooth:always;
 }
 
-@mixin font-body {
+.font-body, .font-body-secondary, .font-normal {
     font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 11pt;
@@ -124,59 +100,35 @@
     font-smooth:always;
 }
 
-@mixin font-normal{
-    font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 11pt;
-    letter-spacing: 0.02em;
-    line-height: 20px;
-    font-smooth:always;
-}
-@mixin font-body-secondary{
-    font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 11pt;
-    letter-spacing: 0.02em;
-    line-height: 20px;
-    font-smooth:always;
-}
-
-@mixin font-link {
+.font-link {
     font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 11pt;
     font-smooth:always;
 }
 
-@mixin font-tertiary {
+.font-tertiary, .font-tertiary-secondary {
     font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 9pt;
     font-smooth:always;
 }
 
-@mixin font-tertiary-secondary{
+.font-control {
     font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 9pt;
     font-smooth:always;
 }
 
-@mixin font-control {
-    font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 9pt;
-    font-smooth:always;
-}
-
-@mixin font-small {
+.font-small {
     font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 8pt;
     font-smooth:always;
 }
 
-@mixin font-long-text {
+.font-long-text {
     //.body;
     font-family: 'PT Serif Caption', sans-serif, serif !important;
     font-weight: 300;
@@ -185,64 +137,38 @@
     line-height: 20px;
     font-smooth:always;
 }
-@mixin font-long-text-smaller {
-    @include long-text;
+.font-long-text-smaller {
+    @extend .long-text;
     font-size: 9pt;
 }
-@mixin font-long-text-lead {
-    @include long-text;
+.font-long-text-lead {
+    @extend .long-text;
     font-size: 20pt;
 }
 
 
-@mixin state-header{
-    @include text-rest-state();
-    &:hover { @include text-hover-state(); }
-    &:active { @include text-pressed-state(); }
-}
-@mixin state-subheader{
-    @include state-header;
-}
-@mixin state-small-subheader{
-    @include state-header;
-}
-@mixin state-body{
-    @include state-header;
-}
-@mixin state-tertiary{
-    @include state-header;
+.state-header, .state-subheader, .state-small-subheader, .state-body, .state-tertiary{
+    @extend.text-rest-state;
+    &:hover { @extend .text-hover-state; }
+    &:active { @extend .text-pressed-state; }
 }
 
-@mixin state-subheader-secondary{
-    @include text-rest2-state();
-    &:hover { @include text-hover-state(); }
-    &:active { @include text-pressed-state(); }
-}
-@mixin state-subheader-secondary-smaller{
-    @include state-subheader-secondary;
-}
-@mixin state-small-subheader{
-    @include state-subheader-secondary;
-}
-@mixin state-small-subheader-secondary{
-    @include state-subheader-secondary;
-}
-@mixin state-body-secondary{
-    @include state-subheader-secondary;
-}
-@mixin state-tertiary-secondary{
-    @include state-subheader-secondary;
+.state-subheader-secondary, .state-subheader-secondary-smaller, .state-small-subheader, .state-small-subheader-secondary, .state-body-secondary, .state-tertiary-secondary {
+    @extend .text-rest2-state;
+    &:hover { @extend .text-hover-state; }
+    &:active { @extend .text-pressed-state; }
 }
 
-@mixin state-link{
+
+.state-link{
     color: rgb(46, 146, 207);
     &:hover { color: rgba(45, 173, 237, 0.8); }
     &:active { color: rgba(45, 173, 237, 0.6); }
 }
 
 a, .link {
-    @include font-link;
-    @include state-link;
+    @extend .font-link;
+    @extend .state-link;
     text-decoration: none;
 }
 
@@ -252,45 +178,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    @include font-header;
-    @include state-header;
+    @extend .font-header;
+    @extend .state-header;
 }
 
 h2 {
-    @include font-subheader;
-    @include state-subheader;
+    @extend .font-subheader;
+    @extend .state-subheader;
 }
 
 h3 {
-    @include font-subheader;
-    @include state-subheader-secondary;
+    @extend .font-subheader;
+    @extend .state-subheader-secondary;
     font-size: 16pt;
     line-height: 24px;
 }
 
 h4 {
-    @include font-small-subheader;
-    @include state-small-subheader;
+    @extend .font-small-subheader;
+    @extend .state-small-subheader;
 }
 
 h5 {
-    @include font-small-subheader-secondary;
-    @include state-small-subheader-secondary;
+    @extend .font-small-subheader-secondary;
+    @extend .state-small-subheader-secondary;
     font-size: 90%;
 }
 
 h6 {
-    @include font-small-subheader-secondary;
-    @include state-small-subheader-secondary;
+    @extend .font-small-subheader-secondary;
+    @extend .state-small-subheader-secondary;
     font-size: 80%;
 }
 
 body, p {
-    @include font-body;
+    @extend .font-body;
 }
 
 p.long-text {
-    @include font-long-text;
+    @extend .font-long-text;
 }
 
 p {
@@ -307,13 +233,13 @@ p.indent:first-letter {
 }
 
 .tertiary-info-text, .tertiary-text {
-    @include font-tertiary;
-    @include state-tertiary;
+    @extend .font-tertiary;
+    @extend .state-tertiary;
 }
 
 .tertiary-info-secondary-text, .tertiary-secondary-text {
-    @include font-tertiary-secondary;
-    @include state-tertiary-secondary;
+    @extend .font-tertiary-secondary;
+    @extend .state-tertiary-secondary;
 }
 
 abbr.initialism {
@@ -328,7 +254,7 @@ abbr[title] {
 address {
     display: block;
     margin-bottom: $unit;
-    @include font-body;
+    @extend .font-body;
     line-height: 20px;
     font-style: normal;
 }
@@ -346,7 +272,7 @@ blockquote {
 
     small:before {
         content: '\2014';
-        @include text-pressed-state;
+        @extend .text-pressed-state;
         margin-right: $subunit;
     }
 
@@ -363,7 +289,7 @@ blockquote {
             }
             &:after {
                 content: '\2014';
-                @include text-pressed-state;
+                @extend .text-pressed-state;
                 margin-left: $subunit;
             }
         }

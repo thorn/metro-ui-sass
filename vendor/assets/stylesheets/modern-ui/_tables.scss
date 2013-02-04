@@ -24,8 +24,8 @@ table {
         border-right: 1px #ddd solid;
         border-left: 1px transparent solid;
         border-top: 1px transparent solid;
-        @include font-navigation;
-        @include text-rest2-state;
+        @extend .font-navigation;
+        @extend .text-rest2-state;
         text-align: left;
 
         &.right {
@@ -53,13 +53,13 @@ table {
       border: 1px #fff solid;
 
       td {
-        @include font-normal;
+        @extend .font-normal;
         padding: 3px 10px;
         border-right: 1px #ddd solid;
         border-bottom: 1px #ddd solid;
         border-left: 1px transparent solid;
         border-top: 1px transparent solid;
-        @include box-sizing(border-box);
+        @extend .box-sizing(border-box);
 
         &.right {
           text-align: right;
@@ -76,21 +76,21 @@ table {
       }
 
       &.success {
-        @include bg-color-green;
+        @extend .bg-color-green;
       }
       &.error {
-        @include bg-color-red;
+        @extend .bg-color-red;
       }
       &.warning {
-        @include bg-color-orange;
+        @extend .bg-color-orange;
       }
       &.info {
-        @include bg-color-blue;
+        @extend .bg-color-blue;
       }
 
       &.info, &.warning, &.error, &.success {
         td {
-          @include fg-color-white;
+          @extend .fg-color-white;
         }
       }
 
