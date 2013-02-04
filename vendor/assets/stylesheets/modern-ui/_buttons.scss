@@ -178,7 +178,7 @@ button, .button, .tool-button {
     a {
         padding: 5px 0;
     }
-    .clearfix;
+    @include clearfix;
 
     .toolbar-group {
         margin-right: 20px;
