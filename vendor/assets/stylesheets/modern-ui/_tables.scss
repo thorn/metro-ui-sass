@@ -76,16 +76,16 @@ table {
       }
 
       &.success {
-        @include color-green;
+        @include bg-color-green;
       }
       &.error {
-        @include color-red;
+        @include bg-color-red;
       }
       &.warning {
-        @include color-orange;
+        @include bg-color-orange;
       }
       &.info {
-        @include color-blue;
+        @include bg-color-blue;
       }
 
       &.info, &.warning, &.error, &.success {
