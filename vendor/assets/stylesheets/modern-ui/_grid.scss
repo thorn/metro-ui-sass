@@ -54,7 +54,7 @@ $cellMargin: 20px;
 [class*="span"] {
     float: none;
     min-height: 1px;
-    @include item-padding();
+    @extend .item-padding;
     @include clearfix();
 
     &:last-child {
