@@ -232,7 +232,7 @@
     right: 0;
     min-height: 100px;
 
-    @include bg-color-darken();
+    @extend .bg-color-darken;
 }
 
 .charms {
@@ -276,12 +276,12 @@
     min-height: 100px;
 }
 .error-bar {
-    @include bg-color-red();
+    @extend .bg-color-red;
 }
 .warning-bar {
-    @include bg-color-yellow();
+    @extend .bg-color-yellow;
 }
 .info-bar {
-    @include bg-color-blue();
+    @extend .bg-color-blue;
 }
 
