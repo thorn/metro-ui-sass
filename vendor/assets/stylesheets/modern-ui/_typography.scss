@@ -306,17 +306,15 @@ p.indent:first-letter {
     line-height: 26px;
 }
 
-@mixin tertiary-info-text {
+.tertiary-info-text, .tertiary-text {
     @include font-tertiary;
     @include state-tertiary;
 }
-@mixin tertiary-text{ @include tertiary-info-text; }
 
-@mixin tertiary-info-secondary-text{
+.tertiary-info-secondary-text, .tertiary-secondary-text {
     @include font-tertiary-secondary;
     @include state-tertiary-secondary;
 }
-@mixin tertiary-secondary-text { @include tertiary-info-secondary-text; }
 
 abbr.initialism {
     font-size: 90%;
