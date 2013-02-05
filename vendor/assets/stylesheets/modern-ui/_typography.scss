@@ -147,7 +147,7 @@
 }
 
 
-.state-header, .state-subheader, .state-small-subheader, .state-body, .state-tertiary{
+.state-header, .state-subheader, .state-small-subheader, .state-navigation, .state-body, .state-tertiary{
     @extend.text-rest-state;
     &:hover { @extend .text-hover-state; }
     &:active { @extend .text-pressed-state; }
