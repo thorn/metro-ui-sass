@@ -140,7 +140,7 @@
         clear: both;
     }
 }
-
+.clearfix { @include clearfix; }
 // Box sizing
 @mixin box-sizing($boxmodel) {
   -webkit-box-sizing: $boxmodel;
