@@ -41,7 +41,7 @@
     src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/K88pR3goAWT7BTt32Z01mz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 
-.text-rest-state       {color: rgba(0, 0, .0, 1.0);}
+.text-rest-state       {color: rgba(0, 0, 0, 1.0);}
 .text-rest2-state      {color: rgba(0, 0, 0, 0.6);}
 .text-hover-state      {color: rgba(0, 0, 0, 0.8);}
 .text-pressed-state    {color: rgba(0, 0, 0, 0.4);}
@@ -148,7 +148,7 @@
 
 
 .state-header, .state-subheader, .state-small-subheader, .state-navigation, .state-body, .state-tertiary{
-    @extend.text-rest-state;
+    @extend .text-rest-state;
     &:hover { @extend .text-hover-state; }
     &:active { @extend .text-pressed-state; }
 }
