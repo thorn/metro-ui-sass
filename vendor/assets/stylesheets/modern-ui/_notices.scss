@@ -48,7 +48,7 @@
                 color: $white;
             }
             .text {
-                .tertiary-text;
+                @extend .tertiary-text;
                 color: $white;
                 line-height: 16px;
                 &:hover {
