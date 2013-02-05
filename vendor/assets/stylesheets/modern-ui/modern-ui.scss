@@ -1,8 +1,5 @@
-// Core variables and mixins
-@import "modern-ui/variables"; // Modify this for custom colors, font-sizes, etc
-// @import "modern-ui/mixins";
+@import "modern-ui/variables";
 
-// CSS Reset
 @import "modern-ui/routines";
 @import "modern-ui/icons";
 @import "modern-ui/reset";
@@ -12,3 +9,6 @@
 @import "modern-ui/buttons";
 @import "modern-ui/tables";
 @import "modern-ui/grid";
+
+@import "modern-ui/hero";
+@import "modern-ui/menus";
