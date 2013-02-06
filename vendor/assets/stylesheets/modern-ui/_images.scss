@@ -13,7 +13,7 @@ $overlay-speed: .3s;
 .image-collection {
     @extend .pos-rel;
     @extend .unstyled;
-    @include .clearfix;
+    @include clearfix;
 
     & > div, & > li {
         width: 220px;
