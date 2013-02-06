@@ -180,7 +180,7 @@ $tileQuadro:            $tileSmall * 4 + $tileMargin * 6;
         right: 0;
         min-height: 30px;
         background-color: transparent;
-        .clearfix;
+        @include clearfix;
 
         & > .badge {
             @extend .bottom-right;
