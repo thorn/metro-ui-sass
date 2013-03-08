@@ -1,7 +1,7 @@
 /*
  * Metro UI CSS
  * Copyright 2012 Sergey Pimenov
- * Licensed under the MIT Lilcense
+ * Licensed under the MIT License
  *
  * Menus.less
  * dropdown-menu, nav-bar
@@ -68,6 +68,7 @@
     display: block;
     margin: 0;
     padding: 0;
+    z-index: 1000;
 
     .nav-bar-inner {
         .element, a .element {
@@ -127,7 +128,7 @@
                 }
 
                 ul.dropdown-menu {
-                //margin-top: 5px;
+                    z-index: 1001;
                     border: 0;
                     li {
 
@@ -217,6 +218,9 @@
     &.bg-color-white .nav-bar-inner .element {color: @darken !important;}
     &.bg-color-white .nav-bar-inner .pull-menu {color: @darken !important;}
     &.bg-color-grayDark .nav-bar-inner .menu li a:hover {background-color: @grayDark !important;}
+    &.bg-color-magenta .nav-bar-inner .menu li a:hover {background-color: @magenta !important;}
+    &.bg-color-teal .nav-bar-inner .menu li a:hover {background-color: @teal !important;}
+    &.bg-color-redLight .nav-bar-inner .menu li a:hover {background-color: @redLight !important;}
 
     .clearfix;
 }

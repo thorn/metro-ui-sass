@@ -8,17 +8,21 @@
 
 /* Large desktop */
 @media (min-width: 1200px) {
+    .modern-ui{
 
+    }
 }
 
 @media (min-width: 980px) {
-    .nav-bar {
-        .nav-bar-inner {
-            .pull-menu {
-                display: none;
-            }
-            & > ul.menu {
-                display: block !important;
+    .modern-ui{
+        .nav-bar {
+            .nav-bar-inner {
+                .pull-menu {
+                    display: none;
+                }
+                & > ul.menu {
+                    display: block !important;
+                }
             }
         }
     }

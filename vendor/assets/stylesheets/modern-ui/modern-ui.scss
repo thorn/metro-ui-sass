@@ -1,29 +1,31 @@
-@import "modern-ui/colors";
+.modern-ui{
+  @import "modern-ui/colors";
 
-@import "modern-ui/routines";
-@import "modern-ui/icons";
-@import "modern-ui/reset";
-@import "modern-ui/bricks";
-@import "modern-ui/typography";
-@import "modern-ui/layout";
-@import "modern-ui/buttons";
-@import "modern-ui/tables";
-@import "modern-ui/grid";
+  @import "modern-ui/routines";
+  @import "modern-ui/icons";
+  @import "modern-ui/reset";
+  @import "modern-ui/bricks";
+  @import "modern-ui/typography";
+  @import "modern-ui/layout";
+  @import "modern-ui/buttons";
+  @import "modern-ui/tables";
+  @import "modern-ui/grid";
 
-@import "modern-ui/hero";
-@import "modern-ui/menus";
-@import "modern-ui/sidebar";
-@import "modern-ui/notices";
-@import "modern-ui/tiles";
-@import "modern-ui/forms";
-@import "modern-ui/images";
-@import "modern-ui/cards";
-@import "modern-ui/code";
-@import "modern-ui/pagecontrol";
-@import "modern-ui/accordion";
-@import "modern-ui/rating";
-@import "modern-ui/progress";
-@import "modern-ui/carousel";
-@import "modern-ui/listview";
-@import "modern-ui/slider";
-@import "modern-ui/dialog";
+  @import "modern-ui/hero";
+  @import "modern-ui/menus";
+  @import "modern-ui/sidebar";
+  @import "modern-ui/notices";
+  @import "modern-ui/tiles";
+  @import "modern-ui/forms";
+  @import "modern-ui/images";
+  @import "modern-ui/cards";
+  @import "modern-ui/code";
+  @import "modern-ui/pagecontrol";
+  @import "modern-ui/accordion";
+  @import "modern-ui/rating";
+  @import "modern-ui/progress";
+  @import "modern-ui/carousel";
+  @import "modern-ui/listview";
+  @import "modern-ui/slider";
+  @import "modern-ui/dialog";
+}
