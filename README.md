@@ -6,7 +6,7 @@ This is SASS powered version of [Metro-UI-CSS](https://github.com/olton/Metro-UI
 
 Add this line to your application's Gemfile:
 
-    gem 'modern-ui-sass'
+    gem 'modern-ui-sass', git: 'git://github.com/thorn/modern-ui-sass.git'
 
 And then execute:
 
