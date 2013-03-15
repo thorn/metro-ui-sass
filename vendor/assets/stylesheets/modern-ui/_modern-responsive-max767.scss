@@ -111,7 +111,7 @@ $tileQuadro:            $tileSmall * 4 + $tileMargin * 6;
                             left: 100%;
                             margin-left: -10px;
                             top: 8px;
-                            @include .rotate(90deg);
+                            @include rotate(90deg);
                         }
                     }
                 }
