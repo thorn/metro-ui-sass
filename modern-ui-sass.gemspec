@@ -15,6 +15,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = ModernUI::VERSION
 
-  gem.add_development_dependency 'sass',   '~> 3.2'
-  gem.add_runtime_dependency 'sass-rails', '~> 3.2'
+  gem.add_development_dependency 'sass',   '>= 3.2'
+  gem.add_runtime_dependency 'sass-rails', '>= 3.2'
 end
