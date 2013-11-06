@@ -2,7 +2,7 @@
 require File.expand_path('../lib/modern-ui-sass/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Thorn731"]
+  gem.authors       = ["thorn"]
   gem.email         = ["notdefined@list.ru"]
   gem.summary       = %q{Modern UI ready to drop into Rails}
   gem.homepage      = "http://github.com/thorn/modern-ui-sass"

@@ -1,11 +1,11 @@
 description "Modern UI for Sass"
 
-# Stylesheet importing bootstrap
+# Stylesheet importing Modern UI
 stylesheet 'styles.scss', :media => 'screen, projection'
 
 #
-# Other Bootstrap assets
-basedir = '../../vendor/assets'
+# Other Modern UI assets
+basedir = '../../app/assets'
 
 # Glyphicons sprites
 image_files = %w{
