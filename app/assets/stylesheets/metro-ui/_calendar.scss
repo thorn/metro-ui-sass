@@ -86,7 +86,7 @@
     }
 
     a.selected {
-      @extend element-selected;
+      @extend .element-selected;
       border-width: 1px;
       &:after {
         border-top-width: 12px;

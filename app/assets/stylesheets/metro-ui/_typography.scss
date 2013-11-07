@@ -3,7 +3,6 @@
 .text-hover-state      {color: rgba(0, 0, 0, 0.8);}
 .text-pressed-state    {color: rgba(0, 0, 0, 0.4);}
 
-
 .font-light {
   font-weight: 300;
 }
@@ -51,6 +50,7 @@
 
 .header, .subheader {
   @extend .font-segoe-light;
+  @extend .font-light;
   @extend .text-rest-state;
   letter-spacing: 0.00em;
 }
@@ -152,10 +152,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { @extend .header;}
-h2 { @extend .subheader }
-h3 { @extend .subheader-secondary }
-h4 { @extend .item-title }
-h5 { @extend .item-title-secondary }
+h2 { @extend .subheader; }
+h3 { @extend .subheader-secondary; }
+h4 { @extend .item-title; }
+h5 { @extend .item-title-secondary; }
 h6 { @extend .body-text; @extend .font-bold; font-size: 9pt;}
 
 h1 small { font-size: $baseFontSize * 1.75; }

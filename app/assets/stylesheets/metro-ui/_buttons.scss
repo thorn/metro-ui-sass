@@ -107,11 +107,11 @@ a.button {
 
 
 button {
-  @extend button;
+  @extend .button;
 }
 
 .command-button {
-  @extend button;
+  @extend .button;
   text-align: left;
   font-size: 14pt;
   width: auto;
@@ -142,7 +142,7 @@ button {
 .toolbar {
   width: auto;
   margin-bottom: 10px;
-  @extend clearfix;
+  @extend .clearfix;
 
   &.transparent, .transparent {
     button, .button {
@@ -192,7 +192,7 @@ button {
     display: inline-block;
     margin-right: 10px;
     color: inherit;
-    @extend clearfix;
+    @extend .clearfix;
   }
 }
 
@@ -254,7 +254,7 @@ button.dropdown-toggle, .button.dropdown-toggle {
 }
 
 .shortcut {
-  @extend button;
+  @extend .button;
   height: 92px;
   width: 92px;
   text-align: center;
@@ -303,7 +303,7 @@ a.shortcut {
 }
 
 .button-set {
-  @extend clearfix;
+  @extend .clearfix;
 
   .button, button {
     display: block;

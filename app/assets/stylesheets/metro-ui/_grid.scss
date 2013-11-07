@@ -48,7 +48,7 @@
   margin-bottom: $gridGutterSize;
 
   .row {
-    @extend clearfix;
+    @extend .clearfix;
     display: block;
     margin-top: $gridGutterSize;
 
