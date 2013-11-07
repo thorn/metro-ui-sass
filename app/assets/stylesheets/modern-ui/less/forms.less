@@ -65,7 +65,7 @@ label {
         }
 
         .check {
-            .square(20px);
+            @include square(20px);
             background-color: @white;
             border: 2px @inputRestState solid;
             padding: 0;
@@ -115,7 +115,7 @@ label {
             &:after {
                 display: block;
                 content: "" !important;
-                .square(10px);
+                @include square(10px);
                 background-color: @dark;
                 margin: 3px;
             }
@@ -136,7 +136,7 @@ label {
             input[type="radio"]:checked ~ .check:after {
                 display: block;
                 content: "" !important;
-                .square(10px);
+                @include square(10px);
                 border-radius: 50%;
                 background-color: @dark;
                 margin: 3px;
@@ -165,7 +165,7 @@ label {
         .check {
             background-color: transparent;
             position: relative;
-            .size(18px, 45px);
+            @include size(18px, 45px);
             outline: 2px #a6a6a6 solid;
             border: 1px #fff solid;
             cursor: pointer;
@@ -181,7 +181,7 @@ label {
             top: -1px;
             display: block;
             content: "";
-            .size(16px, 9px);
+            @include size(16px, 9px);
             outline: 2px #333 solid;
             border: 1px #333 solid;
             cursor: pointer;
@@ -233,7 +233,7 @@ label {
             z-index: 2;
             border: 0;
             right: 4px;
-            .square(24px);
+            @include square(24px);
             min-height: 1px;
             min-width: 1px;
             padding: 0;

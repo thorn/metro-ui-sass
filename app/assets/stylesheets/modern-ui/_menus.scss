@@ -1,286 +1,340 @@
-/*
- * Metro UI CSS
- * Copyright 2012 Sergey Pimenov
- * Licensed under the MIT Lilcense
- *
- * Menus.less
- * dropdown-menu, nav-bar
- */
+.menu-init {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-.dropdown-menu {
-    position: absolute;
-    background-color: #fff;
-    @extend .unstyled;
-    top: 100%;
-    z-index: 11010;
-    float: left;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    min-width: 160px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    display: none;
+.menu-item-vertical {
+  display: block;
+  margin: 10px 0;
+  padding: 0;
+  vertical-align: baseline;
+  position: relative;
+  font-family: $segoeFontFamily;
+}
 
-    &.place-right {
-        right: 0;
-        left: auto;
-    }
+.menu-item-horizontal {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 0;
+  vertical-align: baseline;
+  position: relative;
+  font-family: $segoeFontFamily;
+}
+
+.vertical-menu {
+
+  @extend .menu-init;
+
+  li {
+    @extend .menu-item-vertical;
 
     a {
-        @extend .font-navigation;
-        @extend .state-navigation;
-        display: block;
-        width: 100%;
-        padding: 3px 20px;
-        white-space: nowrap;
-        font-size: 14px;
-        cursor: pointer;
+      display: block;
+      text-decoration: none;
+      @extend .menu-item;
+      color: inherit;
 
-        &:hover {
-            @extend .bg-color-blue;
-            @extend .fg-color-white;
-        }
+      &:hover {
+      }
     }
 
+    &.title {
+      @extend .menu-title;
+      margin-bottom: 20px;
+    }
+  }
+
+  &.compact {
+    a {
+      font-weight: normal;
+      font-size: 10.5pt;
+      line-height: 12pt;
+      color: inherit;
+    }
+    li.title {
+      margin-bottom: 10px;
+      @extend .item-title;
+    }
+  }
+
+  & ul.secondary {
+    @extend .menu-init;
+    margin-left: 15px;
     li {
-        display: list-item;
-        line-height: 20px;
+      a {
+        @extend .menu-item-secondary;
+        color: inherit;
+      }
     }
-
-    .divider {
-        height: 1px;
-        margin: 9px 1px;
-        overflow: hidden;
-        background-color: #e5e5e5;
-    }
-
-    &.open {
-        display: block !important;
-    }
+  }
 }
 
+.horizontal-menu {
+  @extend .menu-init;
+  padding: 0px;
 
-.nav-bar {
-    background-color: $blue;
-    position: relative;
-    top: 0;
-    width: 100%;
+
+  li {
+    @extend .menu-item-horizontal;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      @extend .menu-item;
+      color: inherit;
+      padding: $subunitSize ;
+
+      &:hover {
+        background: inherit;
+      }
+    }
+  }
+
+  &.compact {
+    li {
+      margin-left: 5px;
+    }
+    a {
+      font-weight: normal;
+      font-size: 10.5pt;
+      color: inherit;
+    }
+    .dropdown-toggle {
+      &:after {
+        bottom: 2px;
+      }
+    }
+  }
+
+  li:first-child {
+    margin-left: 0px;
+  }
+
+  li:hover > .dropdown-menu[data-show="hover"] {
     display: block;
-    margin: 0;
+  }
+}
+
+.side-menu {
+  @extend .vertical-menu;
+  position: relative;
+  background: $white;
+  min-width: 200px;
+  width: auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  li {
+    margin: 5px 0 0;
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: $subunitSize;
+    }
+  }
+
+  a {
+    padding: 8px 20px !important;
+    color: inherit;
+    font-size: 15px !important;
+    line-height: 14px !important;
+  }
+
+  li:hover {
+    background: $cyan;
+    color: $white;
+  }
+
+  .divider {
     padding: 0;
-
-    .nav-bar-inner {
-        .element, a .element {
-            position: relative;
-            margin: 5px;
-            line-height: 20px;
-            height: 20px;
-            float: left;
-            display: inline-block;
-            padding: 0;
-            font-weight: normal;
-            font-size: 10pt;
-            color: #fff;
-
-            &.brand {
-                font-size: 1.15em;
-            }
-
-            img {
-                height: 100%;
-            }
-
-            a {
-                line-height: 20px;
-                height: 20px;
-                font-size: 10pt;
-                //color: #fff;
-            }
-
-            [class^="icon-"]:before, [class*=" icon-"]:before {
-                display: inline-block;
-                margin: 0;
-                padding: 0;
-                display: block;
-                float: left;
-                margin: 0 5px;
-            }
-        }
-
-        & > ul.menu {
-            @extend .unstyled;
-            padding: 0;
-            margin: 0;
-
-            & > li {
-                display: block;
-                float: left;
-                margin-right: 10px;
-                position: relative;
-                padding: 5px;
-
-                a {
-                    display: block;
-                    float: left;
-                    color: $white;
-                    font-size: 10pt;
-                }
-
-                ul.dropdown-menu {
-                    z-index: 1001;
-                    border: 0;
-                    li {
-
-                        a {
-                            display: block;
-                            float: none;
-                            color: #1e1e1e;
-                            padding: 3px 20px;
-                        }
-                    }
-
-                }
-
-            }
-
-            &.open {
-                display: block !important;
-            }
-        }
-
-        & > .divider, & > ul.menu > li.divider {
-            @extend .element;
-            width: 1px;
-            border-right: 1px darken($white, 10%) solid;
-            //box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        }
-
-        [data-role=dropdown] {
-            margin-right: 20px !important;
-            & > a {
-                cursor: pointer;
-                &:before {
-                    position: absolute;
-                    content: "\203A";
-                    display: block;
-                    font-size: 1.4em;
-                    left: 100%;
-                    margin-left: 3px;
-                    top: 8px;
-                    @include rotate(90deg);
-                }
-            }
-        }
-
-        .pull-menu {
-            display: none;
-            float: right;
-            color: #fff;
-            cursor: pointer;
-            font: 1.8em sans-serif;
-            margin-right: 0px;
-            position: relative;
-            height: 20px;
-            width: 20px;
-            line-height: 20px;
-
-            &:before {
-                content: "\2261";
-                position: absolute;
-                font-size: 20pt;
-                top: 5px;
-                left: 0;
-            }
-        }
-
-        @include clearfix;
+    height: 1px;
+    margin: 9px 1px;
+    overflow: hidden;
+    background-color: #e5e5e5;
+    &:hover {
+      background: #e5e5e5;
     }
+  }
 
-    &.bg-color-blue .nav-bar-inner .menu li a:hover{background-color: $blue !important;}
-    &.bg-color-blueLight  .nav-bar-inner .menu li a:hover{background-color: $blueLight !important;}
-    &.bg-color-blueDark  .nav-bar-inner .menu li a:hover{background-color: $blueDark !important;}
-    &.bg-color-green  .nav-bar-inner .menu li a:hover{background-color: $green !important;}
-    &.bg-color-greenLight .nav-bar-inner .menu li a:hover {background-color: $greenLight !important;}
-    &.bg-color-greenDark .nav-bar-inner .menu li a:hover {background-color: $greenDark !important;}
-    &.bg-color-red .nav-bar-inner .menu li a:hover {background-color: $red !important;}
-    &.bg-color-yellow .nav-bar-inner .menu li a:hover {background-color: $yellow !important;}
-    &.bg-color-orange .nav-bar-inner .menu li a:hover {background-color: $orange !important;}
-    &.bg-color-orangeDark .nav-bar-inner .menu li a:hover {background-color: $orangeDark !important;}
-    &.bg-color-pink .nav-bar-inner .menu li a:hover {background-color: $pink !important;}
-    &.bg-color-pinkDark .nav-bar-inner .menu li a:hover {background-color: $pinkDark !important;}
-    &.bg-color-purple .nav-bar-inner .menu li a:hover {background-color: $purple !important;}
-    &.bg-color-darken .nav-bar-inner .menu li a:hover {background-color: $darken !important;}
-    &.bg-color-lighten .nav-bar-inner .menu li a:hover {background-color: $lighten !important;}
-    &.bg-color-white .nav-bar-inner .menu li:hover {background-color: darken($white, 10%) !important;}
-    &.bg-color-white .nav-bar-inner .menu li a:hover {background-color: darken($white, 10%) !important;}
-    &.bg-color-white .nav-bar-inner .menu li a {color: $darken !important;}
-    &.bg-color-white .nav-bar-inner .element {color: $darken !important;}
-    &.bg-color-white .nav-bar-inner .pull-menu {color: $darken !important;}
-    &.bg-color-grayDark .nav-bar-inner .menu li a:hover {background-color: $grayDark !important;}
-    &.bg-color-magenta .nav-bar-inner .menu li a:hover {background-color: $magenta !important;}
-    &.bg-color-teal .nav-bar-inner .menu li a:hover {background-color: $teal !important;}
-    &.bg-color-redLight .nav-bar-inner .menu li a:hover {background-color: $redLight !important;}
-    @include clearfix;
+  .dropdown-menu {
+    left: 100%;
+    top: -10%;
+  }
+
+  &.left {
+    .dropdown-menu {
+      left: -100%;
+    }
+  }
+
+  > li:hover > .dropdown-menu[data-show="hover"] {
+    display: block;
+  }
+
+  & > li > a.dropdown-toggle {
+
+    &:after {
+      font-family: iconFont;
+      font-size: .8em;
+      content: "\e156";
+      left: 85%;
+      top: .75em;
+      @include rotate(0deg);
+    }
+  }
+
+  &.text-right {
+    li {
+      text-align: right;
+    }
+  }
 }
 
-.nav-bar {
-    &.fixed-top, &.fixed-bottom {
-        position: fixed;
-        z-index: 10000;
-        left: 0;
+
+.dropdown-menu {
+  @extend .vertical-menu;
+  position: absolute;
+  display: none;
+  z-index: $zindexDropdown;
+  background: $white;
+  min-width: 220px;
+  width: auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  li {
+    margin: 5px 0 0;
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: $subunitSize;
     }
 
-    &.fixed-top {
-        top: 0;
-        bottom: auto;
+    &.disabled, &.disabled:hover {
+      cursor: default !important;
+      background: transparent !important;
+      color: $grayLighter;
+      a {
+        color: inherit;
+        cursor: inherit;
+        background: inherit;
+      }
     }
-    &.fixed-bottom {
-        bottom: 0;
-        top: auto;
+  }
+
+  a {
+    padding: 8px 32px !important;
+    color: inherit;
+    font-size: 15px !important;
+    line-height: 14px !important;
+    cursor: pointer;
+  }
+
+  li:hover {
+    background: $cyan;
+    color: $white;
+  }
+
+  li.checked a, li.checked-partial a {
+    &:before {
+      position: absolute;
+      left: 10px;
+      content: "\e0a6";
+      font-family: iconFont;
     }
+  }
+
+  li.checked-partial a {
+    &:before {
+      content: "\e0a8";
+    }
+  }
+
+  &.place-right {
+    right: -15px;
+    left: auto;
+  }
+
+  .divider {
+    padding: 0;
+    height: 1px;
+    margin: 9px 1px;
+    overflow: hidden;
+    background-color: #e5e5e5;
+    &:hover {
+      background: #e5e5e5;
+    }
+  }
+
+  &.open {
+    display: block !important;
+  }
+
+  .dropdown-menu {
+    left: 100%;
+    top: -10%;
+  }
+
+  > li:hover > .dropdown-menu[data-show="hover"] {
+    display: block;
+  }
+
+  & > li > a.dropdown-toggle {
+
+    &:after {
+      font-family: iconFont;
+      font-size: .7em;
+      content: "\e1b3";
+      left: 85%;
+      top: .85em;
+      @include rotate(0deg);
+    }
+  }
+
+  &.drop-left {
+    left: -100%;
+  }
+  &.drop-up {
+    top: auto;
+    bottom: 0;
+  }
 }
 
-.nav-bar {
-    .nav-bar-inner {
-        &.container {
-            width: 940px;
-            margin: auto;
-        }
+.dropdown-toggle {
+  &:after {
+    position: absolute;
+    margin-left: .45em;
+    bottom: 0;
+    content: '\203A';
+    @include rotate(90deg);
+  }
+
+  &.no-marker {
+    &:after {
+      content: "";
     }
+  }
 }
 
-.side-nav {
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        margin-bottom: 20px;
+.contextmenu {
+  z-index:1000;
+  position: absolute;
+  background-color:#FFFFFF;
+  border: 2.5px solid rgb(42,42,42);
+  padding: 2px;
+  @extend .no-user-select;
 
-        .title {
-            color: #4f4f4f;
-            font-family: Segoe UI,Arial,Verdana,Tahoma,sans-serif;
-            font-size: 12pt;
-            margin: 0 0 5px 0;
-            border-bottom: 1px #ccc solid;
-            //margin-top: 20px;
-        }
-
-        & > li > a {
-            display: block;
-            padding: 3px 10px 3px 0;
-            position: relative;
-            color: #014E85;
-            padding-left: 3px;
-            font-size: 10pt;
-        }
-
-        &.close {
-            & > li {
-                display: none;
-            }
-            & > li[class^=title] {
-                display: list-item;
-            }
-        }
-    }
+  .item:active {
+    background-color:rgb(0,0,0);
+    color:rgb(255,255,255);
+  }
+  .item:hover {
+    background-color:rgb(222,222,222);
+  }
+  .item {
+    background-color:#FFFFFF;
+    width:auto;
+    padding: 12px;
+    margin:-2px;
+  }
 }

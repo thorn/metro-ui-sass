@@ -1,337 +1,313 @@
-/*
- * Metro UI CSS
- * Copyright 2012 Sergey Pimenov
- * Licensed under the MIT License
- *
- * Typography.less
- *
- */
-
-// Cambria equals
-// font-family: "PT Serif Caption", serif;
-@font-face {
-    font-family: "PT Serif Caption";
-    font-style: normal;
-    font-weight: 400;
-    src: local("PT Serif Caption"), local("PTSerif-Caption"), url(https://themes.googleusercontent.com/static/fonts/ptserifcaption/v4/7xkFOeTxxO1GMC1suOUYWWhBabBbEjGd1iRmpyoZukE.woff) format('woff');
-}
-
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzJ1r3JsPcQLi8jytr04NNhU.woff) format('woff');
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 300;
-    src: local("Open Sans Light"), local("OpenSans-Light"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTZ1r3JsPcQLi8jytr04NNhU.woff) format('woff');
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 800;
-    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hp1r3JsPcQLi8jytr04NNhU.woff) format('woff');
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/K88pR3goAWT7BTt32Z01mz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-}
-
 .text-rest-state       {color: rgba(0, 0, 0, 1.0);}
 .text-rest2-state      {color: rgba(0, 0, 0, 0.6);}
 .text-hover-state      {color: rgba(0, 0, 0, 0.8);}
 .text-pressed-state    {color: rgba(0, 0, 0, 0.4);}
 
 
-.font-header {
-    font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: 42pt;
-    letter-spacing: 0.00em;
-    line-height: 44pt;
-    font-smooth:always;
-}
-.font-subheader, .font-subheader-secondary {
-    font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: 20pt;
-    letter-spacing: 0.01em;
-    line-height: 24pt;
-    font-smooth:always;
+.font-light {
+  font-weight: 300;
 }
 
-.font-subheader-smaller, .font-subheader-secondary-smaller {
-    font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    letter-spacing: 0.01em;
-    line-height: 24pt;
-    font-size: 16pt;
-    font-smooth:always;
+.font-normal {
+  font-weight: normal;
+  font-style: normal;
 }
 
-.font-small-subheader, .font-small-subheader-secondary {
-    font-family: 'Segoe UI Semibold', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 11pt;
-    letter-spacing: 0.01em;
-    line-height: 14pt;
-    font-smooth:always;
+.font-bold {
+  font-weight: bold;
 }
 
-.font-navigation {
-    font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 11pt;
-    letter-spacing: 0.01em;
-    line-height: 14pt;
-    font-smooth:always;
+.font-italic {
+  font-style: italic;
 }
 
-.font-body, .font-body-secondary, .font-normal {
-    font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 11pt;
-    letter-spacing: 0.02em;
-    line-height: 20px;
-    font-smooth:always;
+.font-segoe {
+  font-family: $segoeFontFamily;
 }
 
-.font-link {
-    font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 11pt;
-    font-smooth:always;
+.font-segoe-bold {
+  font-family: $segoeBoldFontFamily;
 }
 
-.font-tertiary, .font-tertiary-secondary {
-    font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 9pt;
-    font-smooth:always;
+.font-segoe-light {
+  font-family: $segoeLightFontFamily;
 }
 
-.font-control {
-    font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 9pt;
-    font-smooth:always;
+.font-cambria {
+  font-family: $cambriaFontFamily;
 }
 
-.font-small {
-    font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 8pt;
-    font-smooth:always;
+.font-mono {
+  font-family: $monoFontFamily;
 }
 
-.font-long-text {
-    //.body;
-    font-family: 'PT Serif Caption', sans-serif, serif !important;
-    font-weight: 300;
-    font-size: 10pt;
-    letter-spacing: 0.02em;
-    line-height: 20px;
-    font-smooth:always;
-}
-.font-long-text-smaller {
-    @extend .long-text;
-    font-size: 9pt;
-}
-.font-long-text-lead {
-    @extend .long-text;
-    font-size: 20pt;
+.font-serif {
+  font-family: $serifFontFamily;
 }
 
-
-.state-header, .state-subheader, .state-small-subheader, .state-navigation, .state-body, .state-tertiary{
-    @extend .text-rest-state;
-    &:hover { @extend .text-hover-state; }
-    &:active { @extend .text-pressed-state; }
+.font-sans {
+  font-family: $sansFontFamily;
 }
 
-.state-subheader-secondary, .state-subheader-secondary-smaller, .state-small-subheader, .state-small-subheader-secondary, .state-body-secondary, .state-tertiary-secondary {
-    @extend .text-rest2-state;
-    &:hover { @extend .text-hover-state; }
-    &:active { @extend .text-pressed-state; }
+.header, .subheader {
+  @extend .font-segoe-light;
+  @extend .text-rest-state;
+  letter-spacing: 0.00em;
 }
 
-.state-link{
-    color: rgb(46, 146, 207);
-    &:hover { color: rgba(45, 173, 237, 0.8); }
-    &:active { color: rgba(45, 173, 237, 0.6); }
+.header {
+  font-size: 42pt;
+  line-height: 44pt;
 }
 
-a, .link {
-    @extend .font-link;
-    @extend .state-link;
-    text-decoration: none;
+.subheader {
+  font-size: 20pt;
+  line-height: 24pt;
+  letter-spacing: 0.01em;
+}
+
+.subheader-secondary {
+  @extend .subheader;
+  @extend .text-rest2-state;
+  font-size: 16pt;
+}
+
+.item-title {
+  @extend .font-segoe-bold;
+  @extend .font-bold;
+  @extend .text-rest-state;
+  font-size: 11pt;
+  line-height: 15pt;
+  letter-spacing: 0.02em;
+}
+
+.item-title-secondary {
+  @extend .item-title;
+  @extend .text-rest2-state;
+  font-size: 10pt;
+}
+
+.navigation {
+  @extend .font-segoe;
+  @extend .font-normal;
+  @extend .text-rest2-state;
+  font-size: 10pt;
+  line-height: 12pt;
+  letter-spacing: 0.02em;
+}
+
+.body-text {
+  @extend .font-segoe;
+  @extend .font-normal;
+  @extend .text-rest-state;
+  font-size: 11pt;
+  line-height: 15pt;
+  letter-spacing: 0.02em;
+}
+
+.code-text {
+  @extend .body-text;
+  @extend .font-mono;
+}
+
+.tertiary-text {
+  @extend .font-segoe;
+  @extend .text-rest-state;
+  font-size: 10pt !important;
+  line-height: 11pt !important;
+  font-weight: normal !important;
+}
+
+.tertiary-text-secondary {
+  @extend .tertiary-text;
+  @extend .text-rest2-state;
+}
+
+.readable-text {
+  @extend .font-cambria;
+  @extend .font-normal;
+  font-size: 14pt;
+  line-height: 16pt;
+}
+
+.menu-title {
+  @extend .subheader;
+  font-size: 30pt;
+}
+
+.menu-item {
+  @extend .subheader-secondary;
+  font-size: 14pt;
+}
+
+.menu-item-secondary {
+  @extend .item-title;
+  @extend .font-normal;
+  line-height: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 10px 0;
-    padding: 0;
+  padding: 0;
+  margin: 10px 0;
 }
 
-h1 {
-    @extend .font-header;
-    @extend .state-header;
+h1 { @extend .header;}
+h2 { @extend .subheader }
+h3 { @extend .subheader-secondary }
+h4 { @extend .item-title }
+h5 { @extend .item-title-secondary }
+h6 { @extend .body-text; @extend .font-bold; font-size: 9pt;}
+
+h1 small { font-size: $baseFontSize * 1.75; }
+h2 small { font-size: $baseFontSize * 1.25; }
+h3 small { font-size: $baseFontSize; }
+h4 small { font-size: $baseFontSize; }
+
+a, .link {
+  color: $linkColor;
+  &:hover {
+    color: $linkColorHover;
+  }
+  &:focus, &:active {
+    color: $linkColorActive;
+  }
 }
 
-h2 {
-    @extend .font-subheader;
-    @extend .state-subheader;
-}
-
-h3 {
-    @extend .font-subheader;
-    @extend .state-subheader-secondary;
-    font-size: 16pt;
-    line-height: 24px;
-}
-
-h4 {
-    @extend .font-small-subheader;
-    @extend .state-small-subheader;
-}
-
-h5 {
-    @extend .font-small-subheader-secondary;
-    @extend .state-small-subheader-secondary;
-    font-size: 90%;
-}
-
-h6 {
-    @extend .font-small-subheader-secondary;
-    @extend .state-small-subheader-secondary;
-    font-size: 80%;
-}
-
-body, p {
-    @extend .font-body;
-}
-
-p.long-text {
-    @extend .font-long-text;
+div, span, p {
+  @extend .font-segoe;
+  @extend .font-normal;
 }
 
 p {
-    margin: 0 0 10px;
+  margin: 0 0 $baseLineHeight / 2;
+  @extend .body-text;
 }
 
-p.indent:first-letter {
-    padding-left: $subunit * 5;
+small {}
+strong {
+  @extend .font-segoe-bold;
+  @extend .font-bold;
 }
+em {}
 
-.lead {
-    font-size: 120%;
-    line-height: 26px;
-}
+.text-muted {color: $grayLight !important;}
+.text-info {color: $cyan !important;}
+.text-alert {color: $red !important;}
+.text-warning {color: $orange !important;}
+.text-success {color: $green !important;}
 
-.tertiary-info-text, .tertiary-text {
-    @extend .font-tertiary;
-    @extend .state-tertiary;
-}
-
-.tertiary-info-secondary-text, .tertiary-secondary-text {
-    @extend .font-tertiary-secondary;
-    @extend .state-tertiary-secondary;
-}
-
-abbr.initialism {
-    font-size: 90%;
-    text-transform: uppercase !important;
-}
-
-abbr[title] {
-    cursor: help !important;
+abbr {
+  text-decoration: none;
+  border-bottom: 1px $grayLight dotted;
+  cursor: help;
 }
 
 address {
-    display: block;
-    margin-bottom: $unit;
-    @extend .font-body;
-    line-height: 20px;
-    font-style: normal;
+  @extend .font-segoe;
+  @extend .font-normal;
+  margin-bottom: 7pt;
 }
 
 blockquote {
-    margin: 0;
-    padding: $subunit $unit;
-    border-left: 4px #ccc solid;
-    display: block;
-    background-color: rgba(204, 204, 204, 0.1);
+  margin: 0;
+  padding: 0;
+  border-left: 4px $grayLight solid;
+  padding-left: $unitSize / 2;
 
-    p {
-        margin-bottom: 0;
+  small {
+    color: $grayLight;
+
+    &:before {
+      content: "\2014 \00A0";
     }
+  }
 
-    small:before {
-        content: '\2014';
-        @extend .text-pressed-state;
-        margin-right: $subunit;
+  &.place-right {
+    border: 0;
+    border-right: 4px $grayLight solid;
+    padding-right: $unitSize / 2;
+    @extend .text-right;
+
+    small {
+      &:before {
+        content: "";
+      }
+      &:after {
+        content: " \00A0 \2014";
+      }
     }
+  }
+}
 
-    &.place-right {
-        float: none !important;
-        text-align: right;
-        border: 0;
-        border-right: 4px #ccc solid;
-
-        small {
-            text-align: right;
-            &:before {
-                content: "";
-            }
-            &:after {
-                content: '\2014';
-                @extend .text-pressed-state;
-                margin-left: $subunit;
-            }
-        }
+.unstyled {
+  padding-left: 0;
+  list-style: none;
+  li {
+    & ul, & ol {
+      list-style: none;
+      padding-left: 25px;
     }
+  }
+}
+
+.inline {
+  list-style: none;
+  li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 ul, ol {
-    padding: 0;
-    margin: 0 0 10px 0px;
-    display: block;
-}
+  margin-left: 5px;
+  padding-left: 15px;
+  @extend .body-text;
 
-ul:nth-child(1) {
-    margin-left: 25px;
-}
+  li {
+    line-height: 20px;
 
-ul ul, ul ol, ol ol, ol ul {
-    margin-bottom: 0 !important;
-}
-
-ul {
-    list-style-position: inside;
-    list-style-type: square;
-
-    ul {
-        list-style-type: circle;
+    & ul, & ol {
+      padding-left: 25px;
     }
+  }
 }
 
-ul, ol {
-    list-style-position: inside;
-    li {
-        display: list-item;
-        font-size: 14px;
-        line-height: 20px;
+dl {
+
+  dt, dd {
+    line-height: 20px;
+  }
+
+  dt {
+    @extend .font-segoe-bold;
+  }
+
+  dd {
+    margin-left: 15px;
+  }
+
+  &.horizontal {
+    dt {
+      float: left;
+      width: 160px;
+      overflow: hidden;
+      clear: left;
+      text-align: right;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
+
+    dd {
+      margin-left: 180px;
+    }
+  }
 }
 
-ol {
-    list-style-type: decimal;
-}
-
-ul.unstyled, ol.unstyled, .unstyled {
-    margin-left: 0;
-    list-style: none;
+.prettyprint {
+  * {
+    @extend .code-text;
+    font-size: .9em !important;
+    line-height: 10pt;
+  }
 }

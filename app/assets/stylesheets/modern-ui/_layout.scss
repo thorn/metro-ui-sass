@@ -1,287 +1,70 @@
-/*
- * Metro UI CSS
- * Copyright 2012 Sergey Pimenov
- * Licensed under the MIT Lilcense
- *
- * Layout.less
- */
-
-
-*, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-@mixin column-gap ($gap) {
-    -moz-column-gap: $gap;
-    -webkit-column-gap: $gap;
-    column-gap: $gap;
-}
-
-@mixin columns ($columns) {
-    -moz-columns: $columns;
-    -webkit-columns: $columns;
-    columns: $columns;
-
-    @include column-gap(20px);
-}
-
-.one-column {
-    @include columns(1);
-}
-.two-columns {
-    @include columns(2);
-}
-.three-columns {
-    @include columns(3);
-}
-.four-columns {
-    @include columns(4);
-}
-.five-columns {
-    @include columns(5);
+.container {
+  width: 940px !important;
+  margin: 0 auto;
 }
 
 .page {
-    position: relative;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
-    @include clearfix();
+  @extend clearfix;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
 
-    .page-header {
-        width: 100%;
-        position: relative;
-        display: block;
+  .page-header {
+    .page-header-content {
+      @extend clearfix;
+      min-height: auto;
 
-        .page-header-content {
-            height: $subunit * 20;
-            min-height: $unit * 5;
-            width: 100%;
-            position: relative;
-            display: block;
-
-            h1,h2,h3,h4,h5 {
-                position: absolute;
-                margin: 0;
-                padding: 0;
-                left: $unit;
-                bottom: 0;
-            }
-            h1 small {
-                font-size: 12pt;
-                margin-left: $subunit * 1;
-            }
-
-            h1.sub-menu {
-                cursor: pointer;
-                &:after {
-                    position: absolute;
-                    content: "\3009";
-                    display: inline-block;
-                    font-size: 10pt;
-                    bottom: -5px;
-                    right: -15px;
-                    @include rotate(90deg);
-                }
-            }
-
-            & > .page-back {
-                position: absolute;
-                top: 34px;
-                left: 30px;
-            }
-
-            .user-login {
-                float: right;
-                margin: 55px 44px 0 0;
-                cursor: pointer;
-
-                .avatar {
-                    float: right;
-                    border: 1px #ccc solid;
-                    width: 40px;
-                    height: 40px;
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-                .name {
-                    float: left;
-                    margin: 0px 10px;
-                    text-align: right;
-
-                    .first-name {
-                        font-family: "Open Sans", sans-serif, sans;
-                        font-size: 18pt;
-                        display: block;
-                        margin: 0;
-                    }
-                    .last-name {
-                        font-family: "Open Sans", sans-serif, sans;
-                        font-size: 10pt;
-                        display: block;
-                        margin: 0;
-                    }
-                }
-            }
-        }
-
-    }
-
-    .page-region {
-        display: block;
-
-        .page-region-content {
-            padding-top: $subunit * 2;
-            padding-left: 0;
-            padding-right: 0;
-            padding-bottom: $unit;
-            display: block;
-            height: 100%;
-            position: relative;
-        }
-    }
-
-    &.secondary {
-        .page-header {
-            .page-header-content {
-                h1,h2,h3,h4,h5 {
-                    position: absolute;
-                    margin: 0;
-                    padding: 0;
-                    left: $unit * 6;
-                    bottom: 0;
-                }
-            }
-        }
-
-        .page-region {
-            .page-region-content {
-                padding-left: $unit * 6;
-            }
-        }
-    }
-
-    &.snapped {
-        width: 33.33%;
-        height: 100%;
-        float: left;
-        border-right: 1px #ccc solid;
-    }
-    &.fill{
-        width: 66.66%;
-        height: 100%;
-        float: right;
-        border-left: 1px #ccc solid;
-    }
-
-
-    &.snapped {
-        .page {
-            .page-header {
-                .page-header-content {
-                    h1,h2,h3,h4,h5 {
-                        margin-left: $unit;
-                    }
-                }
-            }
-
-            .page-region {
-                .page-region-content {
-                    padding-left: $unit;
-                }
-            }
-        }
-    }
-}
-
-.page.fixed-header {
-    .page-header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-
-    .page-region {
-        padding-top: 140px;
-    }
-}
-
-.page.with-sidebar {
-    .page-region {
-        margin-left: 220px;
+      .branding {
+        display: inline-block;
         width: auto;
-        //border: 1px #ccc dotted;
+        padding: 10px 0;
+        margin-right: 20px;
 
-        .page-region-content {
-            padding-left: 20px;
+        .brand-title {
+          @extend subheader;
+          display: block;
         }
 
-        @include clearfix;
+        .brand-slogan {
+          @extend .item-title-secondary;
+          @extend .font-normal;
+          font-family: $segoeLightFontFamily;
+          display: block;
+        }
+
+        .brand-title, .brand-slogan {
+          margin: 0;
+        }
+
+        a + .brand-title, a + .brand-slogan {
+          text-decoration: none !important;
+        }
+      }
+
     }
-}
+  }
 
-.app-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    min-height: 100px;
+  .page-region {
 
-    @extend .bg-color-darken;
-}
-
-.charms {
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    min-width: 200px;
-    width: auto;
-
-    &.place-left {
-        left: 0;
-        right: auto;
+    .page-region-content {
+      @extend clearfix;
+      min-height: 500px;
     }
+  }
 
-    &.search {}
-    &.sharing{}
-    &.appsets{}
-    &.apphelp{}
-}
-
-.message-dialog {
-    position: fixed;
-    left: 0;
-    right: 0;
-    height: auto;
-    min-height: 100px;
-    top: 30%;
-    padding: 10px 10px 0;
-}
-.flyouts{}
-
-.error-bar, .warning-bar, .info-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px 20px;
-    color: #fff;
-    min-height: 100px;
-}
-.error-bar {
-    @extend .bg-color-red;
-}
-.warning-bar {
-    @extend .bg-color-yellow;
-}
-.info-bar {
-    @extend .bg-color-blue;
+  .page-footer {
+    .page-footer-content {
+      @extend clearfix;
+      height: $unitSize * 5;
+    }
+  }
 }
 
+.page {
+  &.secondary {
+    .page-region-content, .page-header-content {
+      padding-left: $unitSize * 4;
+    }
+  }
+}

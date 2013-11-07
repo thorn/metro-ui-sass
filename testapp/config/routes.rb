@@ -1,4 +1,10 @@
 Testapp::Application.routes.draw do
+
+  ['main'].each do |page|
+    get page => "pages##{page}", as: page
+  end
+
+  root to: 'pages#main'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
