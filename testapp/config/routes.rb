@@ -1,10 +1,29 @@
 Testapp::Application.routes.draw do
 
-  ['main'].each do |page|
-    get page => "pages##{page}", as: page
-  end
+  # pages = [
+  #   'index',
+  #   'requirements',
+  #   'global',
+  #   'grid',
+  #   'typography',
+  #   'tables',
+  #   'forms',
+  #   'buttons',
+  #   'images',
+  #   'icons',
 
-  root to: 'pages#main'
+  #   'navbar',
+  #   'tiles',
+  #   'menus',
+  #   'fluent_menu'
+  # ]
+  # pages.each do |page|
+  #   get page => "pages##{page}", as: page
+  # end
+
+  root to: 'pages#index'
+
+  get ':id', to: 'pages#show', as: :page
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

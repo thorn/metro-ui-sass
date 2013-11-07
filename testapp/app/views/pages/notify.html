@@ -1,0 +1,96 @@
+<div class="page">
+        <div class="page-region">
+            <div class="page-region-content">
+                <h1>
+                    <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+                    Notify<small class="on-right">plugin</small>
+                </h1>
+
+                <div class="example">
+                    <button class="button primary" id="notify_btn_1">Notify</button>
+                    <button class="button success" id="notify_btn_2">Notify many</button>
+                    <script>
+                        $(function(){
+                            $('#notify_btn_1').on('click', function(){
+                                $.Notify({
+                                    shadow: false,
+                                    position: 'bottom-right',
+                                    content: "Metro UI CSS is awesome!!!"
+                                });
+                            });
+                            $('#notify_btn_2').on('click', function(){
+                                setTimeout(function(){
+                                    $.Notify({style: {background: '#1ba1e2', color: 'white'}, caption: 'Info...', content: "Metro UI CSS is Simple!!!"});
+                                }, 1000);
+                                setTimeout(function(){
+                                    $.Notify({style: {background: 'red', color: 'white'}, content: "Metro UI CSS is Sufficient!!!"});
+                                }, 2000);
+                                setTimeout(function(){
+                                    $.Notify({style: {background: 'green', color: 'white'}, content: "Metro UI CSS is Responsive!!!"});
+                                }, 3000);
+                                setTimeout(function(){
+                                    $.Notify({content: "Default style for notify"});
+                                }, 4000);
+                            });
+                        });
+                    </script>
+                </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="com">//with parameters sets</span></li><li class="L1"><span class="pln">$</span><span class="pun">(</span><span class="str">'#notify_btn_1'</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">'click'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span></li><li class="L2"><span class="pln">    $</span><span class="pun">.</span><span class="typ">Notify</span><span class="pun">({</span></li><li class="L3"><span class="pln">        content</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Metro UI CSS is awesome!!!"</span></li><li class="L4"><span class="pln">    </span><span class="pun">});</span></li><li class="L5"><span class="pun">});</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="com">// alternate with default parameters</span></li><li class="L8"><span class="pln">$</span><span class="pun">(</span><span class="str">'#notify_btn_1'</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">'click'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(){</span></li><li class="L9"><span class="pln">    $</span><span class="pun">.</span><span class="typ">Notify</span><span class="pun">.</span><span class="pln">show</span><span class="pun">(</span><span class="str">"Metro UI CSS is awesome!!!"</span><span class="pun">);</span></li><li class="L0"><span class="pln">    $</span><span class="pun">.</span><span class="typ">Notify</span><span class="pun">.</span><span class="pln">show</span><span class="pun">(</span><span class="str">"Metro UI CSS is awesome!!!"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Info..."</span><span class="pun">);</span></li><li class="L1"><span class="pun">});</span></li></ol></pre>
+                <h3>Parameters:</h3>
+                <table class="table border striped">
+                    <tbody><tr>
+                        <td>icon</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>caption</td>
+                        <td>string</td>
+                        <td>Notify title</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>string</td>
+                        <td>Notify message</td>
+                    </tr>
+                    <tr>
+                        <td>shadow</td>
+                        <td>boolean</td>
+                        <td>Show or hide Notify shadow (default: true)</td>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>int</td>
+                        <td>default 'auto', if value != auto min-width sets</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>int</td>
+                        <td>default 'auto', if value != auto min-height sets</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>{background: 'value', color: 'value'} or false</td>
+                        <td>default false, you can set background and font color</td>
+                    </tr>
+                    <tr>
+                        <td>position</td>
+                        <td>string</td>
+                        <td>values: top-right, bottom-right, top-left, bottom-left</td>
+                    </tr>
+                    <tr>
+                        <td>timeout</td>
+                        <td>int</td>
+                        <td>milliseconds to hide notify, default 3000</td>
+                    </tr>
+                </tbody></table>
+
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="page-footer-content">
+                <!--<div data-load="header.html"></div>-->
+            </div>
+        </div>
+    </div>

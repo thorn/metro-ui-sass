@@ -1,0 +1,93 @@
+<div class="page">
+        <div class="page-region">
+            <div class="page-region-content">
+                <h1>
+                    <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+                    TreeView<small class="on-right">component</small>
+                </h1>
+
+                <div class="grid fluid">
+                    <div class="row">
+                        <div class="span4">
+                            <div class="example">
+                                <ul class="treeview" data-role="treeview">
+                                    <li class="node">
+                                        <a href="#">sergey@pimenov.com.ua</a>
+                                        <ul>
+                                            <li class="active"><a href="#">Inbox</a></li>
+                                            <li><a href="#">Outbox</a></li>
+                                            <li><a href="#">Drafts</a></li>
+                                            <li><a href="#">Rss-channels</a></li>
+                                            <li><a href="#">Trash <span class="value">[5]</span></a></li>
+                                            <li class="node">
+                                                <a href="#">subnode</a>
+                                                <ul>
+                                                    <li><a href="#">Inbox</a></li>
+                                                    <li><a href="#">Outbox</a></li>
+                                                    <li><a href="#">Drafts</a></li>
+                                                    <li><a href="#">Rss-channels</a></li>
+                                                    <li><a href="#">Trash</a></li>
+                                                    <li class="node">
+                                                        <a href="#">subnode 2</a>
+                                                        <ul>
+                                                            <li><a href="#">Inbox</a></li>
+                                                            <li><a href="#">Outbox</a></li>
+                                                            <li><a href="#">Drafts</a></li>
+                                                            <li><a href="#">Rss-channels</a></li>
+                                                            <li><a href="#">Trash</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="node">
+                                        <a href="#">support@metroui.net</a>
+                                        <ul>
+                                            <li><a href="#">Inbox</a></li>
+                                            <li><a href="#">Outbox</a></li>
+                                            <li><a href="#">Drafts</a></li>
+                                            <li><a href="#">Rss-channels</a></li>
+                                            <li><a href="#">Trash</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="node collapsed">
+                                        <a href="#">info@metroui.net</a>
+                                        <ul style="display: none;">
+                                            <li><a href="#">Inbox</a></li>
+                                            <li><a href="#">Outbox</a></li>
+                                            <li><a href="#">Drafts</a></li>
+                                            <li><a href="#">Rss-channels</a></li>
+                                            <li><a href="#">Trash</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>
+                                This component required <code>metro-treevew.js</code>
+                            </p>
+                        </div>
+
+                        <div class="span8">
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"treeview"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"treeview"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"node"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">sergey@pimenov.com.ua</span><span class="tag">&lt;/a&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;ul&gt;</span></li><li class="L4"><span class="pln">            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Inbox</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L5"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Outbox</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L6"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Drafts</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Rss-channels</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L8"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Trash </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"value"</span><span class="tag">&gt;</span><span class="pln">[5]</span><span class="tag">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span></li><li class="L9"><span class="pln">            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"node"</span><span class="tag">&gt;</span></li><li class="L0"><span class="pln">                </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">subnode</span><span class="tag">&lt;/a&gt;</span></li><li class="L1"><span class="pln">                </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">                    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Inbox</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">                    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Outbox</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="pln">                    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Drafts</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L5"><span class="pln">                    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Rss-channels</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L6"><span class="pln">                    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Trash</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">                </span><span class="tag">&lt;/ul&gt;</span></li><li class="L8"><span class="pln">            </span><span class="tag">&lt;/li&gt;</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;/ul&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;/li&gt;</span></li><li class="L1"><span class="pln">&nbsp;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"node collapsed"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">info@metroui.net</span><span class="tag">&lt;/a&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;ul&gt;</span></li><li class="L5"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Inbox</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L6"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Outbox</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Drafts</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L8"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Rss-channels</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L9"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Trash</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L0"><span class="pln">        </span><span class="tag">&lt;/ul&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+                        </div>
+                    </div>
+                </div> <!-- end of grid -->
+
+                <h3>Events</h3>
+                <table class="table border">
+                    <tbody><tr>
+                        <td><strong>onNodeClick</strong></td>
+                        <td>this event fired when user click on node</td>
+                    </tr>
+                </tbody></table>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span></li><li class="L1"><span class="pln">    $</span><span class="pun">(</span><span class="str">"#tree1"</span><span class="pun">).</span><span class="pln">treeview</span><span class="pun">({</span></li><li class="L2"><span class="pln">        onNodeClick</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">node</span><span class="pun">){</span></li><li class="L3"><span class="pln">            console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">node</span><span class="pun">);</span></li><li class="L4"><span class="pln">        </span><span class="pun">}</span></li><li class="L5"><span class="pln">    </span><span class="pun">});</span></li><li class="L6"><span class="pun">});</span></li></ol></pre>
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="page-footer-content">
+                <!--<div data-load="header.html"></div>-->
+            </div>
+        </div>
+    </div>

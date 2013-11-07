@@ -18,6 +18,7 @@ gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 
 # Use the metro-ui-sass gem
 gem 'metro-ui-sass', path: '..'

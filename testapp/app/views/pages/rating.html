@@ -1,0 +1,91 @@
+<div class="page">
+        <div class="page-region">
+            <div class="page-region-content">
+                <h1>
+                    <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+                    Rating<small class="on-right">component</small>
+                </h1>
+
+                <p class="description">
+                    Rating is a component that generates a customizable star rating. This component required <code>metro-rating.js</code>.
+                </p>
+                <div class="example">
+                    <div class="rating large active" data-static="false" data-score="3" data-stars="5" data-role="rating" data-show-score="true" data-score-hint="Rating: "><ul><li class="rated"></li><li class="rated"></li><li class="rated"></li><li></li><li></li></ul><span class="score-hint">Rating: 3</span></div>
+                    <div id="rating_1" class="fg-green rating active"><ul><li title="bad" class="rated"></li><li title="poor" class="rated"></li><li title="regular"></li><li title="good"></li><li title="gorgeous"></li></ul><span class="score-hint">Current score: 2</span></div>
+                    <div class="rating small fg-red active" data-static="false" data-score="3" data-stars="5" data-role="rating" data-show-score="true" data-score-hint="Value: "><ul><li class="rated"></li><li class="rated"></li><li class="rated"></li><li></li><li></li></ul><span class="score-hint">Value: 3</span></div>
+                    <script>
+                        $(function(){
+                            $("#rating_1").rating({
+                                static: false,
+                                score: 2,
+                                stars: 5,
+                                showHint: true,
+                                showScore: true,
+                                click: function(value, rating){
+                                    //alert("Rating clicked with value " + value);
+                                    rating.rate(value);
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+
+                <h4>Component structure</h4>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rating"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rated"</span><span class="tag">&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rated"</span><span class="tag">&gt;&lt;/li&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;/li&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;/li&gt;</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"score-hint"</span><span class="tag">&gt;&lt;/span&gt;</span></li><li class="L9"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                <h4>Component definition</h4>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rating"</span><span class="tag">&gt;&lt;/div&gt;</span></li></ol></pre>
+
+                <p>
+                    You can activate widget manually or auto with <code>data-*</code> api.
+                </p>
+                <h4>
+                    Activate with API on DATA-ROLE attribute.
+                </h4>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rating"</span></li><li class="L1"><span class="pln">    </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"rating"</span></li><li class="L2"><span class="pln">    </span><span class="atn">data-static</span><span class="pun">=</span><span class="atv">"false"</span></li><li class="L3"><span class="pln">    </span><span class="atn">data-score</span><span class="pun">=</span><span class="atv">"3"</span></li><li class="L4"><span class="pln">    </span><span class="atn">data-stars</span><span class="pun">=</span><span class="atv">"5"</span></li><li class="L5"><span class="pln">    </span><span class="atn">data-show-score</span><span class="pun">=</span><span class="atv">"true"</span></li><li class="L6"><span class="pln">    </span><span class="atn">data-score-hint</span><span class="pun">=</span><span class="atv">"Value: "</span><span class="tag">&gt;</span></li><li class="L7"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                <h4>
+                    Activate with javascript.
+                </h4>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span></li><li class="L1"><span class="pln">    $</span><span class="pun">(</span><span class="str">"#rating_1"</span><span class="pun">).</span><span class="pln">rating</span><span class="pun">({</span></li><li class="L2"><span class="pln">        </span><span class="kwd">static</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span></li><li class="L3"><span class="pln">        score</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span></li><li class="L4"><span class="pln">        stars</span><span class="pun">:</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span></li><li class="L5"><span class="pln">        showHint</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span></li><li class="L6"><span class="pln">        hints</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="str">'bad'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'poor'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'regular'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'good'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'gorgeous'</span><span class="pun">],</span></li><li class="L7"><span class="pln">        showScore</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span></li><li class="L8"><span class="pln">        scoreHint</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Current score: "</span><span class="pun">,</span></li><li class="L9"><span class="pln">    </span><span class="pun">});</span></li><li class="L0"><span class="pun">});</span></li></ol></pre>
+                <h4>Event handlers</h4>
+                <div class="example">
+                    <div id="rating_2" class="large fg-green rating active"><ul><li title="bad" class="rated"></li><li title="poor" class="rated"></li><li title="regular"></li><li title="good"></li><li title="gorgeous"></li></ul><span class="score-hint">Current score: 2</span></div>
+                    <script>
+                        $(function(){
+                            $("#rating_2").rating({
+                                static: false,
+                                score: 2,
+                                stars: 5,
+                                showHint: true,
+                                showScore: true,
+                                click: function(value, rating){
+                                    rating.rate(value);
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span></li><li class="L1"><span class="pln">    $</span><span class="pun">(</span><span class="str">"#rating_2"</span><span class="pun">).</span><span class="pln">rating</span><span class="pun">({</span></li><li class="L2"><span class="pln">        click</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">value</span><span class="pun">,</span><span class="pln"> rating</span><span class="pun">){</span></li><li class="L3"><span class="pln">            rating</span><span class="pun">.</span><span class="pln">rate</span><span class="pun">(</span><span class="pln">value</span><span class="pun">);</span></li><li class="L4"><span class="pln">        </span><span class="pun">}</span></li><li class="L5"><span class="pln">    </span><span class="pun">});</span></li><li class="L6"><span class="pun">});</span></li></ol></pre>
+
+                <h4>Change Rating color</h4>
+                <p class="description">
+                    To change color of rating you can use built-in color classes <code>fg-*</code> (see colors on <a href="global.html">Global styles</a> page). Also you can change <code>color</code> style for rating element.
+                </p>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rating fg-green"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L1"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rating"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#2784A7</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></li></ol></pre>
+
+                <h4>Change Rating size</h4>
+                <p class="description">
+                    To change size of rating you can use built-in classes <code>large</code> or <code>small</code>.
+                </p>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rating"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L1"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rating large"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rating small"</span><span class="tag">&gt;&lt;/div&gt;</span></li></ol></pre>
+
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="page-footer-content">
+                <!--<div data-load="header.html"></div>-->
+            </div>
+        </div>
+    </div>

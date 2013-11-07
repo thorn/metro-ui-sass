@@ -1,0 +1,46 @@
+<div class="page">
+        <div class="page-region">
+            <div class="page-region-content">
+                <h1>
+                    <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+                    Hint<small class="on-right">plugin</small>
+                </h1>
+
+                <p>
+                    Metro UI CSS provides plugin to the ability to create tooltips for any elements. Positioned as a replacement attribute title. This method required plugin <code>metro-hint.js</code>
+                </p>
+                <div class="example">
+                    <div class="grid fluid">
+                        <div class="row">
+                            <div class="span3">
+                                <div class="text-center padding10 border" data-hint="Title|This is a hint for element. Hint can be written as html.">Hint on bottom</div>
+                            <div class="hint bottom" style="top: 81px; left: 60px;"><div class="hint-title">Title</div><div class="hint-text">This is a hint for element. Hint can be written as html.</div></div></div>
+                            <div class="span3">
+                                <div class="text-center padding10 border" data-hint-position="top" data-hint="Title|This is a hint for element. Hint can be written as html.">Hint on top</div>
+                            <div class="hint top" style="top: -46px; left: 273.953125px;"><div class="hint-title">Title</div><div class="hint-text">This is a hint for element. Hint can be written as html.</div></div></div>
+                            <div class="span3">
+                                <div class="text-center padding10 border" data-hint-position="right" data-hint="Title|This is a hint for element. Hint can be written as html.">Hint on right</div>
+                            <div class="hint right" style="top: 30px; left: 693.90625px;"><div class="hint-title">Title</div><div class="hint-text">This is a hint for element. Hint can be written as html.</div></div></div>
+                            <div class="span3">
+                                <div class="text-center padding10 border" data-hint-position="left" data-hint="Title|This is a hint for element. Hint can be written as html.">Hint on left</div>
+                            <div class="hint left" style="top: 30px; left: 471.859375px;"><div class="hint-title">Title</div><div class="hint-text">This is a hint for element. Hint can be written as html.</div></div></div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    To create hint for element you must add <code>data-hint</code> attribute to element.
+                    Default position for hint - bottom on element.
+                    To change hint position you can add attribute <code>data-hint-position</code> to element with the following possible values: <code>top</code>, <code>bottom</code>, <code>left</code> or <code>right</code>.
+                </p>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span></li><li class="L1"><span class="pln">    </span><span class="atn">data-hint</span><span class="pun">=</span><span class="atv">"Title|This is a hint for Me"</span></li><li class="L2"><span class="pln">    </span><span class="atn">data-hint-position</span><span class="pun">=</span><span class="atv">"top | bottom | left | right"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">        Hover me...</span></li><li class="L4"><span class="tag">&lt;/a&gt;</span></li></ol></pre>
+
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="page-footer-content">
+                <!--<div data-load="header.html"></div>-->
+            </div>
+        </div>
+    </div>

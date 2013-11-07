@@ -1,0 +1,161 @@
+<div class="page">
+
+    <div class="page-region">
+        <div class="page-region-content">
+
+            <h1>
+                <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+                Grid<small class="on-right">system</small>
+            </h1>
+
+            <p id="_general" class="description">
+                The default Metro UI CSS grid system utilizes <strong>12 columns</strong>, making for a 940px wide container without responsive features enabled.
+                With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport.
+                Below 767px viewports, the columns become fluid and stack vertically.
+            </p>
+            <div class="example">
+                <div class="grid show-grid">
+                    <div class="row">
+                        <div class="span1">1</div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span2">2</div>
+                        <div class="span3">3</div>
+                        <div class="span4">4</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span4">4</div>
+                        <div class="span5">5</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span9">9</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 id="_basic">Basic grid HTML</h3>
+            <p>
+                For a simple two column layout, create a <code>.row</code> and add the appropriate number of <code>.span*</code> columns.
+                As this is a 12-column grid, each <code>.span*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).
+            </p>
+
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"grid"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span8"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+            <p class="description">
+                Given this example, we have <code>.span4</code> and <code>.span8</code>, making for 12 total columns and a complete row.
+            </p>
+
+            <h3 id="_offsetting">Offsetting columns</h3>
+            <p class="description">
+                Move columns to the right using <code>.offset*</code> classes.
+                Each class increases the left margin of a column by a whole column.
+                For example, <code>.offset4</code> moves <code>.span4</code> over four columns.
+            </p>
+
+            <div class="example">
+                <div class="grid show-grid">
+                    <div class="row">
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                        <div class="span1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="span4">4</div>
+                        <div class="span3 offset2">3 offset 2</div>
+                    </div>
+                    <div class="row">
+                        <div class="span3 offset1">3 offset 1</div>
+                        <div class="span3 offset2">3 offset 2</div>
+                    </div>
+                    <div class="row">
+                        <div class="span6 offset3">6 offset 3</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 id="_nesting">Nesting columns</h3>
+            <p>
+                To nest your content with the default grid, add a new <code>.row</code> and set of <code>.span*</code> columns within an existing <code>.span*</code> column.
+                Nested rows should include a set of columns that add up to the number of columns of its parent.
+            </p>
+
+            <div class="example">
+                <div class="grid show-grid">
+                    <div class="row">
+                        <div class="span9">
+                            level 1 column
+                            <div class="row">
+                                <div class="span6">level 2</div>
+                                <div class="span3">level 2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="pln"> </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"grid"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">     </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">         </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span9"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">            level 1 column</span></li><li class="L4"><span class="pln">             </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">                 </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span6"</span><span class="pln"> </span><span class="tag">&gt;</span><span class="pln">level 2 </span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="pln">                 </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span3"</span><span class="pln"> </span><span class="tag">&gt;</span><span class="pln">level 2 </span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="pln">             </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">         </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">     </span><span class="tag">&lt;/div&gt;</span></li><li class="L0"><span class="pln"> </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+            <h3>Fluid Grid</h3>
+            <div class="example">
+                <div class="grid fluid show-grid">
+                    <div class="row">
+                        <div class="span1">1</div>
+                        <div class="span1">2</div>
+                        <div class="span1">3</div>
+                        <div class="span1">4</div>
+                        <div class="span1">5</div>
+                        <div class="span1">6</div>
+                        <div class="span1">7</div>
+                        <div class="span1">8</div>
+                        <div class="span1">9</div>
+                        <div class="span1">10</div>
+                        <div class="span1">11</div>
+                        <div class="span1">12</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span2">1</div>
+                        <div class="span2">2</div>
+                        <div class="span2">3</div>
+                        <div class="span2">4</div>
+                        <div class="span2">5</div>
+                        <div class="span2">6</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span2 offset2">2</div>
+                        <div class="span2">3</div>
+                        <div class="span2">4</div>
+                        <div class="span2">5</div>
+                        <div class="span2">6</div>
+                    </div>
+
+                </div>
+            </div>
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"grid fluid"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">...</span></li><li class="L2"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+        </div> <!-- End page-region-content -->
+    </div> <!-- End page-region -->
+
+    <div class="page-footer">
+        <div class="page-footer-content">
+
+        </div>
+    </div>
+</div>

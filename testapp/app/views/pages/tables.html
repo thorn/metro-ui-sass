@@ -1,0 +1,272 @@
+<div class="page">
+        <div class="page-region">
+            <div class="page-region-content">
+                <h1>
+                    <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+                    Tables<small class="on-right">definition</small>
+                </h1>
+
+                <h3 id="_default">Default table styles</h3>
+                <p class="description">
+                    All tables has default styles: width <code>100%</code>, cell padding <code>10px</code> and text align <code>left</code>.
+                </p>
+
+                <div class="example">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="text-left">Name</th>
+                            <th class="text-left">Time CP</th>
+                            <th class="text-left">Network</th>
+                            <th class="text-left">Traffic</th>
+                            <th class="text-left">Tiles update</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr><td>Bing</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Internet Explorer</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Chrome</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>News</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Weather</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Music</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        </tbody>
+
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;table&gt;</span><span class="pln">...</span><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+
+                <h3 id="_striped">Striped rows</h3>
+                <p class="description">
+                    Adds zebra-striping to any table row within the <code>&lt;tbody&gt;</code> with class <code>.striped</code>.
+                </p>
+
+                <div class="example">
+                    <table class="table striped3n">
+                        <thead>
+                        <tr>
+                            <th class="text-left">Name</th>
+                            <th class="text-left">Time CP</th>
+                            <th class="text-left">Network</th>
+                            <th class="text-left">Traffic</th>
+                            <th class="text-left">Tiles update</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr><td>domain</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>desc</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>domain</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>desc</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>domain</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>desc</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>domain</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>desc</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>domain</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>desc</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>domain</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>desc</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        </tbody>
+
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+                <div class="example">
+                    <table class="table striped">
+                        <thead>
+                        <tr>
+                            <th class="text-left">Name</th>
+                            <th class="text-left">Time CP</th>
+                            <th class="text-left">Network</th>
+                            <th class="text-left">Traffic</th>
+                            <th class="text-left">Tiles update</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr><td>Bing</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Internet Explorer</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Chrome</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>News</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Weather</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Music</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        </tbody>
+
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"striped"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+
+                <h3 id="_bordered">Bordered table</h3>
+                <p class="description">
+                    Adds borders to any table with class <code>.bordered</code>.
+                </p>
+
+                <div class="example">
+                    <table class="table bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-left">Name</th>
+                            <th class="text-left">Time CP</th>
+                            <th class="text-left">Network</th>
+                            <th class="text-left">Traffic</th>
+                            <th class="text-left">Tiles update</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr><td>Bing</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Internet Explorer</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Chrome</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>News</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Weather</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Music</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        </tbody>
+
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bordered"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+
+
+                <h3 id="_hovered">Hovered table</h3>
+                <p class="description">
+                    Enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.
+                </p>
+
+                <div class="example">
+                    <table class="table hovered">
+                        <thead>
+                        <tr>
+                            <th class="text-left">Name</th>
+                            <th class="text-left">Time CP</th>
+                            <th class="text-left">Network</th>
+                            <th class="text-left">Traffic</th>
+                            <th class="text-left">Tiles update</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr><td>Bing</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Internet Explorer</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Chrome</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>News</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Weather</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Music</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        </tbody>
+
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"hovered"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+
+                <h3 id="_optional">Optional row classes</h3>
+                <p class="description">
+                    For displaying optional rows you must add one of next classes for <code>&lt;tr&gt;</code>:
+                </p>
+
+                <ul>
+                    <li class="fg-red">error</li>
+                    <li class="fg-green">success</li>
+                    <li class="fg-orange">warning</li>
+                    <li class="fg-lightBlue">info</li>
+                    <li>selected</li>
+                </ul>
+
+                <div class="example">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="text-left">Name</th>
+                            <th class="text-left">Time CP</th>
+                            <th class="text-left">Network</th>
+                            <th class="text-left">Traffic</th>
+                            <th class="text-left">Tiles update</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr class="error"><td>Bing</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr class="success"><td>Internet Explorer</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr class="warning"><td>Chrome</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr class="info"><td>News</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Music</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr class="selected"><td>Weather</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        </tbody>
+
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;table&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;tr</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"error"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/tr&gt;</span></li><li class="L2"><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+
+
+                <h3 id="_control">TableControl.js</h3>
+                <p class="description">This component in progress...</p>
+                <div class="example">
+                    <div id="table1" style="width: 100%; height: auto;"><table class="table hovered border myClass"><thead><tr><th>No</th><th>Date</th><th class="text-left">Client</th><th class="text-right">Amount</th><th class="text-right">Tax</th><th class="text-right">Total</th><th>Notes</th></tr></thead><tbody><tr><td class="text-center" style="width: 50px;">1</td><td class="text-center" style="width: 120px;">2007-10-01</td><td class="text-left">test</td><td class="text-right" style="width: 80px;">200.00</td><td class="text-right" style="width: 80px;">10.00</td><td class="text-right" style="width: 80px;">210.00</td><td class="span1">note</td></tr><tr><td class="text-center" style="width: 50px;">2</td><td class="text-center" style="width: 120px;">2007-10-02</td><td class="text-left">test2</td><td class="text-right" style="width: 80px;">300.00</td><td class="text-right" style="width: 80px;">20.00</td><td class="text-right" style="width: 80px;">320.00</td><td class="span1">note2</td></tr><tr><td class="text-center" style="width: 50px;">3</td><td class="text-center" style="width: 120px;">2007-09-01</td><td class="text-left">test3</td><td class="text-right" style="width: 80px;">400.00</td><td class="text-right" style="width: 80px;">30.00</td><td class="text-right" style="width: 80px;">430.00</td><td class="span1">note3</td></tr><tr><td class="text-center" style="width: 50px;">4</td><td class="text-center" style="width: 120px;">2007-10-04</td><td class="text-left">test</td><td class="text-right" style="width: 80px;">200.00</td><td class="text-right" style="width: 80px;">10.00</td><td class="text-right" style="width: 80px;">210.00</td><td class="span1">note</td></tr><tr><td class="text-center" style="width: 50px;">5</td><td class="text-center" style="width: 120px;">2007-10-05</td><td class="text-left">test2</td><td class="text-right" style="width: 80px;">300.00</td><td class="text-right" style="width: 80px;">20.00</td><td class="text-right" style="width: 80px;">320.00</td><td class="span1">note2</td></tr><tr><td class="text-center" style="width: 50px;">6</td><td class="text-center" style="width: 120px;">2007-09-06</td><td class="text-left">test3</td><td class="text-right" style="width: 80px;">400.00</td><td class="text-right" style="width: 80px;">30.00</td><td class="text-right" style="width: 80px;">430.00</td><td class="span1">note3</td></tr><tr><td class="text-center" style="width: 50px;">7</td><td class="text-center" style="width: 120px;">2007-10-04</td><td class="text-left">test</td><td class="text-right" style="width: 80px;">200.00</td><td class="text-right" style="width: 80px;">10.00</td><td class="text-right" style="width: 80px;">210.00</td><td class="span1">note</td></tr><tr><td class="text-center" style="width: 50px;">8</td><td class="text-center" style="width: 120px;">2007-10-03</td><td class="text-left">test2</td><td class="text-right" style="width: 80px;">300.00</td><td class="text-right" style="width: 80px;">20.00</td><td class="text-right" style="width: 80px;">320.00</td><td class="span1">note2</td></tr><tr><td class="text-center" style="width: 50px;">9</td><td class="text-center" style="width: 120px;">2007-09-01</td><td class="text-left">test3</td><td class="text-right" style="width: 80px;">400.00</td><td class="text-right" style="width: 80px;">30.00</td><td class="text-right" style="width: 80px;">430.00</td><td class="span1">note3</td></tr></tbody></table></div>
+                    <script>
+                        function checkRow(el){
+                            $(el).parents("tr").toggleClass("selected");
+                        }
+
+                        function checkAll(el){
+                            var state = el.checked;
+                            $(el).parents("table").find("tbody [type=checkbox]").each(function(index){
+                                $(this).prop("checked", state);
+                                if (state) {
+                                    $(this).parents("tr").addClass("selected");
+                                } else {
+                                    $(this).parents("tr").removeClass("selected");
+                                }
+                            });
+
+                        }
+
+                        var table, table_data;
+
+                        table_data = [
+                            {_check:"<input type='checkbox' name='chk[]' value='1' onclick='checkRow(this)'>",id:"1",invdate:"2007-10-01",name:"test",note:"note",amount:"200.00",tax:"10.00",total:"210.00"},
+                            {_check:"<input type='checkbox' name='chk[]' value='2' onclick='checkRow(this)'>",id:"2",invdate:"2007-10-02",name:"test2",note:"note2",amount:"300.00",tax:"20.00",total:"320.00"},
+                            {_check:"<input type='checkbox' name='chk[]' value='3' onclick='checkRow(this)'>",id:"3",invdate:"2007-09-01",name:"test3",note:"note3",amount:"400.00",tax:"30.00",total:"430.00"},
+                            {_check:"<input type='checkbox' name='chk[]' value='4' onclick='checkRow(this)'>",id:"4",invdate:"2007-10-04",name:"test",note:"note",amount:"200.00",tax:"10.00",total:"210.00"},
+                            {_check:"<input type='checkbox' name='chk[]' value='5' onclick='checkRow(this)'>",id:"5",invdate:"2007-10-05",name:"test2",note:"note2",amount:"300.00",tax:"20.00",total:"320.00"},
+                            {_check:"<input type='checkbox' name='chk[]' value='6' onclick='checkRow(this)'>",id:"6",invdate:"2007-09-06",name:"test3",note:"note3",amount:"400.00",tax:"30.00",total:"430.00"},
+                            {_check:"<input type='checkbox' name='chk[]' value='7' onclick='checkRow(this)'>",id:"7",invdate:"2007-10-04",name:"test",note:"note",amount:"200.00",tax:"10.00",total:"210.00"},
+                            {_check:"<input type='checkbox' name='chk[]' value='8' onclick='checkRow(this)'>",id:"8",invdate:"2007-10-03",name:"test2",note:"note2",amount:"300.00",tax:"20.00",total:"320.00"},
+                            {_check:"<input type='checkbox' name='chk[]' value='9' onclick='checkRow(this)'>",id:"9",invdate:"2007-09-01",name:"test3",note:"note3",amount:"400.00",tax:"30.00",total:"430.00"}
+                        ];
+
+                        $(function(){
+                            table = $("#table1").tablecontrol({
+                                cls: 'table hovered border myClass',
+                                checkRow: true,
+                                colModel: [
+                                    //{field: '_check', caption: "<input type='checkbox' onclick='checkAll(this)'>", width: 32, sortable: false, cls: 'text-center', hcls: "text-center"},
+                                    {field: 'id', caption: 'No', width: 50, sortable: false, cls: 'text-center', hcls: ""},
+                                    {field: 'invdate', caption: 'Date', width: 120, sortable: false, cls: 'text-center', hcls: ""},
+                                    {field: 'name', caption: 'Client', width: '', sortable: false, cls: 'text-left', hcls: "text-left"},
+                                    {field: 'amount', caption: 'Amount', width: '80', sortable: false, cls: 'text-right', hcls: "text-right"},
+                                    {field: 'tax', caption: 'Tax', width: '80', sortable: false, cls: 'text-right', hcls: "text-right"},
+                                    {field: 'total', caption: 'Total', width: '80', sortable: false, cls: 'text-right', hcls: "text-right"},
+                                    {field: 'note', caption: 'Notes', width: '', sortable: false, cls: 'span1', hcls: ""}
+                                ],
+
+                                data: table_data
+                            });
+                        });
+
+                    </script>
+                </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="kwd">var</span><span class="pln"> table</span><span class="pun">,</span><span class="pln"> table_data</span><span class="pun">;</span></li><li class="L1"><span class="pln">&nbsp;</span></li><li class="L2"><span class="pln">table_data </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span></li><li class="L3"><span class="pln">    </span><span class="pun">{</span><span class="pln">id</span><span class="pun">:</span><span class="str">"1"</span><span class="pun">,</span><span class="pln">invdate</span><span class="pun">:</span><span class="str">"2007-04-02"</span><span class="pun">,</span><span class="pln">name</span><span class="pun">:</span><span class="str">"test"</span><span class="pun">,</span><span class="pln">note</span><span class="pun">:</span><span class="str">"note"</span><span class="pun">,</span><span class="pln">amount</span><span class="pun">:</span><span class="str">"100.00"</span><span class="pun">,</span><span class="pln">tax</span><span class="pun">:</span><span class="str">"10.00"</span><span class="pun">,</span><span class="pln">total</span><span class="pun">:</span><span class="str">"120.00"</span><span class="pun">},</span></li><li class="L4"><span class="pln">    </span><span class="pun">{</span><span class="pln">id</span><span class="pun">:</span><span class="str">"2"</span><span class="pun">,</span><span class="pln">invdate</span><span class="pun">:</span><span class="str">"2007-10-02"</span><span class="pun">,</span><span class="pln">name</span><span class="pun">:</span><span class="str">"test2"</span><span class="pun">,</span><span class="pln">note</span><span class="pun">:</span><span class="str">"note2"</span><span class="pun">,</span><span class="pln">amount</span><span class="pun">:</span><span class="str">"300.00"</span><span class="pun">,</span><span class="pln">tax</span><span class="pun">:</span><span class="str">"20.00"</span><span class="pun">,</span><span class="pln">total</span><span class="pun">:</span><span class="str">"320.00"</span><span class="pun">},</span></li><li class="L5"><span class="pln">    </span><span class="pun">{</span><span class="pln">id</span><span class="pun">:</span><span class="str">"3"</span><span class="pun">,</span><span class="pln">invdate</span><span class="pun">:</span><span class="str">"2007-09-01"</span><span class="pun">,</span><span class="pln">name</span><span class="pun">:</span><span class="str">"test3"</span><span class="pun">,</span><span class="pln">note</span><span class="pun">:</span><span class="str">"note3"</span><span class="pun">,</span><span class="pln">amount</span><span class="pun">:</span><span class="str">"400.00"</span><span class="pun">,</span><span class="pln">tax</span><span class="pun">:</span><span class="str">"30.00"</span><span class="pun">,</span><span class="pln">total</span><span class="pun">:</span><span class="str">"430.00"</span><span class="pun">},</span></li><li class="L6"><span class="pln">    </span><span class="pun">{</span><span class="pln">id</span><span class="pun">:</span><span class="str">"4"</span><span class="pun">,</span><span class="pln">invdate</span><span class="pun">:</span><span class="str">"2007-10-04"</span><span class="pun">,</span><span class="pln">name</span><span class="pun">:</span><span class="str">"test"</span><span class="pun">,</span><span class="pln">note</span><span class="pun">:</span><span class="str">"note"</span><span class="pun">,</span><span class="pln">amount</span><span class="pun">:</span><span class="str">"200.00"</span><span class="pun">,</span><span class="pln">tax</span><span class="pun">:</span><span class="str">"10.00"</span><span class="pun">,</span><span class="pln">total</span><span class="pun">:</span><span class="str">"210.00"</span><span class="pun">},</span></li><li class="L7"><span class="pln">    </span><span class="pun">{</span><span class="pln">id</span><span class="pun">:</span><span class="str">"5"</span><span class="pun">,</span><span class="pln">invdate</span><span class="pun">:</span><span class="str">"2007-10-05"</span><span class="pun">,</span><span class="pln">name</span><span class="pun">:</span><span class="str">"test2"</span><span class="pun">,</span><span class="pln">note</span><span class="pun">:</span><span class="str">"note2"</span><span class="pun">,</span><span class="pln">amount</span><span class="pun">:</span><span class="str">"300.00"</span><span class="pun">,</span><span class="pln">tax</span><span class="pun">:</span><span class="str">"20.00"</span><span class="pun">,</span><span class="pln">total</span><span class="pun">:</span><span class="str">"320.00"</span><span class="pun">},</span></li><li class="L8"><span class="pln">    </span><span class="pun">{</span><span class="pln">id</span><span class="pun">:</span><span class="str">"6"</span><span class="pun">,</span><span class="pln">invdate</span><span class="pun">:</span><span class="str">"2007-09-06"</span><span class="pun">,</span><span class="pln">name</span><span class="pun">:</span><span class="str">"test3"</span><span class="pun">,</span><span class="pln">note</span><span class="pun">:</span><span class="str">"note3"</span><span class="pun">,</span><span class="pln">amount</span><span class="pun">:</span><span class="str">"400.00"</span><span class="pun">,</span><span class="pln">tax</span><span class="pun">:</span><span class="str">"30.00"</span><span class="pun">,</span><span class="pln">total</span><span class="pun">:</span><span class="str">"430.00"</span><span class="pun">},</span></li><li class="L9"><span class="pln">    </span><span class="pun">{</span><span class="pln">id</span><span class="pun">:</span><span class="str">"7"</span><span class="pun">,</span><span class="pln">invdate</span><span class="pun">:</span><span class="str">"2007-10-04"</span><span class="pun">,</span><span class="pln">name</span><span class="pun">:</span><span class="str">"test"</span><span class="pun">,</span><span class="pln">note</span><span class="pun">:</span><span class="str">"note"</span><span class="pun">,</span><span class="pln">amount</span><span class="pun">:</span><span class="str">"200.00"</span><span class="pun">,</span><span class="pln">tax</span><span class="pun">:</span><span class="str">"10.00"</span><span class="pun">,</span><span class="pln">total</span><span class="pun">:</span><span class="str">"210.00"</span><span class="pun">},</span></li><li class="L0"><span class="pln">    </span><span class="pun">{</span><span class="pln">id</span><span class="pun">:</span><span class="str">"8"</span><span class="pun">,</span><span class="pln">invdate</span><span class="pun">:</span><span class="str">"2007-10-03"</span><span class="pun">,</span><span class="pln">name</span><span class="pun">:</span><span class="str">"test2"</span><span class="pun">,</span><span class="pln">note</span><span class="pun">:</span><span class="str">"note2"</span><span class="pun">,</span><span class="pln">amount</span><span class="pun">:</span><span class="str">"300.00"</span><span class="pun">,</span><span class="pln">tax</span><span class="pun">:</span><span class="str">"20.00"</span><span class="pun">,</span><span class="pln">total</span><span class="pun">:</span><span class="str">"320.00"</span><span class="pun">},</span></li><li class="L1"><span class="pln">    </span><span class="pun">{</span><span class="pln">id</span><span class="pun">:</span><span class="str">"9"</span><span class="pun">,</span><span class="pln">invdate</span><span class="pun">:</span><span class="str">"2007-09-01"</span><span class="pun">,</span><span class="pln">name</span><span class="pun">:</span><span class="str">"test3"</span><span class="pun">,</span><span class="pln">note</span><span class="pun">:</span><span class="str">"note3"</span><span class="pun">,</span><span class="pln">amount</span><span class="pun">:</span><span class="str">"400.00"</span><span class="pun">,</span><span class="pln">tax</span><span class="pun">:</span><span class="str">"30.00"</span><span class="pun">,</span><span class="pln">total</span><span class="pun">:</span><span class="str">"430.00"</span><span class="pun">}</span></li><li class="L2"><span class="pun">];</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="pln">$</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span></li><li class="L5"><span class="pln">    table </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"#table1"</span><span class="pun">).</span><span class="pln">tablecontrol</span><span class="pun">({</span></li><li class="L6"><span class="pln">        cls</span><span class="pun">:</span><span class="pln"> </span><span class="str">'table hovered border myClass'</span><span class="pun">,</span></li><li class="L7"><span class="pln">        colModel</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span></li><li class="L8"><span class="pln">            </span><span class="pun">{</span><span class="pln">field</span><span class="pun">:</span><span class="pln"> </span><span class="str">'id'</span><span class="pun">,</span><span class="pln"> caption</span><span class="pun">:</span><span class="pln"> </span><span class="str">'No'</span><span class="pun">,</span><span class="pln"> width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50</span><span class="pun">,</span><span class="pln"> sortable</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln"> cls</span><span class="pun">:</span><span class="pln"> </span><span class="str">'text-center'</span><span class="pun">,</span><span class="pln"> hcls</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">},</span></li><li class="L9"><span class="pln">            </span><span class="pun">{</span><span class="pln">field</span><span class="pun">:</span><span class="pln"> </span><span class="str">'invdate'</span><span class="pun">,</span><span class="pln"> caption</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Date'</span><span class="pun">,</span><span class="pln"> width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">120</span><span class="pun">,</span><span class="pln"> sortable</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln"> cls</span><span class="pun">:</span><span class="pln"> </span><span class="str">'text-center'</span><span class="pun">,</span><span class="pln"> hcls</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">},</span></li><li class="L0"><span class="pln">            </span><span class="pun">{</span><span class="pln">field</span><span class="pun">:</span><span class="pln"> </span><span class="str">'name'</span><span class="pun">,</span><span class="pln"> caption</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Client'</span><span class="pun">,</span><span class="pln"> width</span><span class="pun">:</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln"> sortable</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln"> cls</span><span class="pun">:</span><span class="pln"> </span><span class="str">'text-left'</span><span class="pun">,</span><span class="pln"> hcls</span><span class="pun">:</span><span class="pln"> </span><span class="str">"text-left"</span><span class="pun">},</span></li><li class="L1"><span class="pln">            </span><span class="pun">{</span><span class="pln">field</span><span class="pun">:</span><span class="pln"> </span><span class="str">'amount'</span><span class="pun">,</span><span class="pln"> caption</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Amount'</span><span class="pun">,</span><span class="pln"> width</span><span class="pun">:</span><span class="pln"> </span><span class="str">'80'</span><span class="pun">,</span><span class="pln"> sortable</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln"> cls</span><span class="pun">:</span><span class="pln"> </span><span class="str">'text-right'</span><span class="pun">,</span><span class="pln"> hcls</span><span class="pun">:</span><span class="pln"> </span><span class="str">"text-right"</span><span class="pun">},</span></li><li class="L2"><span class="pln">            </span><span class="pun">{</span><span class="pln">field</span><span class="pun">:</span><span class="pln"> </span><span class="str">'tax'</span><span class="pun">,</span><span class="pln"> caption</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Tax'</span><span class="pun">,</span><span class="pln"> width</span><span class="pun">:</span><span class="pln"> </span><span class="str">'80'</span><span class="pun">,</span><span class="pln"> sortable</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln"> cls</span><span class="pun">:</span><span class="pln"> </span><span class="str">'text-right'</span><span class="pun">,</span><span class="pln"> hcls</span><span class="pun">:</span><span class="pln"> </span><span class="str">"text-right"</span><span class="pun">},</span></li><li class="L3"><span class="pln">            </span><span class="pun">{</span><span class="pln">field</span><span class="pun">:</span><span class="pln"> </span><span class="str">'total'</span><span class="pun">,</span><span class="pln"> caption</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Total'</span><span class="pun">,</span><span class="pln"> width</span><span class="pun">:</span><span class="pln"> </span><span class="str">'80'</span><span class="pun">,</span><span class="pln"> sortable</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln"> cls</span><span class="pun">:</span><span class="pln"> </span><span class="str">'text-right'</span><span class="pun">,</span><span class="pln"> hcls</span><span class="pun">:</span><span class="pln"> </span><span class="str">"text-right"</span><span class="pun">},</span></li><li class="L4"><span class="pln">            </span><span class="pun">{</span><span class="pln">field</span><span class="pun">:</span><span class="pln"> </span><span class="str">'note'</span><span class="pun">,</span><span class="pln"> caption</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Notes'</span><span class="pun">,</span><span class="pln"> width</span><span class="pun">:</span><span class="pln"> </span><span class="str">''</span><span class="pun">,</span><span class="pln"> sortable</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln"> cls</span><span class="pun">:</span><span class="pln"> </span><span class="str">'span1'</span><span class="pun">,</span><span class="pln"> hcls</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">}</span></li><li class="L5"><span class="pln">        </span><span class="pun">],</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="pln">        data</span><span class="pun">:</span><span class="pln"> table_data</span></li><li class="L8"><span class="pln">    </span><span class="pun">});</span></li><li class="L9"><span class="pun">});</span></li></ol></pre>
+
+
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="page-footer-content">
+                <!--<div data-load="header.html"></div>-->
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,475 @@
+<div class="page">
+        <div class="page-region">
+            <div class="page-region-content">
+                <h1>
+                    <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+                    Buttons<small class="on-right">definition</small>
+                </h1>
+
+                <div class="grid">
+                    <div class="row">
+                        <div class="span3">
+                            <nav>
+                                <ul class="side-menu">
+                                    <li><a href="#_push">Push button</a></li>
+                                    <li><a href="#_command">Command button</a></li>
+                                    <li><a href="#_toolbar">Tool bar</a></li>
+                                    <li><a href="#_ibutton">Image button</a></li>
+                                    <li><a href="#_shortcut">Shortcuts</a></li>
+                                    <li><a href="#_dropdown-btn">Button dropdown</a></li>
+                                    <li><a href="#_pagination">Pagination</a></li>
+                                    <li><a href="#_set">Button Set/Group</a></li>
+                                    <li><a href="#_breadcrumbs">Breadcrumbs</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="span9">
+                            <p class="description">
+                                With the Metro UI CSS you can easily create different types of buttons, stylized to Windows 8.
+                                Button styles can be applied to anything with the <code>.button</code> class applied.
+                                However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.
+                            </p>
+
+
+                            <h2 id="_push"><i class="icon-accessibility on-left"></i>Push button</h2>
+                            <div class="example">
+                                <button class="large">Large</button>
+                                <button>Default</button>
+                                <button class="small">Small</button>
+                                <button class="mini">Mini</button>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;button&gt;</span><span class="pln">Button</span><span class="tag">&lt;/button&gt;</span></li><li class="L1"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button"</span><span class="tag">&gt;</span><span class="pln">Button</span><span class="tag">&lt;/a&gt;</span></li></ol></pre>
+                            <p class="description">
+                                To change size of button you can use build-in classes: <code>large</code>, <code>small</code> and <code>mini</code>.
+                            </p>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;button&gt;</span><span class="pln">Button</span><span class="tag">&lt;/button&gt;</span></li><li class="L1"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"large"</span><span class="tag">&gt;</span><span class="pln">Button</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"small"</span><span class="tag">&gt;</span><span class="pln">Button</span><span class="tag">&lt;/button&gt;</span></li><li class="L3"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"mini"</span><span class="tag">&gt;</span><span class="pln">Button</span><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button small"</span><span class="tag">&gt;</span><span class="pln">Button</span><span class="tag">&lt;/a&gt;</span></li></ol></pre>
+
+                            <p class="description">
+                                For additional styling button you can use predefined button subclasses: <code>.default</code>, <code>.primary</code>, <code>.info</code>, <code>.success</code>, <code>.warning</code>, <code>.danger</code>, <code>.inverse</code> and <code>.link</code> or
+                                build-in color classes for background and foreground.
+                            </p>
+                            <div class="example">
+                                <button class="default">Default</button>
+                                <button class="primary">Primary</button>
+                                <button class="info">Info</button>
+                                <button class="success">Success</button>
+                                <button class="warning">Warning</button>
+                                <button class="danger">Danger</button>
+                                <button class="inverse">Inverse</button>
+                                <button class="link">Link</button>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"primary"</span><span class="tag">&gt;</span><span class="pln">Button</span><span class="tag">&lt;/button&gt;</span></li><li class="L1"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-darkRed fg-white"</span><span class="tag">&gt;</span><span class="pln">Button</span><span class="tag">&lt;/button&gt;</span></li></ol></pre>
+                            <p class="description">
+                                Also you can add icon to button with tag <code>&lt;i&gt;</code> and class <code>icon-*</code>.
+                            </p>
+                            <div class="example">
+                                <button><i class="icon-rocket on-left"></i>Rocket</button>
+                                <button>Rocket<i class="icon-rocket on-right"></i></button>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-rocket on-left"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">Button</span><span class="tag">&lt;/button&gt;</span></li><li class="L1"><span class="tag">&lt;button&gt;</span><span class="pln">Button</span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-rocket on-right"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li></ol></pre>
+
+                            <h2 id="_command"><i class="icon-accessibility on-left"></i>Command button</h2>
+                            <p class="description">
+                                A command button is the extension of a push button.
+                            </p>
+                            <div class="example">
+                                <button class="command-button ">
+                                    <i class="icon-share-2 on-left"></i>
+                                    Yes, share and connect
+                                    <small>Use this option for home or work</small>
+                                </button>
+                                <button class="command-button">
+                                    <i class="icon-share-3 on-right"></i>
+                                    Yes, share and connect
+                                    <small>Use this option for home or work</small>
+                                </button>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"command-button"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-share-2 on-left"</span><span class="tag">&gt;&lt;/i&gt;</span></li><li class="L2"><span class="pln">    Yes, share and connect</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;small&gt;</span><span class="pln">Use this option for home or work</span><span class="tag">&lt;/small&gt;</span></li><li class="L4"><span class="tag">&lt;/button&gt;</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"command-button"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-share-3 on-right"</span><span class="tag">&gt;&lt;/i&gt;</span></li><li class="L8"><span class="pln">    Yes, share and connect</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;small&gt;</span><span class="pln">Use this option for home or work</span><span class="tag">&lt;/small&gt;</span></li><li class="L0"><span class="tag">&lt;/button&gt;</span></li></ol></pre>
+                            <p class="description">
+                                For additional styling button you can use predefined button subclasses: <code>.default</code>, <code>.primary</code>, <code>.info</code>, <code>.success</code>, <code>.warning</code>, <code>.danger</code>, <code>.inverse</code> and <code>.link</code> or
+                                build-in color classes for background and foreground.
+                            </p>
+                            <div class="example">
+                                <button class="command-button primary">
+                                    <i class="icon-share-2 on-left"></i>
+                                    Yes, share and connect
+                                    <small>Use this option for home or work</small>
+                                </button>
+                                <button class="command-button inverse">
+                                    <i class="icon-share-3 on-right"></i>
+                                    Yes, share and connect
+                                    <small>Use this option for home or work</small>
+                                </button>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"command-button primary"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-share-2 on-left"</span><span class="tag">&gt;&lt;/i&gt;</span></li><li class="L2"><span class="pln">    Yes, share and connect</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;small&gt;</span><span class="pln">Use this option for home or work</span><span class="tag">&lt;/small&gt;</span></li><li class="L4"><span class="tag">&lt;/button&gt;</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"command-button inverse"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-share-3 on-right"</span><span class="tag">&gt;&lt;/i&gt;</span></li><li class="L8"><span class="pln">    Yes, share and connect</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;small&gt;</span><span class="pln">Use this option for home or work</span><span class="tag">&lt;/small&gt;</span></li><li class="L0"><span class="tag">&lt;/button&gt;</span></li></ol></pre>
+
+                            <h2 id="_toolbar"><i class="icon-accessibility on-left"></i>Toolbar</h2>
+
+                            <h3>Default toolbar</h3>
+                            <div class="example">
+                                <div class="toolbar">
+                                    <div class="toolbar-group">
+                                        <button>1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+                                    </div>
+                                    <div class="toolbar-group no-spaces">
+                                        <button>1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+                                    </div>
+                                </div>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">...</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">...</span><span class="tag">&lt;/button&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">...</span><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar no-spaces"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">...</span><span class="tag">&lt;/button&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">...</span><span class="tag">&lt;/button&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">...</span><span class="tag">&lt;/button&gt;</span></li><li class="L0"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                            <h3>Transparent toolbar</h3>
+                            <div class="example">
+                                <div class="toolbar transparent">
+                                    <button><i class="icon-folder-2 on-left"></i>Open</button>
+                                    <button><i class="icon-floppy on-left"></i>Save</button>
+                                    <button><i class="icon-spin on-left"></i>Refresh</button>
+                                    <span class="divider"></span>
+                                    <button><i class="icon-undo"></i></button>
+                                    <button><i class="icon-redo"></i></button>
+                                    <span class="divider"></span>
+                                    <button><i class="icon-paragraph-left"></i></button>
+                                    <button><i class="icon-paragraph-center"></i></button>
+                                    <button><i class="icon-paragraph-right"></i></button>
+                                    <button><i class="icon-paragraph-justify"></i></button>
+                                </div>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar transparent"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-folder-2 on-left"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">Open</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-floppy on-left"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">Save</span><span class="tag">&lt;/button&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-spin on-left"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">Refresh</span><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"divider"</span><span class="tag">&gt;&lt;/span&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-undo"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-redo"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"divider"</span><span class="tag">&gt;&lt;/span&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-paragraph-left"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-paragraph-center"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-paragraph-right"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-paragraph-justify"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L2"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                            <h3>Colorize icon &amp; captions</h3>
+                            <div class="example">
+                                <div class="toolbar fg-red">
+                                    <div class="toolbar-group">
+                                        <button><i class="icon-folder-2"></i></button>
+                                        <button><i class="icon-floppy"></i></button>
+                                        <button><i class="icon-spin"></i></button>
+                                    </div>
+                                    <div class="toolbar-group">
+                                        <button><i class="icon-undo"></i></button>
+                                        <button><i class="icon-redo"></i></button>
+                                    </div>
+                                    <div class="toolbar-group">
+                                        <button><i class="icon-paragraph-left"></i></button>
+                                        <button><i class="icon-paragraph-center"></i></button>
+                                        <button><i class="icon-paragraph-right"></i></button>
+                                        <button><i class="icon-paragraph-justify"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar fg-red"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">...</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">...</span><span class="tag">&lt;/button&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">...</span><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                            <h3>Toolbar groups</h3>
+                            <div class="example">
+                                <div class="toolbar fg-red">
+                                    <div class="toolbar-group">
+                                        <button><i class="icon-folder-2"></i></button>
+                                        <button><i class="icon-floppy"></i></button>
+                                        <button><i class="icon-spin"></i></button>
+                                    </div>
+                                    <div class="toolbar-group fg-green">
+                                        <button><i class="icon-undo"></i></button>
+                                        <button><i class="icon-redo"></i></button>
+                                    </div>
+                                    <div class="toolbar-group fg-darkTeal transparent">
+                                        <button><i class="icon-paragraph-left"></i></button>
+                                        <button><i class="icon-paragraph-center"></i></button>
+                                        <button><i class="icon-paragraph-right"></i></button>
+                                        <button><i class="icon-paragraph-justify"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar fg-red"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar-group"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-folder-2"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-floppy"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-spin"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar-group fg-green"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-undo"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L8"><span class="pln">        </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-redo"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar-group fg-darkTeal transparent"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-paragraph-left"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-paragraph-center"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-paragraph-right"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-paragraph-justify"</span><span class="tag">&gt;&lt;/i&gt;&lt;/button&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                            <h2 id="_ibutton"><i class="icon-accessibility on-left"></i>Image button</h2>
+                            <div class="example">
+                                <button class="image-button primary">
+                                    Download
+                                    <img src="http://metroui.org.ua/images/download-32.png" class="bg-cobalt">
+                                </button>
+                                <button class="image-button danger">
+                                    GitHub
+                                    <i class="icon-github bg-red"></i>
+                                </button>
+                                <button class="image-button bg-darkGreen fg-white image-left">
+                                    Windows
+                                    <i class="icon-windows bg-green fg-white"></i>
+                                </button>
+                                <button class="image-button warning image-left">
+                                    Fork
+                                    <img src="http://metroui.org.ua/images/fork-32.png" class="bg-cobalt">
+                                </button>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-button primary"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    Download</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://metroui.org.ua/images/download-32.png"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-cobalt"</span><span class="tag">&gt;</span></li><li class="L3"><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-button danger"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">    GitHub</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-github bg-red"</span><span class="tag">&gt;&lt;/i&gt;</span></li><li class="L7"><span class="tag">&lt;/button&gt;</span></li><li class="L8"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-button bg-darkGreen fg-white image-left"</span><span class="tag">&gt;</span></li><li class="L9"><span class="pln">    Windows</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-windows bg-green fg-white"</span><span class="tag">&gt;&lt;/i&gt;</span></li><li class="L1"><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-button warning image-left"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">    Download</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://metroui.org.ua/images/download-32.png"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-cobalt"</span><span class="tag">&gt;</span></li><li class="L5"><span class="tag">&lt;/button&gt;</span></li></ol></pre>
+
+
+                            <h2 id="_shortcut"><i class="icon-accessibility on-left"></i>Shortcuts</h2>
+                            <div class="example">
+                                <button class="shortcut">
+                                    <i class="icon-rocket"></i>
+                                    Rocket
+                                </button>
+                                <button class="shortcut">
+                                    <i class="icon-rocket"></i>
+                                    Rocket
+                                    <small class="bg-cobalt fg-white">10</small>
+                                </button>
+                            </div>
+<pre class="linenums prettyprint prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"shortcut"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-rocket"</span><span class="tag">&gt;&lt;/i&gt;</span></li><li class="L2"><span class="pln">    Rocket</span></li><li class="L3"><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"shortcut"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-rocket"</span><span class="tag">&gt;&lt;/i&gt;</span></li><li class="L6"><span class="pln">    Rocket</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;small</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-cobalt fg-white"</span><span class="tag">&gt;</span><span class="pln">10</span><span class="tag">&lt;/small&gt;</span></li><li class="L8"><span class="tag">&lt;/button&gt;</span></li></ol></pre>
+                            <p class="description">
+                                Also you can use build-in classes for button to additional quick styling:
+                                <code>.primary</code>, <code>.info</code>, <code>.success</code>,
+                                <code>.warning</code>, <code>.danger</code>, <code>.inverse</code>, <code>.link</code>.
+                            </p>
+                            <div class="example">
+                                <button class="shortcut primary">
+                                    <i class="icon-rocket"></i>
+                                    Rocket
+                                    <small class="bg-lightBlue fg-white">10</small>
+                                </button>
+                                <button class="shortcut danger">
+                                    <i class="icon-rocket"></i>
+                                    Rocket
+                                    <small class="bg-red fg-white">10</small>
+                                </button>
+                                <button class="shortcut link">
+                                    <i class="icon-rocket"></i>
+                                    Rocket
+                                    <small class="bg-cobalt fg-white">10</small>
+                                </button>
+                            </div>
+
+
+                            <h2 id="_dropdown-btn"><i class="icon-accessibility on-left"></i>Button Dropdown</h2>
+                            <p class="description">
+                                Button dropdown required <code>metro-dropdown.js</code> widget.
+                            </p>
+                            <div class="example">
+                                <div class="button-dropdown place-right">
+                                    <button class="dropdown-toggle">Click Me</button>
+                                    <ul class="dropdown-menu place-right">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li>
+                                            <a class="dropdown-toggle" href="#">Something else here</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Sublink 1</a></li>
+                                                <li><a href="#">Sublink 2</a></li>
+                                                <li><a href="#">Sublink 3</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Sublink 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li class="disabled"><a href="#">Separated link</a></li>
+                                        <li class="divider"></li>
+                                        <li class="checked"><a href="#">Checked link</a></li>
+                                    </ul>
+                                </div>
+                                <div class="button-dropdown">
+                                    <button class="dropdown-toggle">Click Me</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li>
+                                            <a class="dropdown-toggle" href="#">Something else here</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Sublink 1</a></li>
+                                                <li><a href="#">Sublink 2</a></li>
+                                                <li><a href="#">Sublink 3</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Sublink 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li class="disabled"><a href="#">Separated link</a></li>
+                                        <li class="divider"></li>
+                                        <li class="checked"><a href="#">Checked link</a></li>
+                                    </ul>
+                                </div>
+                                <!--
+                                -->
+                            </div>
+<pre class="linenums prettyprint prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-dropdown"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle"</span><span class="tag">&gt;</span><span class="pln">Click Me</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-menu"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Item 1</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Item 2</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Item 3</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"divider"</span><span class="tag">&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Item 4</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L9"><span class="tag">&lt;/div&gt;</span></li><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-dropdown"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle"</span><span class="tag">&gt;</span><span class="pln">Click Me</span><span class="tag">&lt;/button&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-menu place-right"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">        ...</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L6"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <p class="description">
+                                You can change button color with build in classes.
+                            </p>
+                            <div class="example">
+                                <div class="button-dropdown">
+                                    <button class="dropdown-toggle primary">Primary</button>
+                                </div>
+                                <div class="button-dropdown">
+                                    <button class="dropdown-toggle info">Info</button>
+                                </div>
+                                <div class="button-dropdown">
+                                    <button class="dropdown-toggle success">Success</button>
+                                </div>
+                                <div class="button-dropdown">
+                                    <button class="dropdown-toggle warning">Warning</button>
+                                </div>
+                                <div class="button-dropdown">
+                                    <button class="dropdown-toggle danger">Danger</button>
+                                </div>
+                                <div class="button-dropdown">
+                                    <button class="dropdown-toggle inverse">Inverse</button>
+                                </div>
+                                <div class="button-dropdown">
+                                    <button class="dropdown-toggle link">Link</button>
+                                </div>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-dropdown"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle primary"</span><span class="tag">&gt;</span><span class="pln">Primary</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-dropdown"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle info"</span><span class="tag">&gt;</span><span class="pln">Info</span><span class="tag">&lt;/button&gt;</span></li><li class="L5"><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-dropdown"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle success"</span><span class="tag">&gt;</span><span class="pln">Success</span><span class="tag">&lt;/button&gt;</span></li><li class="L8"><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-dropdown"</span><span class="tag">&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle warning"</span><span class="tag">&gt;</span><span class="pln">Warning</span><span class="tag">&lt;/button&gt;</span></li><li class="L1"><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-dropdown"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle danger"</span><span class="tag">&gt;</span><span class="pln">Danger</span><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-dropdown"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle inverse"</span><span class="tag">&gt;</span><span class="pln">Inverse</span><span class="tag">&lt;/button&gt;</span></li><li class="L7"><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-dropdown"</span><span class="tag">&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle link"</span><span class="tag">&gt;</span><span class="pln">Link</span><span class="tag">&lt;/button&gt;</span></li><li class="L0"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+
+                            <h2 id="_pagination"><i class="icon-accessibility on-left"></i>Pagination</h2>
+                            <p class="description">
+                                Metro UI CSS provides pagination buttons.
+                            </p>
+                            <div class="example">
+                                <div class="pagination">
+                                    <ul>
+                                        <li class="first"><a><i class="icon-first-2"></i></a></li>
+                                        <li class="prev"><a><i class="icon-previous"></i></a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+                                        <li class="active"><a>3</a></li>
+                                        <li class="spaces"><a>...</a></li>
+                                        <li class="disabled"><a>4</a></li>
+                                        <li><a>500</a></li>
+                                        <li class="next"><a><i class="icon-next"></i></a></li>
+                                        <li class="last"><a><i class="icon-last-2"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="pagination small">
+                                    <ul>
+                                        <li class="first"><a><i class="icon-first-2"></i></a></li>
+                                        <li class="prev"><a><i class="icon-previous"></i></a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+                                        <li class="active"><a>3</a></li>
+                                        <li class="spaces"><a>...</a></li>
+                                        <li class="disabled"><a>4</a></li>
+                                        <li><a>500</a></li>
+                                        <li class="next"><a><i class="icon-next"></i></a></li>
+                                        <li class="last"><a><i class="icon-last-2"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="pagination mini">
+                                    <ul>
+                                        <li class="first"><a><i class="icon-first-2"></i></a></li>
+                                        <li class="prev"><a><i class="icon-previous"></i></a></li>
+                                        <li><a>1</a></li>
+                                        <li><a>2</a></li>
+                                        <li class="active"><a>3</a></li>
+                                        <li class="spaces"><a>...</a></li>
+                                        <li class="disabled"><a>4</a></li>
+                                        <li><a>500</a></li>
+                                        <li class="next"><a><i class="icon-next"></i></a></li>
+                                        <li class="last"><a><i class="icon-last-2"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+<pre class="linenums prettyprint prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"pagination"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L1"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"pagination small"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"pagination mini"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+<pre class="linenums prettyprint prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"pagination"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"first"</span><span class="tag">&gt;&lt;a&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-first-2"</span><span class="tag">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"prev"</span><span class="tag">&gt;&lt;a&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-previous"</span><span class="tag">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;a&gt;</span><span class="pln">1</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;a&gt;</span><span class="pln">2</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a&gt;</span><span class="pln">3</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"spaces"</span><span class="tag">&gt;&lt;a&gt;</span><span class="pln">...</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L8"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"disabled"</span><span class="tag">&gt;&lt;a&gt;</span><span class="pln">4</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;a&gt;</span><span class="pln">500</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L0"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"next"</span><span class="tag">&gt;&lt;a&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-next"</span><span class="tag">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"last"</span><span class="tag">&gt;&lt;a&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-last-2"</span><span class="tag">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                            <h2 id="_set"><i class="icon-accessibility on-left"></i>Button Set</h2>
+                            <p>
+                                This component required <code>metro-button-set.js</code>.
+                            </p>
+                            <div class="example">
+                                <div class="button-set" data-role="button-set">
+                                    <button>One</button>
+                                    <button>Two</button>
+                                    <button>Three</button>
+                                    <button>Four</button>
+                                    <button>Five</button>
+                                </div>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-set"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;</span><span class="pln">One</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">Two</span><span class="tag">&lt;/button&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">Three</span><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">Four</span><span class="tag">&lt;/button&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">Five</span><span class="tag">&lt;/button&gt;</span></li><li class="L6"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <h3>Using</h3>
+                            <p>
+                                You can activate component manually or with <code>data-role</code> attribute.
+                            </p>
+                            <h4>Activate with data-*</h4>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-set"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"button-set"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <h4>Activate with manually javascript</h4>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="str">"#component_id"</span><span class="pun">).</span><span class="pln">buttonset</span><span class="pun">();</span></li></ol></pre>
+                            <p>
+                                When user press button, component fired event <code>click</code>.
+                                You can set handler for this event.
+                            </p>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="str">"#component_id"</span><span class="pun">).</span><span class="pln">buttonset</span><span class="pun">({</span></li><li class="L1"><span class="pln">    click</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">btn</span><span class="pun">,</span><span class="pln"> on</span><span class="pun">){...}</span></li><li class="L2"><span class="pun">});</span></li><li class="L3"><span class="com">// or</span></li><li class="L4"><span class="pln">$</span><span class="pun">(</span><span class="str">"#component_id"</span><span class="pun">).</span><span class="pln">buttonset</span><span class="pun">().</span><span class="pln">bind</span><span class="pun">(</span><span class="str">"buttonsetclick"</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">,</span><span class="pln"> btn</span><span class="pun">,</span><span class="pln"> on</span><span class="pun">){...});</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="com">// where btn is a $(current_button)</span></li><li class="L7"><span class="com">// and on - state of current button (pressed: true, not-pressed: false)</span></li></ol></pre>
+
+                            <h2 id="_grp"><i class="icon-accessibility on-left"></i>Button Group</h2>
+                            <p>
+                                This component required <code>metro-button-set.js</code>.
+                            </p>
+                            <div class="example">
+                                <div class="button-set" data-role="button-group">
+                                    <button class="active">One</button>
+                                    <button>Two</button>
+                                    <button>Three</button>
+                                    <button>Four</button>
+                                    <button>Five</button>
+                                </div>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-set"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;</span><span class="pln">One</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">Two</span><span class="tag">&lt;/button&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">Three</span><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">Four</span><span class="tag">&lt;/button&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">Five</span><span class="tag">&lt;/button&gt;</span></li><li class="L6"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <h3>Using</h3>
+                            <p>
+                                You can activate component manually or with <code>data-role</code> attribute.
+                            </p>
+                            <h4>Activate with data-*</h4>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-set"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"button-group"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <h4>Activate with manually javascript</h4>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="str">"#component_id"</span><span class="pun">).</span><span class="pln">buttongroup</span><span class="pun">();</span></li></ol></pre>
+                            <p>
+                                When user press button, component fired event <code>click</code>.
+                                You can set handler for this event.
+                            </p>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="str">"#component_id"</span><span class="pun">).</span><span class="pln">buttongroup</span><span class="pun">({</span></li><li class="L1"><span class="pln">    click</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">btn</span><span class="pun">,</span><span class="pln"> on</span><span class="pun">){...}</span></li><li class="L2"><span class="pun">});</span></li><li class="L3"><span class="com">// or</span></li><li class="L4"><span class="pln">$</span><span class="pun">(</span><span class="str">"#component_id"</span><span class="pun">).</span><span class="pln">buttongroup</span><span class="pun">().</span><span class="pln">bind</span><span class="pun">(</span><span class="str">"buttongroupclick"</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">,</span><span class="pln"> btn</span><span class="pun">,</span><span class="pln"> on</span><span class="pun">){...});</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="com">// where btn is a $(current_button)</span></li><li class="L7"><span class="com">// and on - state of current button (pressed: true, not-pressed: false)</span></li></ol></pre>
+
+                            <h2 id="_breadcrumbs"><i class="icon-accessibility on-left"></i>Breadcrumbs</h2>
+                            <div class="example">
+                                <nav class="breadcrumbs">
+                                    <ul>
+                                        <li><a href="#"><i class="icon-home"></i></a></li>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Library</a></li>
+                                        <li class="active"><a href="#">Data</a></li>
+                                    </ul>
+                                </nav>
+                                <nav class="breadcrumbs small">
+                                    <ul>
+                                        <li><a href="#"><i class="icon-home"></i></a></li>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Library</a></li>
+                                        <li class="active"><a href="#">Data</a></li>
+                                    </ul>
+                                </nav>
+                                <nav class="breadcrumbs mini">
+                                    <ul>
+                                        <li><a href="#"><i class="icon-home"></i></a></li>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Library</a></li>
+                                        <li class="active"><a href="#">Data</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;nav</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"breadcrumbs"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Home</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Library</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Data</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L6"><span class="tag">&lt;/nav&gt;</span></li><li class="L7"><span class="pln">&nbsp;</span></li><li class="L8"><span class="tag">&lt;nav</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"breadcrumbs small"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/nav&gt;</span></li><li class="L9"><span class="tag">&lt;nav</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"breadcrumbs mini"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/nav&gt;</span></li><li class="L0"><span class="pln">&nbsp;</span></li></ol></pre>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="page-footer-content">
+                <!--<div data-load="header.html"></div>-->
+            </div>
+        </div>
+    </div>

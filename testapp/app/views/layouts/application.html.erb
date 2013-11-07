@@ -6,10 +6,10 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body class="metro">
+<body class="metro" data-load="header.html">
   <%= render 'header' %>
 
 <%= yield %>
-
+  <%= render 'footer' %>
 </body>
 </html>

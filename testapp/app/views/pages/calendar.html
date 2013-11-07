@@ -1,0 +1,92 @@
+<div class="page">
+        <div class="page-region">
+            <div class="page-region-content">
+                <h1>
+                    <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+                    Calendar<small class="on-right">component</small>
+                </h1>
+
+                <p>
+                    This component required <code>metro-calendar.js</code>.
+                </p>
+
+                <div class="example">
+                    <div class="grid fluid">
+                        <div class="row">
+                            <div class="span4"><div class="calendar small" data-role="calendar"></div></div>
+                            <div class="span4"><div class="calendar small" data-role="calendar" data-start-mode="month"></div></div>
+                            <div class="span4"><div class="calendar small" data-role="calendar" data-start-mode="year"></div></div>
+                        </div>
+                    </div>
+                </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"calendar"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L1"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"calendar"</span><span class="pln"> </span><span class="atn">data-start-mode</span><span class="pun">=</span><span class="atv">"month"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"calendar"</span><span class="pln"> </span><span class="atn">data-start-mode</span><span class="pun">=</span><span class="atv">"year"</span><span class="tag">&gt;&lt;/div&gt;</span></li></ol></pre>
+
+
+                <h3>Using</h3>
+                <p>
+                    You can activate calendar manually (with javascript) or auto with <strong>data-role</strong>.
+                </p>
+                <h4>Auto</h4>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"calendar"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"calendar"</span><span class="tag">&gt;&lt;/div&gt;</span></li></ol></pre>
+                <h4>Manually</h4>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="str">"component_id"</span><span class="pun">).</span><span class="pln">calendar</span><span class="pun">();</span></li></ol></pre>
+
+                <h4>Manually with options</h4>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="str">"component_id"</span><span class="pun">).</span><span class="pln">calendar</span><span class="pun">({</span></li><li class="L1"><span class="pln">    format</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">string</span><span class="pun">,</span><span class="pln"> </span><span class="com">//default 'yyyy-mm-dd'</span></li><li class="L2"><span class="pln">    multiSelect</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">boolean</span><span class="pun">,</span><span class="pln"> </span><span class="com">//default true (multi select date)</span></li><li class="L3"><span class="pln">    startMode</span><span class="pun">:</span><span class="pln"> </span><span class="str">'day'</span><span class="pun">,</span><span class="pln"> </span><span class="com">//year, month, day</span></li><li class="L4"><span class="pln">    date</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">string</span><span class="pun">,</span><span class="pln"> </span><span class="com">//the init calendar date (example: '2013-01-01' or '2012-01')</span></li><li class="L5"><span class="pln">    months</span><span class="pun">:</span><span class="pln"> array</span><span class="pun">,</span><span class="pln"> </span><span class="com">// array of month names from Jan to Dec</span></li><li class="L6"><span class="pln">    weekDays</span><span class="pun">:</span><span class="pln"> array</span><span class="pun">,</span><span class="pln"> </span><span class="com">// array of week day names from Sun to Sat</span></li><li class="L7"><span class="pln">    getDates</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">){...},</span><span class="pln"> </span><span class="com">// see example below</span></li><li class="L8"><span class="pln">    click</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">){...},</span><span class="pln"> </span><span class="com">// fired when user clicked on day, in "d" stored date</span></li><li class="L9"><span class="pun">});</span></li></ol></pre>
+
+                <h3>Events &amp; Methods</h3>
+                <div class="example">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="span4">
+                                <div class="calendar" id="cal-events"><table class="bordered"><tbody><tr class="calendar-header"><td class="text-center"><a class="btn-previous-year" href="#"><i class="icon-previous"></i></a></td><td class="text-center"><a class="btn-previous-month" href="#"><i class="icon-arrow-left-4"></i></a></td><td colspan="3" class="text-center"><a class="btn-select-month" href="#">November 2013</a></td><td class="text-center"><a class="btn-next-month" href="#"><i class="icon-arrow-right-4"></i></a></td><td class="text-center"><a class="btn-next-year" href="#"><i class="icon-next"></i></a></td></tr><tr class="calendar-subheader"><td class="text-center day-of-week">Sun</td><td class="text-center day-of-week">Mon</td><td class="text-center day-of-week">Tue</td><td class="text-center day-of-week">Wed</td><td class="text-center day-of-week">Thu</td><td class="text-center day-of-week">Fri</td><td class="text-center day-of-week">Sat</td></tr><tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="text-center day"><a href="#">1</a></td><td class="text-center day"><a href="#">2</a></td></tr><tr><td class="text-center day"><a href="#">3</a></td><td class="text-center day"><a href="#">4</a></td><td class="text-center day"><a href="#">5</a></td><td class="text-center day"><a href="#">6</a></td><td class="text-center day today"><a href="#">7</a></td><td class="text-center day"><a href="#">8</a></td><td class="text-center day"><a href="#">9</a></td></tr><tr><td class="text-center day"><a href="#">10</a></td><td class="text-center day"><a href="#">11</a></td><td class="text-center day"><a href="#">12</a></td><td class="text-center day"><a href="#">13</a></td><td class="text-center day"><a href="#">14</a></td><td class="text-center day"><a href="#">15</a></td><td class="text-center day"><a href="#">16</a></td></tr><tr><td class="text-center day"><a href="#">17</a></td><td class="text-center day"><a href="#">18</a></td><td class="text-center day"><a href="#">19</a></td><td class="text-center day"><a href="#">20</a></td><td class="text-center day"><a href="#">21</a></td><td class="text-center day"><a href="#">22</a></td><td class="text-center day"><a href="#">23</a></td></tr><tr><td class="text-center day"><a href="#">24</a></td><td class="text-center day"><a href="#">25</a></td><td class="text-center day"><a href="#">26</a></td><td class="text-center day"><a href="#">27</a></td><td class="text-center day"><a href="#">28</a></td><td class="text-center day"><a href="#">29</a></td><td class="text-center day"><a href="#">30</a></td></tr><tr class="calendar-actions"><td colspan="7" class="text-left"><button class="button calendar-btn-today small success">Today</button>&nbsp;<button class="button calendar-btn-clear small warning">Clear</button></td></tr></tbody></table></div>
+                            </div>
+                            <div class="span5">
+                                <h3 class="no-margin">Output for getDates</h3>
+                                <hr>
+                                <div id="calendar-output">2013-10-21<br>2013-10-02<br></div>
+
+                                <br>
+                                <h3 class="no-margin">Output for click</h3>
+                                <hr>
+                                <div id="calendar-output2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(function(){
+                            var cal = $("#cal-events").calendar({
+                                multiSelect: true,
+                                getDates: function(data){
+                                    var r = "", out = $("#calendar-output").html("");
+                                    $.each(data, function(i, d){
+                                        r += d + "<br />";
+                                    });
+
+                                    out.html(r);
+                                },
+
+                                click: function(d){
+                                    var out = $("#calendar-output2").html("");
+                                    out.html(d);
+                                }
+
+
+                            });
+
+                            cal.calendar('setDate', '2013-10-21');
+                            cal.calendar('setDate', '2013-10-2');
+                        })
+                    </script>
+                </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="pln">$</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span></li><li class="L1"><span class="pln">    </span><span class="kwd">var</span><span class="pln"> cal </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">".calendar"</span><span class="pun">).</span><span class="pln">calendar</span><span class="pun">({</span></li><li class="L2"><span class="pln">        multiSelect</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span></li><li class="L3"><span class="pln">        getDates</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">data</span><span class="pun">){</span></li><li class="L4"><span class="pln">            </span><span class="kwd">var</span><span class="pln"> r </span><span class="pun">=</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">out</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"#calendar-output"</span><span class="pun">).</span><span class="pln">html</span><span class="pun">(</span><span class="str">""</span><span class="pun">);</span></li><li class="L5"><span class="pln">            $</span><span class="pun">.</span><span class="pln">each</span><span class="pun">(</span><span class="pln">data</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">i</span><span class="pun">,</span><span class="pln"> d</span><span class="pun">){</span></li><li class="L6"><span class="pln">                r </span><span class="pun">+=</span><span class="pln"> d </span><span class="pun">+</span><span class="pln"> </span><span class="str">"&lt;br /&gt;"</span><span class="pun">;</span></li><li class="L7"><span class="pln">            </span><span class="pun">});</span></li><li class="L8"><span class="pln">            </span><span class="kwd">out</span><span class="pun">.</span><span class="pln">html</span><span class="pun">(</span><span class="pln">r</span><span class="pun">);</span></li><li class="L9"><span class="pln">        </span><span class="pun">},</span></li><li class="L0"><span class="pln">        click</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">d</span><span class="pun">){</span></li><li class="L1"><span class="pln">            </span><span class="kwd">var</span><span class="pln"> </span><span class="kwd">out</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"#calendar-output2"</span><span class="pun">).</span><span class="pln">html</span><span class="pun">(</span><span class="str">""</span><span class="pun">);</span></li><li class="L2"><span class="pln">            </span><span class="kwd">out</span><span class="pun">.</span><span class="pln">html</span><span class="pun">(</span><span class="pln">d</span><span class="pun">);</span></li><li class="L3"><span class="pln">        </span><span class="pun">}</span></li><li class="L4"><span class="pln">    </span><span class="pun">});</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="pln">    </span><span class="com">// Add date</span></li><li class="L7"><span class="pln">    cal</span><span class="pun">.</span><span class="pln">calendar</span><span class="pun">(</span><span class="str">'setDate'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'2013-7-21'</span><span class="pun">);</span></li><li class="L8"><span class="pln">    cal</span><span class="pun">.</span><span class="pln">calendar</span><span class="pun">(</span><span class="str">'setDate'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'2013-07-2'</span><span class="pun">);</span></li><li class="L9"><span class="pln">&nbsp;</span></li><li class="L0"><span class="pln">    </span><span class="com">// Remove date</span></li><li class="L1"><span class="pln">    cal</span><span class="pun">.</span><span class="pln">calendar</span><span class="pun">(</span><span class="str">'unsetDate'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'2013-07-2'</span><span class="pun">);</span></li><li class="L2"><span class="pun">})</span></li></ol></pre>
+
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="page-footer-content">
+                <!--<div data-load="header.html"></div>-->
+            </div>
+        </div>
+    </div>

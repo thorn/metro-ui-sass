@@ -1,0 +1,513 @@
+<div class="page">
+    <div class="page-region">
+        <div class="page-region-content">
+            <h1>
+                <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+                Tile<small class="on-right">component</small>
+            </h1>
+
+            <!-- Tiles drag-drop -->
+<!--
+                <h2>Tiles drag-drop feature</h2>
+                <div class="example">
+                    <div class="tile-area tile-area-dark">
+                        <div class="tile-group double">
+                            <span class="tile-group-title">Group 1</span>
+
+                            <div class="tile bg-pink"></div>
+                            <div class="tile bg-lightBlue"></div>
+                            <div class="tile double bg-amber"></div>
+                        </div>
+                        <div class="tile-group double">
+                            <span class="tile-group-title">Group 2</span>
+
+                            <div class="tile double bg-green"></div>
+                            <div class="tile double bg-orange"></div>
+                        </div>
+                    </div>
+                </div>
+            -->
+            <!-- End tiles drag-drop -->
+
+            <h2>General info</h2>
+            <p class="description">
+                Tiles are the representation of your app or sub module. The content shown on your tile can, and ideally should, change regularly, especially if your tile can communicate new, real-time information to your user. Tiles can show a combination of text and images, and a badge to show status. Tile is a block object and can be placed in any container.
+            </p>
+            <div class="example">
+                <div class="tiles">
+                    <div class="tile half"></div>
+                    <div class="tile"></div>
+                    <div class="tile double"></div>
+                    <div class="tile selected"></div>
+                </div>
+            </div>
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L1"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile double"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile selected"</span><span class="tag">&gt;&lt;/div&gt;</span></li></ol></pre>
+
+
+            <h3>Tile sizes</h3>
+            <p class="description">
+                Metro UI CSS is supported any tiles sizes: <strong>half, default, double, triple, quadro</strong>.
+                You can set sizing of tile with build-in tile subclasses: <code>half</code>, <code>double</code>, <code>triple</code> and <code>quadro</code>.
+            </p>
+            <div class="example">
+                <div class="tile half block"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA3CAYAAACo29JGAAACMElEQVRoQ+2U26tpURTGP3IrJUVJeVCElJLbgygP/m7x4FaUKCUvyotbCJGQ05ydh72z92zOc44a+zTWy6Ix1pjf9/3GWpbtdvvEf3pZ2NwPJcvkfig4MDkmRzABXkuCULQkMTmtmAg2MTmCULQkMTmtmAg2MTmCULQkMTmtmAg2MTmCULQkMTkRU7/fx263e0msWq0qa6qI3zHz43na5LrdLmw2G7LZ7IteVU1l7h0z/8hcs9mE2+1GOp1+0ftd7fl8ot1uQ9yLxSIejwdarRZcLhfy+bz8bTpT62X73aRNrtFowG63S6G32w0+nw/xeBwOhwOq2nK5xGg0QiqVwn6/x3w+Ry6Xg9frVT6nmqlrUNtcrVaTRkTii8UC0+kUgUBAilbVhBCxfiKQ6/WKYDCIZDIp9f3NTB2D2uY+DhNCRbLiHaxUKp/O+aq2Wq0wHA5hsVhQKpXgdDpftJnOfJu5+/2Oer0uRZbL5U/nfFUTa7ler+VKRyIRhMPhF22mM/+puV6vh8PhgEwmg/P5jPF4jFAohEQiAVVts9lgMBggGo3KD8psNpOr7fF4lM+pZuoYEz3aa3k8HjGZTHA6nWC1WuH3+xGLxeRqflcTB3Q6HfkhKhQKkpx4/8Rd/L9cLsYzxXm6l7Y53YGU+tgcJRomWpicSVqUepkcJRomWpicSVqUepkcJRomWpicSVqUepkcJRomWpicSVqUepkcJRomWpicSVqUepkcJRomWn4BOwcXhXEzNTIAAAAASUVORK5CYII=" data-src="js/holder/holder.js/55x55" alt="55x55" style="width: 55px; height: 55px;"></div>
+                <div class="tile block"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAECElEQVR4Xu2X2ytscRiGv3GIXCAXpCTlEMKF04Uk4s8WSjkmIkQuRHJMckhymN33FWHbY2VPq/H2rBvNzDLfvM+z3vX7rczl5WXWOGQJZBAs6zaCIVjbL4LF/SIYweoExPOxBiNYnIB4PBqMYHEC4vFoMILFCYjHo8EIFicgHo8GI1icgHg8GoxgcQLi8WgwgsUJiMejwQgWJyAejwYjWJyAeDwajGBxAuLxaDCCxQmIx6PBCBYnIB6PBiNYnIB4PBqMYHEC4vFoMILFCYjHo8EIFicgHo8GI1icgHg8GoxgcQLi8WgwgsUJiMejwQgWJyAejwYjWJyAeDwajGBxAuLxaDCCxQmIx6PBCBYnIB6PBiM4fQLHx8e2ubkZgycmJt5+wO3tre3u7tr19XW8V1NTY21tbVZeXm4vLy+2s7NjFxcXls1mrba2Nj4rKir6NkDa8779QXk8oeAa7ILu7+9D1mfBy8vLIbevr8+en59tdXU1JPf29tr+/r7t7e1ZZ2dn/N/W1lYIbmxszIkr7Xl5dJfoqwpO8MHBQUiZnJz8S/D7RC54enraiouLbWxszBYXF+3m5sZGRkaiwbOzs1ZZWWkDAwM2Pz8f7w0NDcWFMTc3F633zw4PD/M6b3BwMBH4tE4qOMGvwb8TfHR0ZNvb21ZRURHiZmZm7OnpycbHx0Pm1NTUm/zT01Pb2Niw7u5uu7q6Cqn9/f1WXV39xjmf89KSl2TOrxR8fn4ewnzd7enpifX2syB/nclkQrgf3vDHx0d7eHiw+vr6t1t5kgvqJ/OSwE/jnF8n+OTkJDZg3tL3a+xXDS4pKbHR0dHgeHZ2Zuvr6yF9eHjYysrKPvD9V4N/Oi8NeUlm/CrBfntdWVkJSV1dXdHc12NpaSk2YO/X4Kqqqlhn/fDGexP9wmhubrampqZvBf/PvCTw0zjnVwn2zdLd3V2spXV1dR/4+ObMH6E6OjrifV+f29vbraGhIR6d1tbWrKWlJTZZvuN28b4Jy3WL/um8NMQlnVFwgl9vlZ8D+PNwrs+8mf5o5bdib7hfAK2trSF0YWHBSktLzXe4fp6vx/7XX/ut/avjp/N8diEdBSe4kOAo/BYEK1jMkQHBCBYnIB6PBiNYnIB4PBqMYHEC4vFoMILFCYjHo8EIFicgHo8GI1icgHg8GoxgcQLi8WgwgsUJiMejwQgWJyAejwYjWJyAeDwajGBxAuLxaDCCxQmIx6PBCBYnIB6PBiNYnIB4PBqMYHEC4vFoMILFCYjHo8EIFicgHo8GI1icgHg8GoxgcQLi8WgwgsUJiMejwQgWJyAejwYjWJyAeDwajGBxAuLxaDCCxQmIx6PBCBYnIB6PBiNYnIB4PBqMYHEC4vH+ABEQnd5gXA1pAAAAAElFTkSuQmCC" data-src="js/holder/holder.js/120x120" alt="120x120" style="width: 120px; height: 120px;"></div>
+                <div class="tile double block"><img src="data:image/png;base64,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" data-src="js/holder/holder.js/250x120" alt="250x120" style="width: 250px; height: 120px;"></div>
+                <div class="tile triple block"><img src="data:image/png;base64,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" data-src="js/holder/holder.js/380x120" alt="380x120" style="width: 380px; height: 120px;"></div>
+                <div class="tile quadro block"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhIAAAB4CAYAAACnzRuqAAAPiElEQVR4Xu3dBY/jRgMGYF+ZmXtlUJmZVPrZRZWZmZmvzHCf3nzyauJ4N/Zs9m5zeUaqTs16HPvxSH4znhnv2LVr1+5GIUCAAAECBAhUCOwQJCrUVCFAgAABAgQmAoKEhkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkCAAAECBAhUCwgS1XQqEiBAgAABAoKENkBghMAPP/zQPPvssyNq/H/Te++9t7fO33//3XzxxRfNt99+2/zyyy9N/n///fdvDj744Oaoo45qTjnllOb4448f9H1ff/1189VXXzU//fRT89dff03qHHjggWv7OemkkwbtZ5Eb5Tjef//95rPPPmt27949tev1TMqN/v333+bLL79svvnmm+bnn39u/vnnn8l+DjjggObwww9vjjnmmObUU09tDjvssLmHvR195h60DQgsgYAgsQQXySFuH4Hc0F566aXRB9R308yN7Y033piEh43Kscce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n/W9+rxvKe1sm7UrsoZFW/Jrv/sa8JqXfo0NEgk0GbTafatpjidTPLsrZ/Zd3K3w2XQjsgMC+6CAILEPXlSntDUCfe+AKNctaL810yWzDHZZTjvttOaSSy6ZfNT3ro2+pa37Akk51iIv4sq+ytI3O6TvhprHGt3BiX1LaecFWFn5spzSmpkcecTRrb+R+tggkYGVGSdSlvTG5J0bQ7930T5b06rslcDyCwgSy38NncEeEuh7K2XfS7u6q1/m8Mqegr4be99+hnxfdxxAd+xDBmtmManyUUXfG0uzNkYGWJav7s7S3xmD0LdYVd8CWYsKEln2O70RZcng0Aw07RtUudH3LspnDzUxX0NgKQUEiaW8bA56bwikiz/LLpc32xxH1npIT0C64/OWze4v6bxvIzfBtqR+3lrZnRWxc+fOyfst8vgivQNZ3bL7WCE39tzg29LX+5EBmVmzIiEioaV8VNENNe1+8qKsvC2zLblhp9eiHciYIJKgUQ7AbIPGkGsxpkci39MdF9HXYzPkexflM+S7bENgVQUEiVW98s67SiA3+Ly8qruq4no761soKdv23eDmHVDf4lep032Z1kb7KR+xtNvlHRt510ZZ+m7ceX16wk1Zuu/b2GgtjHnnl7/n1eKL2Ef5XZv1GXLctiGwygKCxCpffedeJZAwkRdGZbDlRiU9ERlDsV53fPaTsQDdHo6+febV3BnkmNkf3ZJegry+OwthbVSyQmb2kR6PtmQcQcZ+lD0N2S4Boa90ey5yPBkv0b7caxEhYBH7KI99Mz5VDUQlAismIEis2AV3uosRSIjIOx8SBrLuQv4/N9X0QCRAZHpl1jmYV/J4o91PuvPzKCM3vjxSyAJUWQQqN/YhAwzzaCL7ykyHNpxkbEFW1UxPRPeV5vmujOcox09kQGPe+rne2gx9YykSIhImcv6LCAGL2Eef+1ifedfO3wkQ+L+AIKElECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUCgkQ1nYoECBAgQICAIKENECBAgAABAtUC/wNA2dAaZ2ONQAAAAABJRU5ErkJggg==" data-src="js/holder/holder.js/530x120" alt="530x120" style="width: 530px; height: 120px;"></div>
+            </div>
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile half"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L1"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile double"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile triple"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L4"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile quadro"</span><span class="tag">&gt;&lt;/div&gt;</span></li></ol></pre>
+            <p>To change vertical size use next sub classes: <code>double-vertical</code>, <code>triple-vertical</code> and <code>quadro-vertical</code>.</p>
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile double-vertical"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L1"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile triple-vertical"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile quadro-vertical"</span><span class="tag">&gt;&lt;/div&gt;</span></li></ol></pre>
+
+            <h3>Tile Badges</h3>
+            <p class="description">
+                A badge can display either a number from 1-99 or a status glyph. badge is positioned in tile status container on the bottom right corner.
+                Metro UI CSS support main Windows 8 badges: <code>activity</code>, <code>alert</code>, <code>available</code>, <code>away</code>, <code>busy</code>,
+                <code>newMessage</code>, <code>paused</code>, <code>playing</code>, <code>unavailable</code>, <code>error</code> and <code>attention</code> as built-in.
+                The badge background color can be changed with built-in classes <code>bg-*</code>.
+            </p>
+            <div class="example">
+                <div class="tile bg-cyan">
+                    <div class="tile-status">
+                        <div class="badge bg-red">99</div>
+                    </div>
+                </div>
+                <div class="tile bg-cyan">
+                    <div class="tile-status">
+                        <div class="badge activity"></div>
+                    </div>
+                </div>
+                <div class="tile bg-cyan">
+                    <div class="brand">
+                        <div class="badge alert"></div>
+                    </div>
+                </div>
+                <div class="tile bg-cyan">
+                    <div class="brand">
+                        <div class="badge available"></div>
+                    </div>
+                </div>
+                <div class="tile bg-cyan">
+                    <div class="brand">
+                        <div class="badge away"></div>
+                    </div>
+                </div>
+                <div class="tile bg-cyan">
+                    <div class="brand">
+                        <div class="badge busy"></div>
+                    </div>
+                </div>
+                <div class="tile bg-cyan">
+                    <div class="brand">
+                        <div class="badge newMessage"></div>
+                    </div>
+                </div>
+                <div class="tile bg-cyan">
+                    <div class="brand">
+                        <div class="badge paused"></div>
+                    </div>
+                </div>
+                <div class="tile bg-cyan">
+                    <div class="brand">
+                        <div class="badge playing"></div>
+                    </div>
+                </div>
+                <div class="tile bg-cyan">
+                    <div class="brand">
+                        <div class="badge unavailable"></div>
+                    </div>
+                </div>
+                <div class="tile bg-cyan">
+                    <div class="brand">
+                        <div class="badge error"></div>
+                    </div>
+                </div>
+                <div class="tile bg-cyan">
+                    <div class="brand">
+                        <div class="badge attention"></div>
+                    </div>
+                </div>
+            </div>
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile bg-cyan"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"badge"</span><span class="tag">&gt;</span><span class="pln">99</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile bg-cyan"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand"</span><span class="tag">&gt;</span></li><li class="L8"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"badge activity"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L0"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+            <p class="description">
+                You can create custom <code>bage</code> with <code>&lt;i class="icon-*"&gt;</code>
+            </p>
+            <div class="example">
+                <div class="tile bg-cyan">
+                    <div class="brand">
+                        <div class="badge"><i class="icon-rocket"></i></div>
+                    </div>
+                </div>
+                <div class="tile bg-darkRed">
+                    <div class="brand">
+                        <div class="badge bg-red"><i class="icon-broadcast"></i></div>
+                    </div>
+                </div>
+            </div>
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile bg-cyan"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"badge"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-rocket"</span><span class="tag">&gt;&lt;/i&gt;&lt;/div&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile bg-darkRed"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"badge bg-red"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-broadcast"</span><span class="tag">&gt;&lt;/i&gt;&lt;/div&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+            <h3>Tile status (brand)</h3>
+            <p class="description">
+                Status provides additional information for tile. This may be: name, label, text or badge. Tile status container can be created with <code>tile-status</code> or <code>brand</code> classes.
+            </p>
+            <div class="example">
+                <div class="tile bg-darkPink">
+                    <div class="tile-content icon">
+                        <i class="icon-cart-2"></i>
+                    </div>
+                    <div class="tile-status">
+                        <span class="name">Store</span>
+                    </div>
+                </div>
+                <div class="tile double bg-amber">
+                    <div class="tile-content icon">
+                        <i class="icon-play-alt"></i>
+                    </div>
+                    <div class="brand bg-black">
+                        <span class="label fg-white">Player</span>
+                        <div class="badge bg-darkRed paused"></div>
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/author.jpg">
+                    </div>
+                    <div class="brand">
+                        <span class="label fg-white">Images</span>
+                        <span class="badge bg-orange">12</span>
+                    </div>
+                </div>
+                <div class="tile double">
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                    </div>
+                    <div class="brand bg-dark opacity">
+                        <span class="text">
+                            This is a desert eagle. He is very hungry and angry bird.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile bg-darkPink"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content icon"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-cart-2"</span><span class="tag">&gt;&lt;/i&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-status"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"name"</span><span class="tag">&gt;</span><span class="pln">Store</span><span class="tag">&lt;/span&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">&nbsp;</span></li><li class="L9"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile double bg-amber"</span><span class="tag">&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content icon"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-play-alt"</span><span class="tag">&gt;&lt;/i&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand bg-black"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"label fg-white"</span><span class="tag">&gt;</span><span class="pln">Player</span><span class="tag">&lt;/span&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"badge bg-darkRed paused"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">&nbsp;</span></li><li class="L9"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile"</span><span class="tag">&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content image"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://metroui.org.ua/images/author.jpg"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"label fg-white"</span><span class="tag">&gt;</span><span class="pln">http://metroui.org.ua/Images</span><span class="tag">&lt;/span&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"badge bg-orange"</span><span class="tag">&gt;</span><span class="pln">12</span><span class="tag">&lt;/span&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">&nbsp;</span></li><li class="L9"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile double"</span><span class="tag">&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content image"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://metroui.org.ua/images/4.jpg"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand bg-dark opacity"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">            This is a desert eagle. He is very hungry and angry bird.</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;/span&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+            <h3>Tile content</h3>
+            <p class="description">
+                Tile content can be placed in sub container with class <code>.tile-content</code>.
+                Tiles content can be organized with built-in subclasses: <code>icon</code>, <code>image</code>, <code>image-set</code>.
+            </p>
+            <div class="example">
+                <div class="tile half bg-darkRed">
+                    <div class="tile-content icon">
+                        <i class="icon-rocket"></i>
+                    </div>
+                </div>
+                <div class="tile bg-green">
+                    <div class="tile-content icon">
+                        <img src="http://metroui.org.ua/images/excel2013icon.png">
+                    </div>
+                </div>
+                <div class="tile double">
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                    </div>
+                </div>
+                <div class="tile double">
+                    <div class="tile-content image-set">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                        <img src="http://metroui.org.ua/images/2.jpg">
+                        <img src="http://metroui.org.ua/images/3.jpg">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                        <img src="http://metroui.org.ua/images/5.jpg">
+                    </div>
+                </div>
+            </div>
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile bg-cyan"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content icon"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-rocket"</span><span class="tag">&gt;&lt;/i&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile bg-green"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content icon"</span><span class="tag">&gt;</span></li><li class="L8"><span class="pln">        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://metroui.org.ua/images/excel2013icon.png"</span><span class="tag">&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L0"><span class="tag">&lt;/div&gt;</span></li><li class="L1"><span class="pln">&nbsp;</span></li><li class="L2"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile double"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content image"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://metroui.org.ua/images/1.jpg"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="pln">&nbsp;</span></li><li class="L8"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile double"</span><span class="tag">&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content image-set"</span><span class="tag">&gt;</span></li><li class="L0"><span class="pln">        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://metroui.org.ua/images/1.jpg"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://metroui.org.ua/images/2.jpg"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://metroui.org.ua/images/3.jpg"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://metroui.org.ua/images/4.jpg"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://metroui.org.ua/images/5.jpg"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+            <h3>Live Tile</h3>
+            <p class="description">
+                This feature required <code>metro-live-tile.js</code>. You can set effect with <code>data-effect</code> attribute.
+            </p>
+            <div class="example">
+                <div class="tile double live" data-role="live-tile">
+                    <div class="tile-content image" style="left: -250px;">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                    </div>
+                    <div class="tile-content image" style="left: 0px; display: block;">
+                        <img src="http://metroui.org.ua/images/2.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/3.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/5.jpg">
+                    </div>
+
+                    <div class="tile-status bg-dark opacity">
+                        <span class="label">effect: slideLeft</span>
+                    </div>
+                </div>
+
+                <div class="tile double live" data-role="live-tile" data-effect="slideRight">
+                    <div class="tile-content image" style="left: 250px;">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                    </div>
+                    <div class="tile-content image" style="left: 0px; display: block;">
+                        <img src="http://metroui.org.ua/images/2.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/3.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/5.jpg">
+                    </div>
+
+                    <div class="tile-status bg-dark opacity">
+                        <span class="label">effect: slideRight</span>
+                    </div>
+                </div>
+
+                <div class="tile double live" data-role="live-tile" data-effect="slideLeftRight">
+                    <div class="tile-content image" style="left: 250px;">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                    </div>
+                    <div class="tile-content image" style="left: 0px; display: block;">
+                        <img src="http://metroui.org.ua/images/2.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/3.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/5.jpg">
+                    </div>
+
+                    <div class="tile-status bg-dark opacity">
+                        <span class="label">effect: slideLeftRight</span>
+                    </div>
+                </div>
+
+                <div class="tile double live" data-role="live-tile" data-effect="slideUp">
+                    <div class="tile-content image" style="top: -120px;">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                    </div>
+                    <div class="tile-content image" style="top: 0px; display: block;">
+                        <img src="http://metroui.org.ua/images/2.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/3.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/5.jpg">
+                    </div>
+
+                    <div class="tile-status bg-dark opacity">
+                        <span class="label">effect: slideUp</span>
+                    </div>
+                </div>
+
+                <div class="tile double live" data-role="live-tile" data-effect="slideDown">
+                    <div class="tile-content image" style="top: 120px;">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                    </div>
+                    <div class="tile-content image" style="top: 0px; display: block;">
+                        <img src="http://metroui.org.ua/images/2.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/3.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/5.jpg">
+                    </div>
+
+                    <div class="tile-status bg-dark opacity">
+                        <span class="label">effect: slideDown</span>
+                    </div>
+                </div>
+
+                <div class="tile double live" data-role="live-tile" data-effect="slideUpDown">
+                    <div class="tile-content image" style="top: 120px;">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                    </div>
+                    <div class="tile-content image" style="top: 0px; display: block;">
+                        <img src="http://metroui.org.ua/images/2.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/3.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/5.jpg">
+                    </div>
+
+                    <div class="tile-status bg-dark opacity">
+                        <span class="label">effect: slideUpDown</span>
+                    </div>
+                </div>
+            </div>
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile live"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"live-tile"</span><span class="pln"> </span><span class="atn">data-effect</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+            <p class="description">
+                To change easing effect you can use any jquery easing plugins (example: <a href="https://github.com/gdsmith/jquery.easing">jQuery Easing Plugin</a>)
+                or create you own function and set attribute <code>data-easing</code> to <code>tile</code> with the name of <code>easing</code>.
+            </p>
+            <div class="example">
+                <div class="tile double live" data-role="live-tile" data-easing="easeInBounce">
+                    <div class="tile-content image" style="left: -250px;">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                    </div>
+                    <div class="tile-content image" style="left: 0px; display: block;">
+                        <img src="http://metroui.org.ua/images/2.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/3.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/5.jpg">
+                    </div>
+
+                    <div class="tile-status bg-dark opacity">
+                        <span class="label">ease: easeInBounce</span>
+                    </div>
+                </div>
+
+                <div class="tile double live" data-role="live-tile" data-effect="slideRight" data-easing="easeInBack">
+                    <div class="tile-content image" style="left: 249.99999999999994px;">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                    </div>
+                    <div class="tile-content image" style="left: -0.00000000000005684341886080802px; display: block;">
+                        <img src="http://metroui.org.ua/images/2.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/3.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/5.jpg">
+                    </div>
+
+                    <div class="tile-status bg-dark opacity">
+                        <span class="label">ease: easeInBack</span>
+                    </div>
+                </div>
+
+                <div class="tile double live" data-role="live-tile" data-effect="slideLeftRight" data-easing="easeInElastic">
+                    <div class="tile-content image" style="left: 250px;">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                    </div>
+                    <div class="tile-content image" style="left: 0px; display: block;">
+                        <img src="http://metroui.org.ua/images/2.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/3.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/5.jpg">
+                    </div>
+
+                    <div class="tile-status bg-dark opacity">
+                        <span class="label">ease: easeInElastic</span>
+                    </div>
+                </div>
+
+                <div class="tile double live" data-role="live-tile" data-effect="slideUp" data-easing="easeInCirc">
+                    <div class="tile-content image" style="top: -120px;">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                    </div>
+                    <div class="tile-content image" style="top: 0px; display: block;">
+                        <img src="http://metroui.org.ua/images/2.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/3.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/5.jpg">
+                    </div>
+
+                    <div class="tile-status bg-dark opacity">
+                        <span class="label">ease: easeInCirc</span>
+                    </div>
+                </div>
+
+                <div class="tile double live" data-role="live-tile" data-effect="slideDown" data-easing="easeInExpo">
+                    <div class="tile-content image" style="top: 120px;">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                    </div>
+                    <div class="tile-content image" style="top: 0px; display: block;">
+                        <img src="http://metroui.org.ua/images/2.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/3.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/5.jpg">
+                    </div>
+
+                    <div class="tile-status bg-dark opacity">
+                        <span class="label">ease: easeInExpo</span>
+                    </div>
+                </div>
+
+                <div class="tile double live" data-role="live-tile" data-effect="slideUpDown" data-easing="easeInSine">
+                    <div class="tile-content image" style="top: 119.99999999999999px;">
+                        <img src="http://metroui.org.ua/images/1.jpg">
+                    </div>
+                    <div class="tile-content image" style="top: -0.000000000000014210854715202004px; display: block;">
+                        <img src="http://metroui.org.ua/images/2.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/3.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/4.jpg">
+                    </div>
+                    <div class="tile-content image">
+                        <img src="http://metroui.org.ua/images/5.jpg">
+                    </div>
+
+                    <div class="tile-status bg-dark opacity">
+                        <span class="label">ease: easeInSine</span>
+                    </div>
+                </div>
+            </div>
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile live"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"live-tile"</span><span class="pln"> </span><span class="atn">data-effect</span><span class="pun">=</span><span class="atv">"..."</span><span class="pln"> </span><span class="atn">data-easing</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+        </div>
+    </div>
+
+    <div class="page-footer">
+        <div class="page-footer-content">
+            <!--<div data-load="header.html"></div>-->
+        </div>
+    </div>
+</div>

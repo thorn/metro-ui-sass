@@ -1,0 +1,59 @@
+<div class="page">
+        <div class="page-region">
+            <div class="page-region-content">
+                <h1>
+                    <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+                    DatePicker<small class="on-right">component</small>
+                </h1>
+
+
+                <p>
+                    THis component required <code>metro-calendar.js</code> and <code>metro-datepicker.js</code>
+                </p>
+                <div class="example">
+
+                    <div class="grid fluid">
+                        <div class="row">
+                            <div class="span3">
+                                <div class="input-control text" data-role="datepicker">
+                                    <input type="text" readonly="readonly">
+                                    <button class="btn-date"></button>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="input-control text" data-role="datepicker" data-date="2013-11-13" data-effect="slide">
+                                    <input type="text" readonly="readonly">
+                                    <button class="btn-date"></button>
+                                </div>
+                            </div>
+                            <div class="span6">
+                                <div class="input-control text" data-role="datepicker" data-date="2013-11-14" data-format="dddd, mmmm d, yyyy" data-effect="fade">
+                                    <input type="text" readonly="readonly">
+                                    <button class="btn-date"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-control text"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn-date"</span><span class="tag">&gt;&lt;/button&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                <p>
+                    Init with data-* API:
+                </p>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-control text"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"datepicker"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn-date"</span><span class="tag">&gt;&lt;/button&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                <p>
+                    Init with Javascript:
+                </p>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-control text"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"datepicker"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn-date"</span><span class="tag">&gt;&lt;/button&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="tag">&lt;script&gt;</span></li><li class="L6"><span class="pln">    $</span><span class="pun">(</span><span class="str">"#datepicker"</span><span class="pun">).</span><span class="pln">datepicker</span><span class="pun">();</span></li><li class="L7"><span class="tag">&lt;/script&gt;</span></li></ol></pre>
+
+                <p>To set params you can use data-* api or javascript:</p>
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="com">// Data-* API</span></li><li class="L1"><span class="pun">&lt;</span><span class="pln">div </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"input-control text"</span><span class="pln"> data</span><span class="pun">-</span><span class="pln">role</span><span class="pun">=</span><span class="str">"datepicker"</span></li><li class="L2"><span class="pln">    data</span><span class="pun">-</span><span class="pln">date</span><span class="pun">=</span><span class="str">"2013-01-01"</span></li><li class="L3"><span class="pln">    data</span><span class="pun">-</span><span class="pln">format</span><span class="pun">=</span><span class="str">"d/m/y"</span></li><li class="L4"><span class="pln">    data</span><span class="pun">-</span><span class="pln">position</span><span class="pun">=</span><span class="str">"top|bottom"</span></li><li class="L5"><span class="pln">    data</span><span class="pun">-</span><span class="pln">effect</span><span class="pun">=</span><span class="str">"none|slide|fade"</span><span class="pun">&gt;</span></li><li class="L6"><span class="pln">    </span><span class="pun">&lt;</span><span class="pln">input type</span><span class="pun">=</span><span class="str">"text"</span><span class="pun">&gt;</span></li><li class="L7"><span class="pln">    </span><span class="pun">&lt;</span><span class="pln">button </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"btn-date"</span><span class="pun">&gt;&lt;/</span><span class="pln">button</span><span class="pun">&gt;</span></li><li class="L8"><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></li><li class="L9"><span class="pln">&nbsp;</span></li><li class="L0"><span class="com">// Javascript</span></li><li class="L1"><span class="str">&lt;script&gt;</span></li><li class="L2"><span class="pln">    $</span><span class="pun">(</span><span class="str">"#datepicker"</span><span class="pun">).</span><span class="pln">datepicker</span><span class="pun">({</span></li><li class="L3"><span class="pln">        date</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2013-01-01"</span><span class="pun">,</span><span class="pln"> </span><span class="com">// set init date</span></li><li class="L4"><span class="pln">        format</span><span class="pun">:</span><span class="pln"> </span><span class="str">"d/m/y"</span><span class="pun">,</span><span class="pln"> </span><span class="com">// set output format</span></li><li class="L5"><span class="pln">        effect</span><span class="pun">:</span><span class="pln"> </span><span class="str">"none"</span><span class="pun">,</span><span class="pln"> </span><span class="com">// none, slide, fade</span></li><li class="L6"><span class="pln">        position</span><span class="pun">:</span><span class="pln"> </span><span class="str">"bottom"</span><span class="pun">,</span><span class="pln"> </span><span class="com">// top or bottom</span></li><li class="L7"><span class="pln">    </span><span class="pun">});</span></li><li class="L8"><span class="pun">&lt;/</span><span class="pln">script</span><span class="pun">&gt;</span></li></ol></pre>
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="page-footer-content">
+                <!--<div data-load="header.html"></div>-->
+            </div>
+        </div>
+    </div>

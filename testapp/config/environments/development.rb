@@ -19,6 +19,9 @@ Testapp::Application.configure do
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
+  config.assets.debug = true
+  config.sass.debug_info = true
+  config.sass.line_comments = true
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large

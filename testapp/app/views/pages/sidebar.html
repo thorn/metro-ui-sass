@@ -1,0 +1,65 @@
+<div class="page">
+        <div class="page-region">
+            <div class="page-region-content">
+                <h1>
+                    <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+                    Sidebar<small class="on-right">component</small>
+                </h1>
+
+                <div class="example">
+                    <div class="grid fluid">
+                        <div class="row">
+                            <div class="span3">
+                                <nav class="sidebar">
+                                    <ul>
+                                        <li class="title">Items Group 1</li>
+                                        <li class="active"><a href="#"><i class="icon-home"></i>Dashboard</a></li>
+                                        <li class="stick bg-red"><a href="#"><i class="icon-cog"></i>Layouts</a></li>
+                                        <li class="stick bg-yellow">
+                                            <a class="dropdown-toggle" href="#"><i class="icon-tree-view"></i>Sub menu</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="">Subitem 1</a></li>
+                                                <li><a href="">Subitem 2</a></li>
+                                                <li><a href="">Subitem 3</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="">Subitem 4</a></li>
+                                                <li class="disabled"><a href="">Subitem 4</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="stick bg-green"><a href="#">Thread item</a></li>
+                                        <li class="disabled"><a href="#">Disabled item</a></li>
+
+                                        <li class="title">Items Group 2</li>
+                                        <li><a href="#">Other Item 1</a></li>
+                                        <li><a href="#">Other item 2</a></li>
+                                        <li><a href="#">Other item 3</a></li>
+                                        <li>
+                                            <a class="dropdown-toggle" href="#">Sub menu 2</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="">Subitem 1</a></li>
+                                                <li><a href="">Subitem 2</a></li>
+                                                <li><a href="">Subitem 3</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="span9 bg-grayLighter padding20">
+                                <p>Metro UI CSS provides <code>SideBar</code> component. This component is great to create side menu.</p>
+                                <p>For <strong>dropdown</strong> you must include <code>metro-dropdown.js</code></p>
+                                <p>See code below for definition details.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="tag">&lt;nav</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sidebar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"title"</span><span class="tag">&gt;</span><span class="pln">Items Group 1</span><span class="tag">&lt;/li&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-home"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">Dashboard</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stick bg-red"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-cog"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">Layouts</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stick bg-yellow"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">            </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-tree-view"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">Sub menu</span><span class="tag">&lt;/a&gt;</span></li><li class="L7"><span class="pln">            </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-menu"</span><span class="tag">&gt;</span></li><li class="L8"><span class="pln">                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Subitem 1</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L9"><span class="pln">                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Subitem 2</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L0"><span class="pln">                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Subitem 3</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L1"><span class="pln">                </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"divider"</span><span class="tag">&gt;&lt;/li&gt;</span></li><li class="L2"><span class="pln">                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Subitem 4</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">                </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"disabled"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Subitem 4</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="pln">            </span><span class="tag">&lt;/ul&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;/li&gt;</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"stick bg-green"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Thread item</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"disabled"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Disabled item</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L8"><span class="pln">&nbsp;</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"title"</span><span class="tag">&gt;</span><span class="pln">Items Group 2</span><span class="tag">&lt;/li&gt;</span></li><li class="L0"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Other Item 1</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Other item 2</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Other item 3</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;li&gt;</span></li><li class="L4"><span class="pln">            </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-toggle"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Sub menu 2</span><span class="tag">&lt;/a&gt;</span></li><li class="L5"><span class="pln">            </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-menu"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Subitem 1</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Subitem 2</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L8"><span class="pln">                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">Subitem 3</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L9"><span class="pln">            </span><span class="tag">&lt;/ul&gt;</span></li><li class="L0"><span class="pln">        </span><span class="tag">&lt;/li&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L2"><span class="tag">&lt;/nav&gt;</span></li></ol></pre>
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="page-footer-content">
+                <!--<div data-load="header.html"></div>-->
+            </div>
+        </div>
+    </div>
