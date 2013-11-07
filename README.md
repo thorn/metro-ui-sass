@@ -1,4 +1,4 @@
-# Modern::Ui::Sass
+# MetroUI SASS
 
 This is SASS powered version of [Metro-UI-CSS](https://github.com/olton/Metro-UI-CSS).
 
@@ -6,7 +6,7 @@ This is SASS powered version of [Metro-UI-CSS](https://github.com/olton/Metro-UI
 
 Add this line to your application's Gemfile:
 
-    gem 'modern-ui-sass', git: 'git://github.com/thorn/modern-ui-sass.git'
+    gem 'metro-ui-sass', git: 'git://github.com/thorn/metro-ui-sass.git'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install modern-ui-sass
+    $ gem install metro-ui-sass
 
 ## Documentation
 

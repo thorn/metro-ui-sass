@@ -1,6 +1,6 @@
-require "modern-ui-sass/version"
+require "metro-ui-sass/version"
 
-module ModernUI
+module MetroUI
 
   class FrameworkNotFound < StandardError; end
 
@@ -10,14 +10,14 @@ module ModernUI
       register_rails_engine
     elsif compass?
       # Only require compass extension if a standalone project
-      require 'modern-ui-sass/compass_functions'
+      require 'metro-ui-sass/compass_functions'
       register_compass_extension
     elsif asset_pipeline?
       require "sass-rails"
       register_rails_engine
-      require 'modern-ui-sass/rails_functions'
+      require 'metro-ui-sass/rails_functions'
     else
-      raise ModernUI::FrameworkNotFound, "modern-ui-sass requires either Rails > 3.1 or Compass, neither of which are loaded"
+      raise MetroUI::FrameworkNotFound, "metro-ui-sass requires either Rails > 3.1 or Compass, neither of which are loaded"
     end
   end
 
@@ -35,13 +35,13 @@ module ModernUI
     base = File.join(File.dirname(__FILE__), '..')
     styles = File.join(base, 'app', 'assets', 'stylesheets')
     templates = File.join(base, 'templates')
-    ::Compass::Frameworks.register('modern-ui', :stylesheets_directory => styles, :templates_directory => templates)
+    ::Compass::Frameworks.register('metro-ui', :stylesheets_directory => styles, :templates_directory => templates)
   end
 
   def self.register_rails_engine
-    require 'modern-ui-sass/engine'
+    require 'metro-ui-sass/engine'
   end
 
 end
 
-ModernUI.load!
+MetroUI.load!

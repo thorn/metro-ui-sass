@@ -21,5 +21,5 @@ end
 
 # Javascripts
 %w(accordion buttonset carousel dialog dropdown input-control pagecontrol rating slider start-menu tile-drag tile-slider).each do |file|
-  javascript "#{basedir}/javascripts/modern-ui-#{file}.js", :to => "modern-ui-#{file}.js"
+  javascript "#{basedir}/javascripts/metro-ui-#{file}.js", :to => "metro-ui-#{file}.js"
 end
