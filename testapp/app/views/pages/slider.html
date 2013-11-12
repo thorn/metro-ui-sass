@@ -1,51 +1,120 @@
-<div class="page">
-        <div class="page-region">
-            <div class="page-region-content">
-                <h1>
-                    <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
-                    Slider<small class="on-right">component</small>
-                </h1>
+    <div class="page">
+      <div class="page-region">
+        <div class="page-region-content">
+          <h1>
+            <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+            Slider<small class="on-right">component</small>
+          </h1>
 
-                <div class="example">
-                    <div class="slider" id="s1" data-role="slider" data-position="25" data-accuracy="0"><div class="complete" style="width: 206.5px;"></div><a class="marker" style="left: 206.5px;"></a></div>
-                    <div class="slider" id="slider_1" data-role="slider"><div class="complete" style="width: 0px;"></div><a class="marker" style="left: 0px;"></a></div>
-                    <div class="slider" data-role="slider" data-position="0" data-accuracy="0" data-colors="blue, red, yellow, green"><div class="complete" style="width: 0px; background-color: blue;"></div><a class="marker" style="left: 0px;"></a></div>
-                    <script>
-                        $(function(){
-                            $("#slider_1").slider();
-                        });
-                    </script>
-                </div>
+          <p>
+            Metro UI CSS provides a component for creating slider.
+          </p>
+          <div class="example">
+            <div class="slider" id="s1" data-role="slider" data-position="25" data-accuracy="0"></div>
+            <div class="slider" id="slider_1" data-role="slider"></div>
+            <div class="slider" data-role="slider" data-position="0" data-accuracy="0" data-colors="blue, red, yellow, green"></div>
+            <script>
+              $(function(){
+                $("#slider_1").slider();
+              });
+            </script>
+          </div>
 
-                <div class="example clearfix">
-                    <div class="slider vertical place-left" data-role="slider" data-position="20" data-accuracy="0"><div class="complete" style="height: 29.599999999999998px;"></div><a class="marker" style="top: 70.4px;"></a></div>
-                    <div class="slider vertical place-left" data-role="slider" data-position="0" data-accuracy="20"><div class="complete" style="height: 12px;"></div><a class="marker" style="top: 88px;"></a></div>
-                    <div class="slider vertical place-left" data-role="slider" data-position="40" data-accuracy="0" data-color="green" style="background-color: green;"><div class="complete" style="height: 47.199999999999996px;"></div><a class="marker" style="top: 52.800000000000004px;"></a></div>
-                    <div class="slider vertical place-left" data-role="slider" data-position="70" data-accuracy="0" data-color="#f00" style="background-color: rgb(255, 0, 0);"><div class="complete" style="height: 73.6px;"></div><a class="marker" style="top: 26.400000000000006px;"></a></div>
-                    <div class="slider vertical place-left" data-role="slider" data-position="70" data-accuracy="0" data-color="black" data-complete-color="blue" data-marker-color="yellow" style="background-color: black;"><div class="complete" style="background-color: blue; height: 73.6px;"></div><a class="marker" style="background-color: yellow; top: 26.400000000000006px;"></a></div>
-                    <div class="slider vertical place-left hint-left" data-show-hint="true" data-role="slider" data-position="0" data-accuracy="0" data-colors="blue, red, yellow, green"><div class="complete" style="height: 12px; background-color: blue;"></div><a class="marker" style="top: 88px;"></a><span class="hint" style="top: 80px;">0</span></div>
-                    <div class="slider vertical place-left" data-role="slider" data-show-hint="true"><div class="complete" style="height: 12px;"></div><a class="marker" style="top: 88px;"></a><span class="hint" style="top: 80px;">0</span></div>
-                    <div class="slider vertical place-left permanent-hint" data-role="slider" data-show-hint="true"><div class="complete" style="height: 12px;"></div><a class="marker" style="top: 88px;"></a><span class="hint" style="top: 80px;">0</span></div>
-                </div>
+          <div class="example clearfix">
+            <div class="slider vertical place-left" data-role="slider" data-position="20" data-accuracy="0"></div>
+            <div class="slider vertical place-left" data-role="slider" data-position="0" data-accuracy="20"></div>
+            <div class="slider vertical place-left" data-role="slider" data-position="40" data-accuracy="0" data-color="green"></div>
+            <div class="slider vertical place-left" data-role="slider" data-position="70" data-accuracy="0" data-color="#f00"></div>
+            <div class="slider vertical place-left" data-role="slider" data-position="70" data-accuracy="0" data-color="black" data-complete-color="blue" data-marker-color="yellow"></div>
+            <div class="slider vertical place-left hint-left" data-show-hint="true" data-role="slider" data-position="0" data-accuracy="0" data-colors="blue, red, yellow, green"></div>
+            <div class="slider vertical place-left" data-role="slider" data-show-hint="true"></div>
+            <div class="slider vertical place-left permanent-hint" data-role="slider" data-show-hint="true"></div>
+          </div>
 
-                <div class="example">
-                    <br>
-                    <div class="slider" data-role="slider" data-position="20" data-accuracy="0" data-show-hint="true"><div class="complete" style="width: 165.2px;"></div><a class="marker" style="left: 165.2px;"></a><span class="hint" style="left: 155.2px;">20</span></div>
-                    <br>
-                    <div class="slider permanent-hint" data-role="slider" data-position="70" data-accuracy="0" data-show-hint="true"><div class="complete" style="width: 578.2px;"></div><a class="marker" style="left: 578.2px;"></a><span class="hint" style="left: 568.2px;">70</span></div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="slider hint-bottom" data-role="slider" data-position="20" data-accuracy="0" data-show-hint="true"><div class="complete" style="width: 165.2px;"></div><a class="marker" style="left: 165.2px;"></a><span class="hint" style="left: 155.2px;">20</span></div>
-                    <br>
-                    <div id="s2" class="slider permanent-hint hint-bottom" data-role="slider" data-position="20" data-accuracy="0" data-show-hint="true"><div class="complete" style="width: 165.2px;"></div><a class="marker" style="left: 165.2px;"></a><span class="hint" style="left: 155.2px;">20</span></div>
-                </div>
-            </div>
-        </div>
+          <div class="example">
+            <br />
+            <div class="slider" data-role="slider" data-position="20" data-accuracy="0" data-show-hint="true"></div>
+            <br />
+            <div class="slider permanent-hint" data-role="slider" data-position="70" data-accuracy="0" data-show-hint="true"></div>
+            <br />
+            <br />
+            <br />
+            <div class="slider hint-bottom" data-role="slider" data-position="20" data-accuracy="0" data-show-hint="true"></div>
+            <br />
+            <div id="s2" class="slider permanent-hint hint-bottom" data-role="slider" data-position="20" data-accuracy="0" data-show-hint="true"></div>
+          </div>
 
-        <div class="page-footer">
-            <div class="page-footer-content">
-                <!--<div data-load="header.html"></div>-->
-            </div>
-        </div>
+          <h4>HTML</h4>
+          <p>
+            To create <strong>slider</strong> you can use next <strong>html</strong> structure:
+          </p>
+          <pre class="prettyprint linenums">
+            &lt;div class="slider" data-role="slider"&gt;&lt;/div&gt;
+            &lt;div class="slider vertical" data-role="slider"&gt;&lt;/div&gt;
+          </pre>
+
+          <h4>Options</h4>
+          <p>
+            Slider supported next options:
+          </p>
+          <table class="table border">
+            <tr>
+              <td class="text-bold">position</td>
+              <td class="text-bold">data-position</td>
+              <td>determines the starting position of marker</td>
+            </tr>
+            <tr>
+              <td class="text-bold">accuracy</td>
+              <td class="text-bold">data-accuracy</td>
+              <td>determines the accuracy of the marker (from 1 to 100)</td>
+            </tr>
+            <tr>
+              <td class="text-bold">color</td>
+              <td class="text-bold">data-color</td>
+              <td>determines the color of the slider</td>
+            </tr>
+            <tr>
+              <td class="text-bold">completeColor</td>
+              <td class="text-bold">data-complete-color</td>
+              <td>determines the complete color of the slider</td>
+            </tr>
+            <tr>
+              <td class="text-bold">markerColor</td>
+              <td class="text-bold">data-marker-color</td>
+              <td>determines the marker color</td>
+            </tr>
+            <tr>
+              <td class="text-bold">colors</td>
+              <td class="text-bold">data-colors</td>
+              <td>defines a set of colors that will be applied uniformly to complete color when marker is moving</td>
+            </tr>
+            <tr>
+              <td class="text-bold">showHint</td>
+              <td class="text-bold">data-show-hint</td>
+              <td>show or hide hint for value of marker position</td>
+            </tr>
+          </table>
+
+          <p>
+            You can sets options over javascript or data-* api.
+          </p>
+          <pre class="prettyprint linenums">
+            &lt;div class="slider" data-role="slider" data-position="0" data-accuracy="0" data-colors="blue, red, yellow, green"&gt;&lt;/div&gt;
+          </pre>
+          <pre class="prettyprint linenums">
+            $(function(){
+            $("#slider").slider({
+            position: 10,
+            accuracy: 1
+          });
+        });
+      </pre>
+      <p>This component required <code>metro-slider.js</code></p>
     </div>
+  </div>
+
+  <div class="page-footer">
+    <div class="page-footer-content">
+    </div>
+  </div>
+</div>

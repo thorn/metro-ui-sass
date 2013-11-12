@@ -40,6 +40,8 @@
 .bg-darkViolet {background-color: $darkViolet !important;}
 .bg-darkBlue {background-color: $darkBlue !important;}
 .bg-lightBlue {background-color: $lightBlue !important;}
+.bg-lightRed {background-color: $lightRed !important;}
+.bg-lightGreen {background-color: $lightGreen !important;}
 .bg-lighterBlue {background-color: $lighterBlue !important;}
 .bg-lightTeal {background-color: lighten($teal, 30%) !important;}
 .bg-lightOlive {background-color: $lightOlive !important;}
@@ -97,6 +99,8 @@
 .fg-lightOlive {color: $lightOlive !important;}
 .fg-lightOrange {color: $lightOrange !important;}
 .fg-lightPink {color: $lightPink !important;}
+.fg-lightRed {color: $lightRed !important;}
+.fg-lightGreen {color: $lightGreen !important;}
 
 .fg-grayDark {color: $grayDark !important;}
 .fg-grayDarker {color: $grayDarker !important;}
@@ -150,6 +154,8 @@
 .ol-lightOlive {outline-color: $lightOlive !important;}
 .ol-lightOrange {outline-color: $lightOrange !important;}
 .ol-lightPink {outline-color: $lightPink !important;}
+.ol-lightRed {outline-color: $lightRed !important;}
+.ol-lightGreen {outline-color: $lightGreen !important;}
 
 .ol-grayDark {outline-color: $grayDark !important;}
 .ol-grayDarker {outline-color: $grayDarker !important;}
@@ -202,6 +208,8 @@
 .bd-lightOlive {border-color: $lightOlive !important;}
 .bd-lightOrange {border-color: $lightOrange !important;}
 .bd-lightPink {border-color: $lightPink !important;}
+.bd-lightRed {border-color: $lightRed !important;}
+.bd-lightGreen {border-color: $lightGreen !important;}
 
 .bd-grayDark {border-color: $grayDark !important;}
 .bd-grayDarker {border-color: $grayDarker !important;}
@@ -218,49 +226,51 @@
     background-size: $size $size;
 }
 
-.ribbed-black {@include ribbed($black)}
-.ribbed-white {@include ribbed($white)}
-.ribbed-lime {@include ribbed($lime)}
-.ribbed-green {@include ribbed($green)}
-.ribbed-emerald {@include ribbed($emerald)}
-.ribbed-teal {@include ribbed($teal)}
-.ribbed-cyan {@include ribbed($cyan)}
-.ribbed-cobalt {@include ribbed($cobalt)}
-.ribbed-indigo {@include ribbed($indigo)}
-.ribbed-violet {@include ribbed($violet)}
-.ribbed-pink {@include ribbed($pink)}
-.ribbed-magenta {@include ribbed($magenta)}
-.ribbed-crimson {@include ribbed($crimson)}
-.ribbed-red {@include ribbed($red)}
-.ribbed-orange {@include ribbed($orange)}
-.ribbed-amber {@include ribbed($amber)}
-.ribbed-yellow {@include ribbed($yellow)}
-.ribbed-brown {@include ribbed($brown)}
-.ribbed-olive {@include ribbed($olive)}
-.ribbed-steel {@include ribbed($steel)}
-.ribbed-mauve {@include ribbed($mauve)}
-.ribbed-taupe {@include ribbed($taupe)}
-.ribbed-dark {@include ribbed($dark)}
-.ribbed-darkBrown {@include ribbed($darkBrown)}
-.ribbed-darkCrimson {@include ribbed($darkCrimson)}
-.ribbed-darkMagenta {@include ribbed($darkMagenta)}
-.ribbed-darkIndigo {@include ribbed($darkIndigo)}
-.ribbed-darkCyan {@include ribbed($darkCyan)}
-.ribbed-darkCobalt {@include ribbed($darkCobalt)}
-.ribbed-darkTeal {@include ribbed($darkTeal)}
-.ribbed-darkEmerald {@include ribbed($darkEmerald)}
-.ribbed-darkGreen {@include ribbed($darkGreen)}
-.ribbed-darkOrange {@include ribbed($darkOrange)}
-.ribbed-darkRed {@include ribbed($darkRed)}
-.ribbed-darkPink {@include ribbed($darkPink)}
-.ribbed-darkViolet {@include ribbed($darkViolet)}
-.ribbed-darkBlue {@include ribbed($darkBlue)}
-.ribbed-lightTeal {@include ribbed($lightTeal)}
-.ribbed-lightOlive {@include ribbed($lightOlive)}
-.ribbed-lightOrange {@include ribbed($lightOrange)}
-.ribbed-lightPink {@include ribbed($lightPink)}
-.ribbed-grayed {@include ribbed($grayed)}
-.ribbed-grayDarker {@include ribbed($grayDarker)}
-.ribbed-gray {@include ribbed($gray)}
-.ribbed-grayLight {@include ribbed($grayLight)}
-.ribbed-grayLighter {@include ribbed($grayLighter)}
+.ribbed-black {@include ribbed($black);}
+.ribbed-white {@include ribbed($white);}
+.ribbed-lime {@include ribbed($lime);}
+.ribbed-green {@include ribbed($green);}
+.ribbed-emerald {@include ribbed($emerald);}
+.ribbed-teal {@include ribbed($teal);}
+.ribbed-cyan {@include ribbed($cyan);}
+.ribbed-cobalt {@include ribbed($cobalt);}
+.ribbed-indigo {@include ribbed($indigo);}
+.ribbed-violet {@include ribbed($violet);}
+.ribbed-pink {@include ribbed($pink);}
+.ribbed-magenta {@include ribbed($magenta);}
+.ribbed-crimson {@include ribbed($crimson);}
+.ribbed-red {@include ribbed($red);}
+.ribbed-orange {@include ribbed($orange);}
+.ribbed-amber {@include ribbed($amber);}
+.ribbed-yellow {@include ribbed($yellow);}
+.ribbed-brown {@include ribbed($brown);}
+.ribbed-olive {@include ribbed($olive);}
+.ribbed-steel {@include ribbed($steel);}
+.ribbed-mauve {@include ribbed($mauve);}
+.ribbed-taupe {@include ribbed($taupe);}
+.ribbed-dark {@include ribbed($dark);}
+.ribbed-darkBrown {@include ribbed($darkBrown);}
+.ribbed-darkCrimson {@include ribbed($darkCrimson);}
+.ribbed-darkMagenta {@include ribbed($darkMagenta);}
+.ribbed-darkIndigo {@include ribbed($darkIndigo);}
+.ribbed-darkCyan {@include ribbed($darkCyan);}
+.ribbed-darkCobalt {@include ribbed($darkCobalt);}
+.ribbed-darkTeal {@include ribbed($darkTeal);}
+.ribbed-darkEmerald {@include ribbed($darkEmerald);}
+.ribbed-darkGreen {@include ribbed($darkGreen);}
+.ribbed-darkOrange {@include ribbed($darkOrange);}
+.ribbed-darkRed {@include ribbed($darkRed);}
+.ribbed-darkPink {@include ribbed($darkPink);}
+.ribbed-darkViolet {@include ribbed($darkViolet);}
+.ribbed-darkBlue {@include ribbed($darkBlue);}
+.ribbed-lightTeal {@include ribbed($lightTeal);}
+.ribbed-lightOlive {@include ribbed($lightOlive);}
+.ribbed-lightOrange {@include ribbed($lightOrange);}
+.ribbed-lightPink {@include ribbed($lightPink);}
+.ribbed-lightRed {@include ribbed($lightRed);}
+.ribbed-lightGreen {@include ribbed($lightGreen);}
+.ribbed-grayed {@include ribbed($grayed);}
+.ribbed-grayDarker {@include ribbed($grayDarker);}
+.ribbed-gray {@include ribbed($gray);}
+.ribbed-grayLight {@include ribbed($grayLight);}
+.ribbed-grayLighter {@include ribbed($grayLighter);}

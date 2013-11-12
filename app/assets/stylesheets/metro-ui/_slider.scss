@@ -28,7 +28,7 @@
     transition: background .3s ease;
   }
 
-  .hint {
+  &> .hint {
     background-color: $white;
     display: block;
     position: absolute;
@@ -45,7 +45,7 @@
   }
 
   &.permanent-hint {
-    .hint {
+    &> .hint {
       display: block;
     }
   }
@@ -76,6 +76,7 @@
     .hint {
       left: 100%;
       margin-left: 5px;
+      margin-top: 0;
     }
 
     &.hint-left {
